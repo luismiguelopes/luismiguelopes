@@ -234,14 +234,6 @@
                             <div class="col-md-6 col-sm-6 p-none">
                                 <ul class="custom-list-style-1 p-none">
 
-                                    <li>
-                                        <span class="text-color-dark">TELEFONE:</span>
-                                        <span class="custom-text-color-2"><a class="custom-text-color-2" href="tel:915212277">915 212 277</a></span>
-                                    </li>
-                                    <li>
-                                        <span class="text-color-dark">EMAIL:</span>
-                                        <span class="custom-text-color-2"><a class="custom-text-color-2" href="mailto:geral@luismiguelopes.com">geral@luismiguelopes.com</a></span>
-                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -258,7 +250,7 @@
                             <p>Morbi tincidunt nunc non diam porta, at fermentum orci bibendum. Donec arcu nisi, ornare nec commodo vitae, sollicitudin sed magna. Cras sit amet justo et nulla pulvinar laoreet. Phasellus scelerisque, metus id posuere vulputate, diam tellus iaculis sapien, eget scelerisque ipsum libero convallis velit. Duis lorem ligula, faucibus quis tellus nec, fringilla ultricies leo. Etiam tempus congue magna. Suspendisse porta dictum tortor, eu volutpat ipsum eleifend nec. Aliquam dapibus lorem luctus, cursus libero imperdiet, mattis nunc. Sed in ipsum diam. Quisque efficitur metus purus, vitae fermentum lacus venenatis id.</p>
                         </div>
 
-                        <a id="aboutMeMoreBtn" class="btn btn-tertiary text-uppercase custom-btn-style-1 text-xs">View More</a>
+                        <a id="aboutMeMoreBtn" class="btn btn-tertiary text-uppercase custom-btn-style-1 text-xs">Ver Mais</a>
 
                     </div>
                 </div>
@@ -269,28 +261,32 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h2 class="text-color-quaternary text-uppercase font-weight-extra-bold">Experience</h2>
+                        <h2 class="text-color-quaternary text-uppercase font-weight-extra-bold">Experiência</h2>
                         <section class="timeline custom-timeline" id="timeline">
                             <div class="timeline-body">
                                 <article class="timeline-box right custom-box-shadow-2">
                                     <div class="experience-info col-md-3 col-sm-5 match-height background-color-primary">
 											<span class="from text-color-dark text-uppercase">
-												From
-												<span class="font-weight-semibold">Sep 2012</span>
+
+												<span class="font-weight-semibold">Jun 2015</span>
 											</span>
                                         <span class="to text-color-dark text-uppercase">
-												To
-												<span class="font-weight-semibold">Present</span>
+
+												<span class="font-weight-semibold">Presente</span>
 											</span>
-                                        <p class="text-color-dark">(3 Years 9 Months)</p>
+                                        <p class="text-color-dark">(2 Anos)</p>
                                         <span class="company text-color-dark font-weight-semibold">
-												Okler Themes
-												<span class="company-location text-color-dark font-weight-normal text-uppercase">Greater New York</span>
+												HostingZard
+												<span class="company-location text-color-dark font-weight-normal text-uppercase">Empresa</span>
 											</span>
                                     </div>
                                     <div class="experience-description col-md-9 col-sm-7 match-height background-color-light">
-                                        <h4 class="text-color-dark font-weight-semibold">Chief Product Officer</h4>
-                                        <p class="custom-text-color-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tincidunt nulla tortor, a imperdiet enim tristique nec. Nulla lobortis leo eget metus dapibus sodales. Sed placerat vitae dui vitae vehicula. Quisque in tincidunt ligula, nec dignissim arcu.</p>
+                                        <h4 class="text-color-dark font-weight-semibold">Web Developer</h4>
+                                        <ul class="custom-text-color-2">
+                                            <li>HostingZard é uma empresa de Alojamento de Websites.</li>
+                                            <li>Desenvolvedor do Website.</li>
+                                            <li>Manutenção e Optimização dos servidores em Linux (Ubuntu Server).</li>
+                                        </ul>
                                     </div>
                                 </article>
                                 <article class="timeline-box right custom-box-shadow-2">
@@ -311,7 +307,14 @@
                                     </div>
                                     <div class="experience-description col-md-9 col-sm-7 match-height background-color-light">
                                         <h4 class="text-color-dark font-weight-semibold">Web Developer</h4>
-                                        <p class="custom-text-color-2">ImplodeCode é um Blog de Tutoriais de Programação, com o intuito de ajudar todos os internautas. </p>
+                                        <ul class="custom-text-color-2">
+                                            <li>ImplodeCode é um Blog de Tutoriais de Programação, com o intuito de ajudar todos os internautas.</li>
+                                            <li>Autor e Criador dos artigos de ImplodeCode.</li>
+                                            <li>Manutenção do Website.</li>
+                                            <li>Optimização SEO e Optimização na Velocidade de Carregamento.</li>
+                                            <li>Controle de versões em Git.</li>
+                                            <li>Desenvolvimento de um tema em Wordpress.</li>
+                                        </ul>
                                     </div>
                                 </article>
                                 <article class="timeline-box right custom-box-shadow-2">
@@ -332,7 +335,11 @@
                                     </div>
                                     <div class="experience-description col-md-9 col-sm-7 match-height background-color-light">
                                         <h4 class="text-color-dark font-weight-semibold">Web Developer</h4>
-                                        <p class="custom-text-color-2">GirlsVinci é uma marca de sapatos personalizados para noivas. Criador, Gestor, Desenvolvedor do Website da GirlsVinci, tendo como base o CMS Wordpress. Gestor dos servidores servidos na Cloud, onde é feita toda a manutenção quer a nível de segurança como de optimização.</p>
+                                        <ul class="custom-text-color-2">
+                                            <li>GirlsVinci é uma marca de sapatos personalizados para noivas.</li>
+                                            <li>Gestor de Servidores VPS, onde é feita toda a manutenção quer a nível de segurança como de optimização.</li>
+                                            <li>Criador, Gestor e Desenvolvedor do Website da GirlsVinci, tendo como base o CMS Wordpress.</li>
+                                        </ul>
                                     </div>
                                 </article>
                                 <div class="timeline-bar"></div>
@@ -347,51 +354,15 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h2 class="text-color-quaternary text-uppercase font-weight-extra-bold m-none">Education</h2>
+                        <h2 class="text-color-quaternary text-uppercase font-weight-extra-bold m-none">Educação</h2>
                         <div class="owl-carousel nav-bottom custom-carousel-style-1 custom-item-padding custom-dots-style-1" data-plugin-options="{'items': 1, 'loop': false, 'dots': true, 'nav': false}">
                             <div>
                                 <div class="col-md-6 col-sm-6">
                                     <div class="custom-box-details-2 background-color-light custom-box-shadow-3">
                                         <i class="icon-graduation icons text-color-primary"></i>
-                                        <h4 class="font-weight-semibold text-color-dark m-none">Porto University</h4>
-                                        <p class="custom-text-color-2 mb-xs">Master of Information Technology</p>
-                                        <strong class="text-color-primary">2001-2015</strong>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-sm-6">
-                                    <div class="custom-box-details-2 background-color-light custom-box-shadow-3">
-                                        <i class="icon-graduation icons text-color-primary"></i>
-                                        <h4 class="font-weight-semibold text-color-dark m-none">Porto University</h4>
-                                        <p class="custom-text-color-2 mb-xs">Master of Information Technology</p>
-                                        <strong class="text-color-primary">2001-2015</strong>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="col-md-6 col-sm-6">
-                                    <div class="custom-box-details-2 background-color-light custom-box-shadow-3">
-                                        <i class="icon-graduation icons text-color-primary"></i>
-                                        <h4 class="font-weight-semibold text-color-dark m-none">Porto University</h4>
-                                        <p class="custom-text-color-2 mb-xs">Master of Information Technology</p>
-                                        <strong class="text-color-primary">2001-2015</strong>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-sm-6">
-                                    <div class="custom-box-details-2 background-color-light custom-box-shadow-3">
-                                        <i class="icon-graduation icons text-color-primary"></i>
-                                        <h4 class="font-weight-semibold text-color-dark m-none">Porto University</h4>
-                                        <p class="custom-text-color-2 mb-xs">Master of Information Technology</p>
-                                        <strong class="text-color-primary">2001-2015</strong>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="col-md-6 col-sm-6">
-                                    <div class="custom-box-details-2 background-color-light custom-box-shadow-3">
-                                        <i class="icon-graduation icons text-color-primary"></i>
-                                        <h4 class="font-weight-semibold text-color-dark m-none">Porto University</h4>
-                                        <p class="custom-text-color-2 mb-xs">Master of Information Technology</p>
-                                        <strong class="text-color-primary">2001-2015</strong>
+                                        <h4 class="font-weight-semibold text-color-dark m-none">FLAG</h4>
+                                        <p class="custom-text-color-2 mb-xs">FLAGProfessional Web/Mobile Developer</p>
+                                        <strong class="text-color-primary">2014-2015</strong>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
@@ -413,28 +384,28 @@
             <div class="container">
                 <div class="row custom-sm-flex-order">
                     <div class="col-md-4 col-sm-6 col-xs-12">
-                        <h2 class="text-color-quaternary text-uppercase font-weight-extra-bold">Skills & Language</h2>
+                        <h2 class="text-color-quaternary text-uppercase font-weight-extra-bold">Competências</h2>
                         <div class="progress-bars custom-progress-bars">
                             <div class="progress-label text-color-dark font-weight-semibold text-uppercase text-sm">
-                                <span>Start Up</span>
+                                <span>Criatividade</span>
                             </div>
                             <div class="progress">
-                                <div class="progress-bar" data-appear-progress-animation="60%"></div>
+                                <div class="progress-bar" data-appear-progress-animation="80%"></div>
                             </div>
                             <div class="progress-label text-color-dark font-weight-semibold text-uppercase text-sm">
-                                <span>Innovation</span>
+                                <span>Inovação</span>
                             </div>
                             <div class="progress">
-                                <div class="progress-bar" data-appear-progress-animation="80%" data-appear-animation-delay="300"></div>
+                                <div class="progress-bar" data-appear-progress-animation="70%" data-appear-animation-delay="300"></div>
                             </div>
                             <div class="progress-label text-color-dark font-weight-semibold text-uppercase text-sm">
-                                <span>Products</span>
+                                <span>Autodidacta</span>
                             </div>
                             <div class="progress">
-                                <div class="progress-bar" data-appear-progress-animation="70%" data-appear-animation-delay="600"></div>
+                                <div class="progress-bar" data-appear-progress-animation="90%" data-appear-animation-delay="600"></div>
                             </div>
                             <div class="progress-label text-color-dark font-weight-semibold text-uppercase text-sm">
-                                <span>CSS</span>
+                                <span>Conhecimento</span>
                             </div>
                             <div class="progress">
                                 <div class="progress-bar" data-appear-progress-animation="90%" data-appear-animation-delay="900"></div>
@@ -444,46 +415,42 @@
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="progress-bars custom-progress-bars custom-md-margin-top-1">
                             <div class="progress-label text-color-dark font-weight-semibold text-uppercase text-sm">
-                                <span>Javascript</span>
+                                <span>HTML</span>
                             </div>
                             <div class="progress">
-                                <div class="progress-bar" data-appear-progress-animation="60%"></div>
+                                <div class="progress-bar" data-appear-progress-animation="99%"></div>
                             </div>
                             <div class="progress-label text-color-dark font-weight-semibold text-uppercase text-sm">
-                                <span>Business</span>
+                                <span>CSS</span>
                             </div>
                             <div class="progress">
-                                <div class="progress-bar" data-appear-progress-animation="80%" data-appear-animation-delay="300"></div>
+                                <div class="progress-bar" data-appear-progress-animation="95%" data-appear-animation-delay="300"></div>
                             </div>
                             <div class="progress-label text-color-dark font-weight-semibold text-uppercase text-sm">
-                                <span>E-commerce</span>
+                                <span>PHP</span>
                             </div>
                             <div class="progress">
-                                <div class="progress-bar" data-appear-progress-animation="70%" data-appear-animation-delay="600"></div>
+                                <div class="progress-bar" data-appear-progress-animation="92%" data-appear-animation-delay="600"></div>
                             </div>
                             <div class="progress-label text-color-dark font-weight-semibold text-uppercase text-sm">
-                                <span>Creative</span>
+                                <span>JavaScript</span>
                             </div>
                             <div class="progress">
-                                <div class="progress-bar" data-appear-progress-animation="90%" data-appear-animation-delay="900"></div>
+                                <div class="progress-bar" data-appear-progress-animation="85%" data-appear-animation-delay="900"></div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="custom-box-details background-color-light custom-box-shadow-1">
-                            <h4 class="text-color-dark">Languages</h4>
+                            <h4 class="text-color-dark">Línguas</h4>
                             <ul class="custom-list-style-1 p-none">
                                 <li>
-                                    <span class="font-weight-semibold custom-max-width-1 text-color-dark"><img src="img/blank.gif" class="flag flag-us mr-xs" alt="English">English:</span>
-                                    <span class="custom-text-color-2">Advanced</span>
+                                    <span class="font-weight-semibold custom-max-width-1 text-color-dark"><img src="img/blank.gif" class="flag flag-pt mr-xs" alt="Português">Português:</span>
+                                    <span class="custom-text-color-2">Nativo</span>
                                 </li>
                                 <li>
-                                    <span class="font-weight-semibold custom-max-width-1 text-color-dark"><img src="img/blank.gif" class="flag flag-es mr-xs" alt="Spanish">Spanish:</span>
-                                    <span class="custom-text-color-2">Advanced</span>
-                                </li>
-                                <li>
-                                    <span class="font-weight-semibold custom-max-width-1 text-color-dark"><img src="img/blank.gif" class="flag flag-fr mr-xs" alt="Française">French:</span>
-                                    <span class="custom-text-color-2">Basic</span>
+                                    <span class="font-weight-semibold custom-max-width-1 text-color-dark"><img src="img/blank.gif" class="flag flag-england mr-xs" alt="Inglês">Inglês:</span>
+                                    <span class="custom-text-color-2">Avançado</span>
                                 </li>
                             </ul>
                         </div>
@@ -498,10 +465,9 @@
                     <div class="col-md-12">
                         <h2 class="text-color-quaternary font-weight-extra-bold text-uppercase">Portfolio</h2>
                         <ul class="nav nav-pills sort-source custom-nav-sort mb-xlg" data-sort-id="portfolio" data-option-key="filter">
-                            <li data-option-value="*" class="active"><a href="#">Show All</a></li>
+                            <li data-option-value="*" class="active"><a href="#">Tudo</a></li>
                             <li data-option-value=".websites"><a href="#">Websites</a></li>
-                            <li data-option-value=".logos"><a href="#">Logos</a></li>
-                            <li data-option-value=".brands"><a href="#">Brands</a></li>
+                            <li data-option-value=".apps"><a href="#">APPS</a></li>
                         </ul>
                         <div class="row">
                             <div class="sort-destination-loader sort-destination-loader-showing">
@@ -518,25 +484,13 @@
                                             </a>
                                         </div>
                                     </li>
-                                    <li class="col-md-3 col-sm-6 col-xs-12 isotope-item logos">
+                                    <li class="col-md-3 col-sm-6 col-xs-12 isotope-item apps">
                                         <div class="image-gallery-item">
                                             <a href="img/demos/resume/portfolio/portfolio-2.jpg" class="lightbox-portfolio">
 													<span class="thumb-info custom-thumb-info-1">
 														<span class="thumb-info-wrapper">
 															<span class="thumb-info-plus"></span>
 															<img src="img/demos/resume/portfolio/portfolio-2.jpg" class="img-responsive" alt="">
-														</span>
-													</span>
-                                            </a>
-                                        </div>
-                                    </li>
-                                    <li class="col-md-3 col-sm-6 col-xs-12 isotope-item brands">
-                                        <div class="image-gallery-item">
-                                            <a href="img/demos/resume/portfolio/portfolio-3.jpg" class="lightbox-portfolio">
-													<span class="thumb-info custom-thumb-info-1">
-														<span class="thumb-info-wrapper">
-															<span class="thumb-info-plus"></span>
-															<img src="img/demos/resume/portfolio/portfolio-3.jpg" class="img-responsive" alt="">
 														</span>
 													</span>
                                             </a>
@@ -614,7 +568,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h2 class="text-color-quaternary font-weight-extra-bold text-uppercase">Recommendations</h2>
+                        <h2 class="text-color-quaternary font-weight-extra-bold text-uppercase">Recomendações</h2>
                     </div>
                     <div class="col-md-12 p-none">
                         <div class="owl-carousel custom-dots-style-1 custom-dots-color-1 custom-dots-position-1 mb-none" data-plugin-options="{'items': 1, 'autoHeight': true, 'loop': false, 'nav': false, 'dots': true}">
@@ -625,7 +579,7 @@
                                             <p class="custom-text-color-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tincidunt nulla tortor, a imperdiet enim tristique nec. Nulla lobortis leo eget metus dapibus sodales. Sed placerat vitae dui vitae vehicula. Quisque in tincidunt ligula, nec dignissim arcu. Praesent aliquam velit vel libero dictum, non sollicitudin lectus mollis. Morbi sollicitudin auctor gravida.</p>
                                         </blockquote>
                                         <div class="testimonial-author pull-left">
-                                            <p><strong class="text-uppercase">Bob Doe</strong><span class="custom-text-color-3">Director of Engineering</span></p>
+                                            <p><strong class="text-uppercase">Sara Ribeiro</strong><span class="custom-text-color-3">Produtora Sapatos</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -652,7 +606,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h2 class="text-color-quaternary font-weight-extra-bold text-uppercase">My Blog</h2>
+                        <h2 class="text-color-quaternary font-weight-extra-bold text-uppercase">O Meu Blog</h2>
                     </div>
                     <div class="col-md-6 col-sm-10 col-sm-offset-1 col-md-offset-0 custom-sm-margin-bottom-1">
                         <article class="thumb-info custom-thumb-info-2 custom-box-shadow-1 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="0" data-appear-animation-duration="1s">
@@ -729,7 +683,7 @@
                         </article>
                     </div>
                     <div class="col-md-12 col-sm-12 pt-xlg mt-xlg center">
-                        <a class="btn btn-primary btn-borders text-color-dark custom-btn-style-2 font-weight-bold custom-border-radius-1 text-uppercase">View All</a>
+                        <a class="btn btn-primary btn-borders text-color-dark custom-btn-style-2 font-weight-bold custom-border-radius-1 text-uppercase">Ver Tudo</a>
                     </div>
                 </div>
             </div>
