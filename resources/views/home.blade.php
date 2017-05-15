@@ -240,7 +240,7 @@
 
                         <h2 class="text-color-quaternary font-weight-extra-bold text-uppercase">Sobre Mim</h2>
 
-                        <p class="custom-text-color-2">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+                        <p class="custom-text-color-2">Olá, o meu nome é Luís Miguel Lopes, sou um programador independente e resido em Carcavelos, concelho de Cascais. Trabalho essencialmente com projectos em Wordpress ou Laravel.</p>
 
                         <div class="about-me-more" id="aboutMeMore">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tincidunt nulla tortor, a imperdiet enim tristique nec. Nulla lobortis leo eget metus dapibus sodales. Sed placerat vitae dui vitae vehicula. Quisque in tincidunt ligula, nec dignissim arcu. Praesent aliquam velit vel libero dictum, non sollicitudin lectus mollis. Morbi sollicitudin auctor gravida. Vivamus vitae dui non lorem euismod pretium. Morbi congue sem sed ex iaculis, nec mattis felis pretium. Nullam molestie libero id odio blandit sodales. Suspendisse non mauris et felis molestie placerat aliquet a risus. Aliquam ac leo tempus, hendrerit eros mollis, gravida est.</p>
