@@ -92,7 +92,7 @@ h1, h2, h3 {
 */
 .custom-line {
 		width: 50px;
-		border-bottom: 2px solid #CCC;
+		border-bottom: 2px solid var(--grey-500);
 }
 
 /*
@@ -241,4 +241,12 @@ h1, h2, h3 {
 
 #footer .footer-copyright {
 		background: #2c2c2c;
+}
+
+/* Skin */
+/*
+* Custom Line
+*/
+.custom-line {
+		border-bottom-color: var(--primary);
 }

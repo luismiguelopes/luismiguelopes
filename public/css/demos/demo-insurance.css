@@ -45,7 +45,7 @@
 		transform: translate3d(-50%, 0, 0);
 		width: 125%;
 		height: 300px;
-		background: #FFF;
+		background: var(--light);
 }
 
 .custom-form-control-group-style-1 .form-control {
@@ -53,7 +53,7 @@
 		line-height: 1;
 		padding: 10px 30px;
 		border-width: 2px;
-		border-color: #CCC;
+		border-color: var(--grey-500);
 }
 
 .custom-form-control-group-style-1 .form-control:first-child {
@@ -131,17 +131,6 @@
 		font-weight: 600;
 }
 
-@-webkit-keyframes customLines1anim {
-		from {
-				stroke-dasharray: 1600;
-				stroke-dashoffset: 1600;
-		}
-		to {
-				stroke-dasharray: 1600;
-				stroke-dashoffset: 0;
-		}
-}
-
 @keyframes customLines1anim {
 		from {
 				stroke-dasharray: 1600;
@@ -154,8 +143,7 @@
 }
 
 .customLines1anim {
-		-webkit-animation-name: customLines1anim;
-						animation-name: customLines1anim;
+		animation-name: customLines1anim;
 }
 
 /*
@@ -194,7 +182,7 @@
 .custom-accordion-style-1 > .card .card-header a {
 		position: relative;
 		padding: 23px 30px;
-		background-color: #FFF;
+		background-color: var(--light);
 		transition: ease background-color 300ms, ease color 300ms;
 }
 
@@ -232,7 +220,7 @@
 
 .custom-testimonial-style-1 blockquote:before {
 		content: "\f10d";
-		font-family: "Font Awesome 5 Free";
+		font-family: "Font Awesome 6 Free";
 		font-weight: 900;
 		font-size: 18px;
 		color: #212121;
@@ -266,13 +254,13 @@
 		padding: 0.975rem 1.25rem;
 		background: transparent;
 		border-width: 2px;
-		border-color: #CCC;
+		border-color: var(--grey-500);
 		border-radius: 35px;
 		line-height: 1.5 !important;
 }
 
 .custom-form-style-1 .form-control:focus {
-		border-color: #CCC;
+		border-color: var(--grey-500);
 }
 
 .custom-form-style-1 .form-control::-webkit-input-placeholder {

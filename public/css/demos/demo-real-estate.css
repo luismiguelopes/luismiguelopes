@@ -26,7 +26,7 @@ h4, h5, h6 {
 		}
 		#header .header-nav-main.header-nav-main-dropdown-modern nav > ul > li.dropdown .dropdown-menu li a {
 				font-weight: 500;
-				color: #777;
+				color: var(--default);
 		}
 }
 
@@ -65,11 +65,11 @@ h4, h5, h6 {
 .custom-card-info .card-body {
 		padding: 0;
 		border-radius: .25rem;
-		background: #FFF;
+		background: var(--light);
 }
 
 .custom-card-info .featured-tag {
-		color: #FFF;
+		color: var(--light);
 		text-transform: uppercase;
 		padding: 15px 102px;
 		position: absolute;
@@ -183,4 +183,11 @@ h4, h5, h6 {
 
 #footer .footer-copyright p {
 		color: #999;
+}
+
+/* Skin */
+@media (min-width: 992px) {
+		html #header .header-nav:not(.header-nav-line):not(.header-nav-links) .header-nav-main nav > ul:not(:hover) > li.dropdown-full-color.dropdown-quaternary > a.active {
+				color: var(--primary);
+		}
 }

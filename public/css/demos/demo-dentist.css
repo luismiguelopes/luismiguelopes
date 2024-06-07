@@ -1,16 +1,20 @@
+.body {
+		background-color: var(--light);
+}
+
 @media (min-width: 992px) {
 		#header .header-nav.header-nav-line:not(.header-nav-light-text) nav > ul > li > a {
-				color: #3E3E3E;
+				color: var(--dark);
 				font-weight: 600;
 		}
 		#header .header-nav.header-nav-line:not(.header-nav-light-text) nav > ul > li > a:before {
 				height: 1px !important;
 		}
 		#header .header-nav-features .header-nav-top-icon {
-				color: #3E3E3E;
+				color: var(--dark);
 		}
 		#header .header-nav-features .header-nav-top-icon-img {
-				color: #3E3E3E;
+				color: var(--dark);
 		}
 }
 
@@ -43,7 +47,7 @@ html .btn-quaternary:hover {
 }
 
 .owl-carousel-light .owl-stage {
-		background: #F5F6FB;
+		background: var(--light);
 }
 
 .owl-carousel.custom-nav-1 .owl-nav .owl-prev, .owl-carousel.custom-nav-1 .owl-nav .owl-next {
@@ -53,7 +57,7 @@ html .btn-quaternary:hover {
 }
 
 .owl-carousel.custom-nav-1 .owl-nav .owl-prev:before, .owl-carousel.custom-nav-1 .owl-nav .owl-next:before {
-		color: #3E3E3E;
+		color: var(--dark);
 		left: 0 !important;
 		top: 1px !important;
 		font-size: 16px !important;

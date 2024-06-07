@@ -1247,7 +1247,7 @@ website:	 	http://www.themepunch.com
 
 .tp-caption.News-Subtitle,.News-Subtitle
 {
-	background-color:rgba(255,255,255,0);
+	background-color:var(--light-rgba-0);
 	border-color:transparent;
 	border-radius:0 0 0 0;
 	border-style:none;
@@ -1264,7 +1264,7 @@ website:	 	http://www.themepunch.com
 
 .tp-caption.News-Subtitle:hover,.News-Subtitle:hover
 {
-	background-color:rgba(255,255,255,0);
+	background-color:var(--light-rgba-0);
 	border-color:transparent;
 	border-radius:0 0 0 0;
 	border-style:solid;
@@ -1312,7 +1312,7 @@ website:	 	http://www.themepunch.com
 .tp-caption.Photography-ImageHover,.Photography-ImageHover
 {
 	background-color:transparent;
-	border-color:rgba(255,255,255,0);
+	border-color:var(--light-rgba-0);
 	border-radius:0 0 0 0;
 	border-style:none;
 	border-width:0;
@@ -1404,7 +1404,7 @@ website:	 	http://www.themepunch.com
 .tp-caption.Photography-ImageHover2,.Photography-ImageHover2
 {
 	background-color:transparent;
-	border-color:rgba(255,255,255,0);
+	border-color:var(--light-rgba-0);
 	border-radius:0 0 0 0;
 	border-style:none;
 	border-width:0;
@@ -1663,7 +1663,7 @@ website:	 	http://www.themepunch.com
 .tp-caption.NotGeneric-Icon,.NotGeneric-Icon
 {
 	background-color:rgba(0,0,0,0);
-	border-color:rgba(255,255,255,0);
+	border-color:var(--light-rgba-0);
 	border-radius:0 0 0 0;
 	border-style:solid;
 	border-width:0;
@@ -1730,7 +1730,7 @@ website:	 	http://www.themepunch.com
 .tp-caption.Gym-Menuitem,.Gym-Menuitem
 {
 	background-color:rgba(0,0,0,1.00);
-	border-color:rgba(255,255,255,0);
+	border-color:var(--light-rgba-0);
 	border-radius:3px 3px 3px 3px;
 	border-style:solid;
 	border-width:2px;
@@ -1759,7 +1759,7 @@ website:	 	http://www.themepunch.com
 
 .tp-caption.Newspaper-Button,.Newspaper-Button
 {
-	background-color:rgba(255,255,255,0);
+	background-color:var(--light-rgba-0);
 	border-color:rgba(255,255,255,0.25);
 	border-radius:0 0 0 0;
 	border-style:solid;
@@ -2429,7 +2429,7 @@ website:	 	http://www.themepunch.com
 
 .tp-caption.Twitter-Favorites,.Twitter-Favorites
 {
-	background-color:rgba(255,255,255,0);
+	background-color:var(--light-rgba-0);
 	border-color:transparent;
 	border-radius:0 0 0 0;
 	border-style:none;
@@ -2476,7 +2476,7 @@ website:	 	http://www.themepunch.com
 
 .tp-caption.Twitter-Retweet,.Twitter-Retweet
 {
-	background-color:rgba(255,255,255,0);
+	background-color:var(--light-rgba-0);
 	border-color:transparent;
 	border-radius:0 0 0 0;
 	border-style:none;

@@ -1,6 +1,6 @@
 h2 {
 		text-transform: uppercase;
-		color: #777;
+		color: var(--default);
 		font-weight: 700;
 		font-size: 16px;
 		line-height: 16px;
@@ -38,7 +38,7 @@ h3 {
 .custom-hero-heading {
 		font-size: 4.2vw;
 		text-transform: uppercase;
-		color: #FFF;
+		color: var(--light);
 		font-weight: bold;
 		line-height: 4.2vw;
 		margin: 0;
@@ -263,7 +263,7 @@ section.custom-timeline .timeline-box-content-img img {
 
 .custom-venue-info {
 		border-radius: 10px;
-		background: #FFF;
+		background: var(--light);
 		height: 350px;
 		box-shadow: 0px 20px 100px 0 rgba(0, 0, 0, 0.1);
 		margin-bottom: -175px;
@@ -281,7 +281,7 @@ section.custom-timeline .timeline-box-content-img img {
 		transform: rotate(45deg);
 		content: '';
 		display: block;
-		background: #FFF;
+		background: var(--light);
 		height: 50px;
 		width: 50px;
 		z-index: 0;

@@ -128,7 +128,7 @@ body {
 .custom-table-style-1 thead th {
 		border-top: 0;
 		border-bottom: 0;
-		color: #FFF;
+		color: var(--light);
 		font-weight: 700;
 		font-size: 17.6px;
 		font-size: 1.1rem;
@@ -243,7 +243,7 @@ body {
 		left: 0;
 		width: 339px;
 		height: 100%;
-		background: #CCC;
+		background: var(--grey-500);
 		opacity: 0.7;
 		z-index: 1;
 }
@@ -255,7 +255,7 @@ body {
 		right: 100%;
 		width: 40vw;
 		height: 100%;
-		background: #CCC;
+		background: var(--grey-500);
 }
 
 .custom-hero-sub-images-style-1 .custom-hero-sub-images-shadow {
@@ -312,8 +312,7 @@ body {
 }
 
 .custom-thumb-info-style-1:hover .custom-thumb-info-icon > img, .custom-thumb-info-style-1.active .custom-thumb-info-icon > img {
-		-webkit-animation: toRightFromLeftNoScale 0.3s forwards;
-						animation: toRightFromLeftNoScale 0.3s forwards;
+		animation: toRightFromLeftNoScale 0.3s forwards;
 }
 
 .custom-thumb-info-style-1:hover .thumb-info-wrapper:after, .custom-thumb-info-style-1.active .thumb-info-wrapper:after {
@@ -322,19 +321,6 @@ body {
 
 .custom-thumb-info-style-1:hover .thumb-info-wrapper > img, .custom-thumb-info-style-1.active .thumb-info-wrapper > img {
 		filter: grayscale(0);
-}
-
-@-webkit-keyframes toRightFromLeftNoScale {
-		49% {
-				transform: translate(100%) scale(1);
-		}
-		50% {
-				opacity: 0;
-				transform: translate(-100%) scale(1);
-		}
-		51% {
-				opacity: 1;
-		}
 }
 
 @keyframes toRightFromLeftNoScale {
@@ -365,7 +351,7 @@ body {
 		left: 47.5%;
 		width: 50vw;
 		height: 100%;
-		background: #FFF;
+		background: var(--light);
 		transform: skewX(21deg);
 		z-index: 0;
 }
@@ -386,7 +372,7 @@ body {
 		left: 0;
 		width: 100%;
 		height: 150%;
-		background: #f7f7f7;
+		background: var(--grey-100);
 		transform: skewY(-4deg);
 		z-index: 0;
 }
@@ -442,7 +428,7 @@ body {
 
 .custom-testimonial-style-1.testimonial.testimonial-style-3 blockquote:before {
 		content: '\f10d';
-		font-family: "Font Awesome 5 Free";
+		font-family: "Font Awesome 6 Free";
 		font-weight: 900;
 		font-size: 19.2px;
 		font-size: 1.2rem;
@@ -467,12 +453,12 @@ body {
 		height: calc(1.5em + 1.85rem + 2px);
 		padding: 15.6px 20px;
 		padding: 0.975rem 1.25rem;
-		background: #f7f7f7;
-		border-color: #f7f7f7;
+		background: var(--grey-100);
+		border-color: var(--grey-100);
 }
 
 .custom-form-style-1 .form-control:focus {
-		border-color: #CCC;
+		border-color: var(--grey-500);
 }
 
 .custom-form-style-1 textarea.form-control {
@@ -510,5 +496,74 @@ body {
 }
 
 .custom-footer-top-light-border {
-		border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+		border-top: 1px solid var(--light-rgba-10) !important;
+}
+
+/* Skin */
+.featured-icon.rounded-circle {
+		border-radius: 100% !important;
+}
+
+.custom-btn-style-1:after {
+		border-left-color: var(--primary);
+}
+
+.custom-btn-style-1:hover:after, .custom-btn-style-1.hover:after {
+		border-left-color: var(--primary--200);
+}
+
+.custom-btn-style-1:focus:after, .custom-btn-style-1.focus:after {
+		border-left-color: var(--primary-200);
+}
+
+.custom-btn-style-1.disabled:after, .custom-btn-style-1:disabled:after {
+		border-left-color: var(--primary);
+}
+
+.custom-btn-style-1:active:after, .custom-btn-style-1.active:after {
+		border-left-color: var(--primary-200) !important;
+}
+
+.custom-svg-btn-style-1:not(.custom-svg-btn-style-1-light):hover .custom-svg-btn-background polygon {
+		stroke: var(--primary);
+}
+
+.custom-svg-btn-style-1:not(.custom-svg-btn-style-1-light).custom-svg-btn-style-1-solid .custom-svg-btn-background polygon {
+		fill: var(--primary);
+		stroke: var(--primary);
+}
+
+.custom-svg-btn-style-1:not(.custom-svg-btn-style-1-light).custom-svg-btn-style-1-solid:hover .custom-svg-btn-background polygon, .custom-svg-btn-style-1:not(.custom-svg-btn-style-1-light).custom-svg-btn-style-1-solid:focus .custom-svg-btn-background polygon {
+		fill: var(--primary--200);
+		stroke: var(--primary--200);
+}
+
+.btn-link > svg polygon {
+		stroke: var(--primary);
+		fill: var(--primary);
+}
+
+/*
+* Home Section - Hero
+*/
+.custom-hero-sub-images-style-1:before, .custom-hero-sub-images-style-1:after {
+		background: var(--primary-200);
+}
+
+.custom-hero-sub-images-style-1 .custom-hero-sub-images-shadow {
+		box-shadow: 0px 0px 80px 68px var(--primary-200);
+}
+
+/*
+* Home Section - What We Do
+*/
+.custom-thumb-info-style-1:hover .custom-thumb-info-icon {
+		background: var(--primary) !important;
+}
+
+/*
+* Home Section - Testimonials
+*/
+.custom-testimonial-style-1.testimonial.testimonial-style-3 blockquote:before {
+		color: var(--primary);
 }

@@ -160,7 +160,7 @@ p.lead {
 					transform: rotate(90deg);
 }
 .panel {
-	background: rgba(255,255,255,0.2);
+	background: var(--light-rgba-20);
 	padding: 20px;
 	margin-top: 20px;
 	margin-right: 20px;

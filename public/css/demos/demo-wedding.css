@@ -79,11 +79,11 @@
 
 .tp-caption-custom-2 {
 		font-family: "Tangerine", cursive;
-		color: #FFF;
+		color: var(--light);
 }
 
 .tp-caption-custom-3-el-1 {
-		color: #333;
+		color: var(--dark--200);
 		display: inline-block;
 		letter-spacing: 2.5px;
 		padding: 15px 80px;
@@ -152,7 +152,7 @@
 
 #ourHistoryLightbox .mfp-close {
 		background-color: #60635c;
-		color: #FFF;
+		color: var(--light);
 		top: 0;
 		right: 0;
 		opacity: 1;
@@ -200,7 +200,7 @@
 #ourHistoryLightbox .owl-carousel .owl-nav button.owl-next {
 		border: 0 none;
 		border-radius: 0;
-		color: #FFF;
+		color: var(--light);
 		height: 80px;
 		line-height: 68px;
 		margin-top: -20px;
@@ -338,4 +338,22 @@
 		#ourHistoryLightbox .owl-carousel .owl-item img {
 				max-width: 80vw;
 		}
+}
+
+/* Skin */
+@media (min-width: 992px) {
+		#header .header-nav.header-nav-line:not(.header-nav-light-text) nav > ul > li > a {
+				color: var(--primary);
+		}
+		#header .header-nav.header-nav-line:not(.header-nav-light-text) nav > ul > li:hover > a {
+				color: var(--primary--100);
+		}
+}
+
+.slider .slotholder:after {
+		background-color: var(--primary);
+}
+
+.custom-thumb-info-style-1 .thumb-info-wrapper:after {
+		background: var(--primary);
 }

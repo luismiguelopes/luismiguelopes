@@ -20,7 +20,7 @@ html.boxed .body {
 
 #header .header-container {
 		min-height: 125px !important;
-		background: #FFF;
+		background: var(--light);
 }
 
 @media (max-width: 1200px) {
@@ -47,6 +47,12 @@ html.boxed .body {
 @media (min-width: 992px) {
 		#header .header-body {
 				overflow: visible !important;
+		}
+}
+
+@media (min-width: 992px) {
+		#header .header-nav-main nav > ul > li > a {
+				font-size: 13px;
 		}
 }
 
@@ -81,7 +87,7 @@ html.boxed #header .header-container {
 
 @media (min-width: 999px) {
 		html.sticky-header-active #header .header-body {
-				background: #FFF;
+				background: var(--light);
 		}
 }
 
@@ -111,7 +117,7 @@ html.boxed.sticky-header-active #header .header-container {
 @media (min-width: 992px) {
 		#header .header-nav.header-nav-links:not(.header-nav-light-text) nav > ul > li.dropdown-mega-book-now > a > span,
 		#header .header-nav.header-nav-line:not(.header-nav-light-text) nav > ul > li.dropdown-mega-book-now > a > span {
-				color: #FFF;
+				color: var(--light);
 		}
 }
 
@@ -120,7 +126,7 @@ html.boxed.sticky-header-active #header .header-container {
 				min-height: 134px;
 		}
 		#header .header-nav nav > ul > li.dropdown-mega-book-now .form-control-custom .form-control {
-				color: #777;
+				color: var(--default);
 				margin-bottom: 5px;
 				border: 1px solid #DDD !important;
 				padding-left: 5px;
@@ -136,7 +142,7 @@ html.boxed.sticky-header-active #header .header-container {
 		}
 		#header .header-nav nav > ul > li.dropdown-mega-book-now .dropdown-mega-content {
 				padding: 10px 0;
-				color: #777;
+				color: var(--default);
 				margin-left: -20px;
 		}
 }
@@ -168,7 +174,7 @@ html.boxed.sticky-header-active #header .header-container {
 		border: 0;
 		border-bottom: 1px solid rgba(255, 255, 255, 0.25) !important;
 		box-shadow: none !important;
-		color: #FFF;
+		color: var(--light);
 		padding-left: 0;
 		height: auto;
 }
@@ -186,8 +192,8 @@ html.boxed.sticky-header-active #header .header-container {
 }
 
 .form-control-custom .form-control option {
-		background: #FFF;
-		color: #777;
+		background: var(--light);
+		color: var(--default);
 }
 
 .form-control-datepicker-custom {
@@ -201,7 +207,7 @@ html.boxed.sticky-header-active #header .header-container {
 		font-size: 10px;
 		top: 3px;
 		font-size: 14px;
-		color: #FFF;
+		color: var(--light);
 		z-index: 1;
 		right: 3px;
 }
@@ -212,8 +218,8 @@ html.boxed.sticky-header-active #header .header-container {
 }
 
 .form-control-custom-dark .form-control {
-		border-bottom: 1px solid #DADADA !important;
-		color: #777;
+		border-bottom: 1px solid var(--grey-500) !important;
+		color: var(--default);
 }
 
 .form-control-custom-dark .form-control::-webkit-input-placeholder {
@@ -230,11 +236,11 @@ html.boxed.sticky-header-active #header .header-container {
 
 .form-control-custom-dark .form-control option {
 		background: #DDD;
-		color: #777;
+		color: var(--default);
 }
 
 .form-control-custom-dark.form-control-datepicker-custom:before {
-		color: #777;
+		color: var(--default);
 }
 
 .datepicker .disabled, .datepicker .disabled:hover {
@@ -355,4 +361,16 @@ html.boxed.sticky-header-active #header .header-container {
 		html.boxed .footer-copyright .container:not(.container-bs):not(.container-xl-custom):not(.container-xxl-custom) {
 				max-width: 1200px;
 		}
+}
+
+/* Skin */
+@media (min-width: 992px) {
+		#header .header-nav.header-nav-links:not(.header-nav-light-text) nav > ul > li.dropdown-mega-book-now > a > span,
+		#header .header-nav.header-nav-line:not(.header-nav-light-text) nav > ul > li.dropdown-mega-book-now > a > span {
+				background: var(--primary);
+		}
+}
+
+.custom-nav-sidebar > li > a.active {
+		color: var(--primary) !important;
 }

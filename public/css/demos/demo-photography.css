@@ -222,7 +222,7 @@ h6 {
 
 #header .header-nav-main nav > ul > li ul.custom-dropdown-menu-style-1 li > a {
 		border-bottom: none;
-		color: #777;
+		color: var(--default);
 }
 
 #header .header-nav-main nav > ul > li ul.custom-dropdown-menu-style-1 li > a:hover {
@@ -260,7 +260,7 @@ html.sticky-header-active #header .header-body {
 		}
 		#header .header-nav-main nav > ul > li.dropdown .dropdown-menu li.dropdown-submenu > a:after {
 				content: "\f105";
-				font-family: 'Font Awesome 5 Free';
+				font-family: 'Font Awesome 6 Free';
 				font-weight: 900;
 				border: none;
 				margin: 0;
@@ -282,7 +282,7 @@ html.sticky-header-active #header .header-body {
 				color: #999 !important;
 		}
 		#header .header-nav-main nav > ul > li ul.custom-dropdown-menu-style-1 li > a:hover {
-				color: #FFF !important;
+				color: var(--light) !important;
 		}
 		#header .header-nav-main nav > ul > li ul.custom-dropdown-menu-style-1 li > a > i {
 				margin-top: 3px;
@@ -322,7 +322,7 @@ html.sticky-header-active #header .header-body {
 }
 
 .tp-caption-photo-label {
-		color: #fff;
+		color: var(--light);
 		font-family: "Roboto Slab", serif;
 		font-size: 1.8em;
 		font-weight: 300;
@@ -371,7 +371,7 @@ html.sticky-header-active #header .header-body {
 }
 
 .arrows-side-header-1:hover {
-		background: #FFF;
+		background: var(--light);
 }
 
 .arrows-side-header-1:hover:before {
@@ -603,7 +603,7 @@ html.sticky-header-active #header .header-body {
 .portfolio-detail-item .owl-carousel .owl-nav button.owl-prev,
 .portfolio-detail-item .owl-carousel .owl-nav button.owl-next {
 		border: 0 none;
-		color: #FFF;
+		color: var(--light);
 		height: 50px;
 		line-height: 38px;
 		margin-top: -4px;
@@ -659,7 +659,7 @@ html.sticky-header-active #header .header-body {
 
 .portfolio-detail-item .sub-item-description h5 {
 		transition: all 0.3s ease;
-		color: #FFF;
+		color: var(--light);
 		position: absolute;
 		z-index: 2;
 		bottom: -100%;
@@ -688,7 +688,7 @@ html.sticky-header-active #header .header-body {
 
 .portfolio-detail-item .item-image-wrapper .fa-spin {
 		background: transparent none repeat scroll 0 0;
-		color: #ccc;
+		color: var(--grey-500);
 		font-size: 25px;
 		left: 50%;
 		margin: -13px;
@@ -747,7 +747,7 @@ html.sticky-header-active #header .header-body {
 }
 
 #porfolioDetailsAjaxBoxContent .slider-container .hermes .tp-bullet:after {
-		background-color: #FFF;
+		background-color: var(--light);
 		box-shadow: 0 0 1px #FFF;
 }
 
@@ -1241,7 +1241,7 @@ html.sticky-header-active #header .header-body {
 		height: 80px;
 		top: -40px;
 		left: 0;
-		color: #FFF;
+		color: var(--light);
 		background-color: #242E39;
 		cursor: pointer;
 }
@@ -1323,7 +1323,7 @@ html.sticky-header-active #header .header-body {
 
 #photographyLightbox .mfp-close {
 		background-color: #242E39;
-		color: #FFF;
+		color: var(--light);
 		top: 0;
 		right: 0;
 		opacity: 1;
@@ -1371,7 +1371,7 @@ html.sticky-header-active #header .header-body {
 #photographyLightbox .owl-carousel .owl-nav button.owl-next {
 		border: 0 none;
 		border-radius: 0;
-		color: #FFF;
+		color: var(--light);
 		height: 80px;
 		line-height: 68px;
 		margin-top: -20px;
@@ -1527,7 +1527,7 @@ html.sticky-header-active #header .header-body {
 #portfolioSliderWithThumbs #thumbGalleryDetail .owl-nav button.owl-next {
 		border: 0 none;
 		border-radius: 0;
-		color: #FFF;
+		color: var(--light);
 		height: 80px;
 		line-height: 68px;
 		margin-top: -20px;
@@ -1699,8 +1699,8 @@ section.photographers .owl-carousel .owl-nav {
 		background: transparent !important;
 		width: 40px;
 		height: 40px;
-		border-color: #fff;
-		color: #fff !important;
+		border-color: var(--light);
+		color: var(--light) !important;
 		line-height: 36px;
 }
 
@@ -1757,7 +1757,7 @@ section.photographers .owl-carousel .owl-nav {
 }
 
 section.our-services {
-		background: #FFF;
+		background: var(--light);
 		border: none;
 		margin: 0;
 		padding: 60px 0;
@@ -1829,7 +1829,7 @@ section.why-choose-us .feature-box p {
 }
 
 section.our-clients {
-		background: #FFF;
+		background: var(--light);
 		border: 0;
 		margin: 0;
 		padding: 60px 0;
@@ -1897,7 +1897,7 @@ section.our-blog {
 }
 
 .our-blog-item.blog-post .post-infos .testimonial blockquote:before {
-		color: #333;
+		color: var(--dark--200);
 		top: -13px;
 }
 
@@ -1907,7 +1907,7 @@ section.our-blog {
 
 .our-blog-item.blog-post .post-infos .testimonial blockquote p {
 		font-family: "Roboto Slab", serif;
-		color: #777;
+		color: var(--default);
 		font-style: normal;
 		line-height: 1.5;
 		font-size: 1.1em;
@@ -1949,14 +1949,14 @@ section.our-blog {
 		position: absolute;
 		top: 15px;
 		right: 15px;
-		color: #fff;
+		color: var(--light);
 		padding: 5px 25px;
 		border-radius: 20px;
 }
 
 .our-blog-item .post-infos {
 		position: relative;
-		background: #FFF;
+		background: var(--light);
 		padding: 25px;
 }
 
@@ -1985,7 +1985,7 @@ section.our-blog {
 
 .our-blog-item .post-infos .share .share-icons i {
 		display: block;
-		color: #FFF;
+		color: var(--light);
 		padding: 15px;
 		opacity: 0.5;
 		transition: ease opacity 300ms;
@@ -2165,7 +2165,7 @@ section.contact-details .feature-box .feature-box-icon {
 }
 
 section.contact-details .feature-box .feature-box-icon [class*="fa-"], section.contact-details .feature-box .feature-box-icon .icons {
-		color: #FFF;
+		color: var(--light);
 		opacity: 0.5;
 }
 
@@ -2191,7 +2191,84 @@ section.contact-details .feature-box p, section.contact-details .feature-box a {
 }
 
 #footer.light.narrow .footer-copyright p {
-		color: #777;
+		color: var(--default);
 		font-family: "Roboto Slab", serif;
 		font-size: 13px;
+}
+
+/* Skin */
+.portfolio-grid-item .thumb-info .thumb-info-wrapper:after, .portfolio-vertical-item .thumb-info .thumb-info-wrapper:after, .horizontal-scroll-item .thumb-info .thumb-info-wrapper:after, .portfolio-detail-image-item .thumb-info .thumb-info-wrapper:after, .portfolio-item .thumb-info .thumb-info-wrapper:after {
+		background: var(--quaternary-rgba-50) !important;
+}
+
+.portfolio-parallax:not(.portfolio-parallax-demo-2):hover:before {
+		background: var(--quaternary-rgba-50) !important;
+}
+
+.custom-thumb-info-photographers .thumb-info-wrapper:before {
+		box-shadow: 0 50px 190px 110px var(--quaternary);
+}
+
+.custom-thumb-info-photographers .thumb-info-wrapper:after {
+		background: var(--quaternary-rgba-50) !important;
+}
+
+.portfolio-detail-item .sub-item-description:before {
+		box-shadow: 0 50px 130px 110px var(--quaternary);
+}
+
+.portfolio-stripes .owl-item .portfolio-item .thumb-info .thumb-info-wrapper::before {
+		box-shadow: 0 50px 190px 110px var(--quaternary);
+}
+
+.tparrows {
+		background: var(--quaternary-rgba-50) !important;
+}
+
+.tparrows:hover {
+		background: var(--quaternary-rgba-90) !important;
+}
+
+.tparrows.arrows-transparent-header-photography-1 {
+		background: transparent !important;
+}
+
+.tparrows.arrows-transparent-header-photography-1:hover {
+		background: transparent !important;
+}
+
+#photographyLightbox .mfp-close {
+		background: var(--quaternary) !important;
+}
+
+html.photography-demo-2.sticky-header-enabled.sticky-header-active #header .header-body {
+		background: var(--primary);
+}
+
+html.photography-demo-2 #header.solid-header .header-body {
+		background: var(--primary);
+}
+
+html.photography-demo-2 .list.list-icons.list-icons-style-2 li > .fa:first-child,
+html.photography-demo-2 .list.list-icons.list-icons-style-2 li > .icons:first-child, html.photography-demo-2 .list.list-icons.list-icons-style-2 li a:first-child > .fa:first-child,
+html.photography-demo-2 .list.list-icons.list-icons-style-2 li a:first-child > .icons:first-child {
+		color: var(--primary);
+}
+
+html.photography-demo-2 .portfolio-parallax-demo-2:before {
+		background: transparent linear-gradient(to top, var(--quaternary) 0px, transparent 100%) repeat scroll 0 0;
+}
+
+html.photography-demo-2 .portfolio-vertical-item .thumb-info .thumb-info-wrapper:before, html.photography-demo-2 .horizontal-scroll-item .thumb-info .thumb-info-wrapper:before, html.photography-demo-2 .portfolio-detail-image-item .thumb-info .thumb-info-wrapper:before, html.photography-demo-2 .portfolio-grid-item .thumb-info .thumb-info-wrapper:before {
+		box-shadow: 0 50px 190px 110px var(--quaternary);
+}
+
+html.photography-demo-3 #main:hover .portfolio-parallax:before {
+		background: var(--quaternary-rgba-50) !important;
+}
+
+html.photography-demo-3 .list.list-icons.list-icons-style-2 li > .fa:first-child,
+html.photography-demo-3 .list.list-icons.list-icons-style-2 li > .icons:first-child, html.photography-demo-3 .list.list-icons.list-icons-style-2 li a:first-child > .fa:first-child,
+html.photography-demo-3 .list.list-icons.list-icons-style-2 li a:first-child > .icons:first-child {
+		color: var(--primary);
 }

@@ -66,7 +66,7 @@
 .custom-square-1 {
 		width: 216px;
 		height: 216px;
-		background-color: #CCC;
+		background-color: var(--grey-500);
 		transform: rotate(48deg);
 		transform-origin: 0% 100%;
 }
@@ -143,16 +143,6 @@
 /*
 * SVG Line Divider
 */
-@-webkit-keyframes customLineDividerAnim {
-		from {
-				stroke-dasharray: 170;
-				stroke-dashoffset: 0;
-		}
-		to {
-				stroke-dasharray: 170;
-				stroke-dashoffset: -170;
-		}
-}
 @keyframes customLineDividerAnim {
 		from {
 				stroke-dasharray: 170;
@@ -165,8 +155,7 @@
 }
 
 .customLineDividerAnim {
-		-webkit-animation-name: customLineDividerAnim;
-						animation-name: customLineDividerAnim;
+		animation-name: customLineDividerAnim;
 }
 
 /*
@@ -187,7 +176,7 @@ html #header .header-logo.custom-header-logo:before {
 		left: 40px;
 		width: 170px;
 		height: 350px;
-		background-color: #CCC;
+		background-color: var(--grey-500);
 		opacity: 1;
 		visibility: visible;
 		transform: rotate(45deg);
@@ -260,7 +249,7 @@ html.sticky-header-active #header .header-container {
 }
 
 html:not(.sticky-header-active) #header.header-semi-transparent-light .header-body {
-		background-color: #FFF !important;
+		background-color: var(--light) !important;
 }
 
 @media (min-width: 992px) {
@@ -302,16 +291,6 @@ html:not(.sticky-header-active) #header.header-semi-transparent-light .header-bo
 /*
 * Diamonds SVG Line
 */
-@-webkit-keyframes customDiamondsLineAnim {
-		from {
-				stroke-dasharray: 1330;
-				stroke-dashoffset: 0;
-		}
-		to {
-				stroke-dasharray: 1330;
-				stroke-dashoffset: -1300;
-		}
-}
 @keyframes customDiamondsLineAnim {
 		from {
 				stroke-dasharray: 1330;
@@ -324,8 +303,7 @@ html:not(.sticky-header-active) #header.header-semi-transparent-light .header-bo
 }
 
 .customDiamondsLineAnim {
-		-webkit-animation-name: customDiamondsLineAnim;
-						animation-name: customDiamondsLineAnim;
+		animation-name: customDiamondsLineAnim;
 }
 
 /*
@@ -373,7 +351,7 @@ html:not(.sticky-header-active) #header.header-semi-transparent-light .header-bo
 
 .diamonds .diamond:before {
 		transition: all 0.2s ease;
-		color: #fff;
+		color: var(--light);
 		content: "\e091";
 		font-family: "simple-line-icons";
 		font-size: 28px;
@@ -607,7 +585,7 @@ html:not(.sticky-header-active) #header.header-semi-transparent-light .header-bo
 .custom-process-style-1.process.process-vertical .process-step-circle {
 		width: 80px;
 		height: 80px;
-		border-color: #CCC;
+		border-color: var(--grey-500);
 		flex: 0 0 auto;
 }
 
@@ -624,4 +602,54 @@ html:not(.sticky-header-active) #header.header-semi-transparent-light .header-bo
 */
 #footer {
 		background: #f4f4f4;
+}
+
+/* Skin */
+/*
+* Header
+*/
+html #header .header-logo.custom-header-logo:before {
+		background-color: var(--primary);
+}
+
+/*
+* Sticky Sidebar
+*/
+#sidebar a.active {
+		color: var(--primary) !important;
+}
+
+/*
+* Thumb Gallery Wrapper
+*/
+.thumb-gallery-wrapper .thumb-gallery-thumbs .owl-item:hover,
+.thumb-gallery-wrapper .thumb-gallery-thumbs .owl-item.selected {
+		border-color: var(--primary) !important;
+}
+
+/*
+* Accordion
+*/
+.custom-accordion-style-1 > .card .card-header a:not(.collapsed) {
+		background-color: var(--primary);
+		color: var(--primary-inverse) !important;
+}
+
+.custom-accordion-style-1 > .card:hover .card-header a.collapsed {
+		color: var(--primary) !important;
+}
+
+/*
+* Process
+*/
+.custom-process-style-1.process.process-vertical .process-step-circle .process-step-circle-content {
+		color: var(--primary);
+}
+
+.custom-process-style-1.process.process-vertical .process-step:hover .process-step-circle {
+		border-color: var(--primary);
+}
+
+.custom-process-style-1.process.process-vertical .process-step:hover .process-step-circle .process-step-circle-content {
+		color: var(--primary-inverse);
 }

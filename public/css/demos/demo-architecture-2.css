@@ -108,7 +108,7 @@ h1, h2, h3, h4, h5, h6, .btn {
 		right: -5px;
 		bottom: -5px;
 		left: -5px;
-		border: 1px solid #CCC;
+		border: 1px solid var(--grey-500);
 		transition: ease all 300ms;
 }
 
@@ -129,9 +129,9 @@ h1, h2, h3, h4, h5, h6, .btn {
 }
 
 .custom-stroke-text-effect-1 {
-		-webkit-text-fill-color: #FFF;
+		-webkit-text-fill-color: var(--light);
 		-webkit-text-stroke-width: 1px;
-		-webkit-text-stroke-color: #CCC;
+		-webkit-text-stroke-color: var(--grey-500);
 		white-space: nowrap;
 }
 
@@ -170,23 +170,12 @@ h1, h2, h3, h4, h5, h6, .btn {
 		left: 0;
 		width: 0;
 		height: 1px;
-		border-bottom: 2px solid #CCC;
+		border-bottom: 2px solid var(--grey-500);
 		transition: ease width 300ms;
 }
 
 .custom-link-effect-1:hover:after, .custom-link-effect-1.active:after {
 		width: 100%;
-}
-
-@-webkit-keyframes customFadeFlipAnim {
-		0% {
-				opacity: 0;
-				transform: translateY(-20px) perspective(600px) rotateX(10deg);
-		}
-		100% {
-				opacity: 1;
-				transform: translateY(0) perspective(600px) rotateX(0);
-		}
 }
 
 @keyframes customFadeFlipAnim {
@@ -201,8 +190,7 @@ h1, h2, h3, h4, h5, h6, .btn {
 }
 
 .customFadeFlipAnim {
-		-webkit-animation-name: customFadeFlipAnim;
-						animation-name: customFadeFlipAnim;
+		animation-name: customFadeFlipAnim;
 }
 
 /*
@@ -221,13 +209,13 @@ html.sticky-header-active #header .header-body {
 				flex: 0 auto;
 		}
 		#header .header-nav.header-nav-line nav > ul:not(:hover) li > a.active {
-				color: #FFF !important;
+				color: var(--light) !important;
 		}
 		#header .header-nav.header-nav-line nav > ul:not(:hover) li > a.active:before {
 				background: #FFF !important;
 		}
 		#header .header-nav.header-nav-line nav > ul li:hover > a {
-				color: #FFF !important;
+				color: var(--light) !important;
 		}
 		#header .header-nav.header-nav-line nav > ul li:hover > a:before {
 				background: #FFF !important;
@@ -265,7 +253,7 @@ html.sticky-header-active #header .header-body {
 * Header Search
 */
 #header .header-nav-features .header-nav-features-search-reveal-big-search .form-control {
-		border-bottom-color: #FFF !important;
+		border-bottom-color: var(--light) !important;
 }
 
 /*
@@ -366,7 +354,7 @@ html.sticky-header-active #header .header-body {
 }
 
 .custom-card-style-1:hover {
-		background-color: #CCC;
+		background-color: var(--grey-500);
 }
 
 .custom-card-style-1:hover p {
@@ -396,17 +384,17 @@ html.sticky-header-active #header .header-body {
 
 .custom-dots-style-1 .owl-dots .owl-dot span {
 		background: transparent;
-		border: 1px solid #CCC;
+		border: 1px solid var(--grey-500);
 		width: 12px;
 		height: 12px;
 }
 
 .custom-dots-style-1 .owl-dots .owl-dot:hover span, .custom-dots-style-1 .owl-dots .owl-dot.active span {
-		background: #CCC;
+		background: var(--grey-500);
 }
 
 .custom-dots-style-1.custom-dots-style-1-light .owl-dots .owl-dot span {
-		border-color: #FFF;
+		border-color: var(--light);
 }
 
 .custom-dots-style-1.custom-dots-style-1-light .owl-dots .owl-dot:hover span, .custom-dots-style-1.custom-dots-style-1-light .owl-dots .owl-dot.active span {
@@ -468,7 +456,7 @@ html.sticky-header-active #header .header-body {
 */
 .custom-heading-style-1 {
 		position: relative;
-		color: #FFF;
+		color: var(--light);
 }
 
 .custom-heading-style-1 .custom-heading-style-1-step {
@@ -494,11 +482,11 @@ html.sticky-header-active #header .header-body {
 */
 .custom-testimonial-quote.testimonial.testimonial-with-quotes blockquote:before {
 		content: '\f10d';
-		font-family: "Font Awesome 5 Free";
+		font-family: "Font Awesome 6 Free";
 		font-weight: 900;
 		font-size: 22.4px;
 		font-size: 1.4rem;
-		color: #FFF;
+		color: var(--light);
 }
 
 /*
@@ -534,7 +522,7 @@ html.sticky-header-active #header .header-body {
 }
 
 .custom-nav-filter > li.active > a {
-		border-bottom: 1px solid #CCC !important;
+		border-bottom: 1px solid var(--grey-500) !important;
 }
 
 .custom-nav-filter > li + li {
@@ -548,13 +536,13 @@ html.sticky-header-active #header .header-body {
 		height: calc(1.8em + 1.85rem + 2px);
 		padding: 15.6px 20px;
 		padding: 0.975rem 1.25rem;
-		background: #f7f7f7;
-		border-color: #f7f7f7;
+		background: var(--grey-100);
+		border-color: var(--grey-100);
 		line-height: 1.5 !important;
 }
 
 .custom-form-style-1 .form-control:focus {
-		border-color: #CCC;
+		border-color: var(--grey-500);
 }
 
 .custom-form-style-1 .form-control::-webkit-input-placeholder {
@@ -594,4 +582,58 @@ html.sticky-header-active #header .header-body {
 
 #footer .footer-copyright p {
 		color: #999;
+}
+
+/* Skin */
+.custom-btn-style-1:before {
+		border-color: var(--primary) !important;
+}
+
+.custom-btn-style-1.btn-light:before {
+		border-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.custom-stroke-text-effect-1 {
+		-webkit-text-stroke-color: var(--primary);
+}
+
+/*
+* Card
+*/
+.custom-card-style-1:hover {
+		background-color: var(--primary) !important;
+}
+
+.custom-card-style-1:hover h2, .custom-card-style-1:hover p {
+		color: var(--light) !important;
+}
+
+.custom-card-style-1:hover .animated-icon svg path, .custom-card-style-1:hover .animated-icon svg rect {
+		fill: #FFF !important;
+}
+
+/*
+* Owl Carousel
+*/
+.custom-dots-style-1 .owl-dots .owl-dot span {
+		border-color: var(--primary) !important;
+}
+
+.custom-dots-style-1 .owl-dots .owl-dot:hover span, .custom-dots-style-1 .owl-dots .owl-dot.active span {
+		background: var(--primary) !important;
+}
+
+/*
+* Sort Navigation
+*/
+.custom-nav-filter > li.active > a {
+		color: var(--primary) !important;
+		border-bottom-color: var(--primary) !important;
+}
+
+/*
+* Link Effect
+*/
+.custom-link-effect-1:after {
+		border-bottom-color: var(--primary);
 }

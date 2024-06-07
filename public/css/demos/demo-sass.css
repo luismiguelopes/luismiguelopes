@@ -14,41 +14,41 @@ body {
 /* Header */
 @media (min-width: 992px) {
 		#header .header-nav-main nav > ul:not(:hover) > li > a.active {
-				color: #FFF !important;
+				color: var(--light) !important;
 		}
 		#header .header-nav-main nav > ul:not(:hover) > li > a.active:before {
 				background: #FFF !important;
 		}
 		#header .header-nav-main nav > ul > li:hover > a {
-				color: #FFF !important;
+				color: var(--light) !important;
 		}
 		#header .header-nav-main nav > ul > li:hover > a:before {
 				background: #FFF !important;
 		}
 		html.sticky-header-active #header .header-nav-main nav > ul:not(:hover) > li > a.active {
-				color: #212529 !important;
+				color: var(--dark) !important;
 		}
 		html.sticky-header-active #header .header-nav-main nav > ul:not(:hover) > li > a.active:before {
-				background: #212529 !important;
+				background: var(--dark) !important;
 		}
 		html.sticky-header-active #header .header-nav-main nav > ul > li > a {
-				color: #212529 !important;
+				color: var(--dark) !important;
 		}
 		html.sticky-header-active #header .header-nav-main nav > ul > li:hover > a {
-				color: #212529 !important;
+				color: var(--dark) !important;
 		}
 		html.sticky-header-active #header .header-nav-main nav > ul > li:hover > a:before {
-				background: #212529 !important;
+				background: var(--dark) !important;
 		}
 }
 
 /* Header Social Icons */
 html.sticky-header-active #header .header-social-icons > li > a:hover > i {
-		color: #FFF !important;
+		color: var(--light) !important;
 }
 
 html.sticky-header-active #header .header-social-icons > li > a > i {
-		color: #212529 !important;
+		color: var(--dark) !important;
 }
 
 /* Animated Circles */
@@ -70,39 +70,30 @@ html.sticky-header-active #header .header-social-icons > li > a > i {
 		border-radius: 100%;
 		border: 1px solid #FFF;
 		transform: translate3d(-50%, -50%, 0);
-		-webkit-animation-name: customAnimatedCircles;
-						animation-name: customAnimatedCircles;
-		-webkit-animation-iteration-count: infinite;
-						animation-iteration-count: infinite;
-		-webkit-animation-fill-mode: both;
-						animation-fill-mode: both;
-		-webkit-animation-timing-function: linear;
-						animation-timing-function: linear;
-		-webkit-animation-duration: 2.5s;
-						animation-duration: 2.5s;
-		-webkit-animation-delay: 500ms;
-						animation-delay: 500ms;
+		animation-name: customAnimatedCircles;
+		animation-iteration-count: infinite;
+		animation-fill-mode: both;
+		animation-timing-function: linear;
+		animation-duration: 2.5s;
+		animation-delay: 500ms;
 }
 
 .custom-animated-circles .circle:nth-child(2) {
 		width: 70%;
 		height: 70%;
-		-webkit-animation-delay: 1000ms;
-						animation-delay: 1000ms;
+		animation-delay: 1000ms;
 }
 
 .custom-animated-circles .circle:nth-child(3) {
 		width: 90%;
 		height: 90%;
-		-webkit-animation-delay: 1500ms;
-						animation-delay: 1500ms;
+		animation-delay: 1500ms;
 }
 
 .custom-animated-circles .circle:nth-child(4) {
 		width: 110%;
 		height: 110%;
-		-webkit-animation-delay: 2000ms;
-						animation-delay: 2000ms;
+		animation-delay: 2000ms;
 }
 
 .custom-animated-circles.custom-animated-circles-pos-2 {
@@ -117,21 +108,6 @@ html.sticky-header-active #header .header-social-icons > li > a > i {
 		right: 0;
 		transform: translate3d(65%, -50%, 0);
 		top: 0;
-}
-
-@-webkit-keyframes customAnimatedCircles {
-		0% {
-				opacity: 0;
-				transform: translate3d(-50%, -50%, 0) scale(0.8);
-		}
-		50% {
-				opacity: 0.5;
-				transform: translate3d(-50%, -50%, 0);
-		}
-		100% {
-				opacity: 0;
-				transform: translate3d(-50%, -50%, 0) scale(1.1);
-		}
 }
 
 @keyframes customAnimatedCircles {
@@ -214,7 +190,7 @@ html.sticky-header-active #header .header-social-icons > li > a > i {
 		margin-top: -8px;
 		margin-left: -8px;
 		border: 1px solid rgba(0, 0, 0, 0.12);
-		border-radius: 4px;
+		border-radius: var(--border-radius);
 		position: absolute;
 		display: block;
 		content: '';
@@ -245,4 +221,10 @@ html.sticky-header-active #header .header-social-icons > li > a > i {
 		padding: 20.8px;
 		padding: 1.3rem;
 		height: 45px;
+}
+
+/* Skin */
+/* Animated Circles */
+.custom-animated-circles-primary .circle {
+		border-color: var(--primary) !important;
 }

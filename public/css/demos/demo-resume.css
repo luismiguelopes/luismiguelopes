@@ -116,7 +116,7 @@ section.section {
 }
 
 .custom-btn-style-2 {
-		color: #1e1e1e !important;
+		color: var(--dark) !important;
 		padding: 10px 30px;
 		border-radius: 35px !important;
 }
@@ -179,8 +179,8 @@ section.section {
 }
 
 .owl-carousel.custom-dots-style-1 .owl-dots button.owl-dot.active span, .owl-carousel.custom-dots-style-1 .owl-dots button.owl-dot:hover span {
-		border-color: #1e1e1e !important;
-		background-color: #1e1e1e !important;
+		border-color: var(--dark) !important;
+		background-color: var(--dark) !important;
 }
 
 .owl-carousel.custom-dots-style-1 .owl-dots button.owl-dot span {
@@ -189,21 +189,21 @@ section.section {
 		height: 12px;
 		margin: 5px 2px;
 		background: transparent !important;
-		border: 2px solid #1e1e1e;
+		border: 2px solid var(--dark);
 }
 
 .owl-carousel.custom-dots-color-1 .owl-dots button.owl-dot.active span, .owl-carousel.custom-dots-color-1 .owl-dots button.owl-dot:hover span {
-		border-color: #1e1e1e !important;
-		background-color: #1e1e1e !important;
+		border-color: var(--dark) !important;
+		background-color: var(--dark) !important;
 }
 
 .owl-carousel.custom-dots-color-1 .owl-dots button.owl-dot span {
-		border: 2px solid #1e1e1e !important;
+		border: 2px solid var(--dark) !important;
 }
 
 .owl-carousel.custom-dots-color-1.custom-dots-color-1-light .owl-dots button.owl-dot.active span, .owl-carousel.custom-dots-color-1.custom-dots-color-1-light .owl-dots button.owl-dot:hover span {
-		border-color: #FFF !important;
-		background-color: #FFF !important;
+		border-color: var(--light) !important;
+		background-color: var(--light) !important;
 }
 
 .owl-carousel.custom-dots-color-1.custom-dots-color-1-light .owl-dots button.owl-dot span {
@@ -232,7 +232,7 @@ section.section {
 }
 
 #header.header-floating-icons .header-nav-main nav > ul > li > a.active:after {
-		background: #FFF;
+		background: var(--light);
 }
 
 @media (min-width: 992px) {
@@ -278,14 +278,14 @@ section.section {
 				right: 0;
 				width: 100%;
 				height: 102%;
-				background: #FDD55C;
+				background: var(--primary);
 				z-index: -1;
 		}
 		#header.header-floating-icons .header-nav-main nav > ul > li > a > span {
 				position: absolute;
 				top: 0;
 				left: 125.5%;
-				background: #FFF;
+				background: var(--light);
 				padding: 0 25px;
 				height: 100%;
 				line-height: 4.1;
@@ -303,7 +303,7 @@ section.section {
 				top: 50%;
 				left: -4px;
 				padding: 10px;
-				background: #FFF;
+				background: var(--light);
 				z-index: -1;
 				transform: translate(0, -50%) rotate(45deg);
 		}
@@ -515,7 +515,7 @@ section.section {
 		line-height: 40px;
 		width: 40px;
 		border-radius: 0;
-		color: #FFF !important;
+		color: var(--light) !important;
 }
 
 .custom-social-icons li:hover a {
@@ -561,7 +561,7 @@ section.custom-timeline .timeline-body:after {
 
 section.custom-timeline .timeline-bar {
 		position: absolute;
-		background: #1e1e1e;
+		background: var(--dark);
 		width: 3px;
 		left: -3.6%;
 		z-index: 0;
@@ -583,8 +583,8 @@ section.custom-timeline .timeline-box.right {
 section.custom-timeline .timeline-box.right:before {
 		top: 50%;
 		left: -3.8%;
-		background: #1e1e1e !important;
-		box-shadow: 0 0 0 3px #ecf1f7, 0 0 0 6px #1e1e1e !important;
+		background: var(--dark) !important;
+		box-shadow: 0 0 0 3px var(--secondary), 0 0 0 6px var(--dark) !important;
 		margin-top: 0;
 		transform: translateY(-50%);
 }
@@ -592,7 +592,7 @@ section.custom-timeline .timeline-box.right:before {
 section.custom-timeline .timeline-box.right:after {
 		top: 50%;
 		left: -22px;
-		background: #FDD55C;
+		background: var(--primary);
 		border: none;
 		transform: translateY(-50%) rotate(45deg);
 }
@@ -727,7 +727,7 @@ section.custom-timeline .timeline-box .experience-info .company > span {
 }
 
 .custom-progress-bars .progress .progress-bar {
-		background-color: #1e1e1e;
+		background-color: var(--dark);
 		overflow: visible !important;
 		height: auto;
 }
@@ -742,7 +742,7 @@ section.custom-timeline .timeline-box .experience-info .company > span {
 .custom-nav-sort.nav > li > a {
 		background: transparent;
 		border-radius: 35px;
-		color: #1e1e1e;
+		color: var(--dark);
 		text-transform: uppercase;
 		border: 1px solid #d0d3d6;
 		font-weight: 700;
@@ -752,8 +752,8 @@ section.custom-timeline .timeline-box .experience-info .company > span {
 }
 
 .custom-nav-sort.nav > li.active > a, .custom-nav-sort.nav > li:hover > a {
-		background: #FDD55C;
-		border-color: #FDD55C;
+		background: var(--primary);
+		border-color: var(--primary);
 }
 
 @media (max-width: 767px) {
@@ -764,8 +764,7 @@ section.custom-timeline .timeline-box .experience-info .company > span {
 
 .custom-thumb-info-1 {
 		border: none;
-		-webkit-backface-visibility: initial;
-						backface-visibility: initial;
+		backface-visibility: initial;
 		transform: none;
 }
 
@@ -784,13 +783,12 @@ section.custom-timeline .timeline-box .experience-info .company > span {
 
 .custom-thumb-info-1 .thumb-info-wrapper {
 		margin: 0 !important;
-		-webkit-backface-visibility: initial;
-						backface-visibility: initial;
+		backface-visibility: initial;
 		transform: none;
 }
 
 .custom-thumb-info-1 .thumb-info-wrapper:after {
-		background: #FDD55C;
+		background: var(--primary);
 }
 
 .custom-thumb-info-1 .thumb-info-wrapper .thumb-info-plus {
@@ -811,7 +809,7 @@ section.custom-timeline .timeline-box .experience-info .company > span {
 		width: 100%;
 		top: 50%;
 		left: 50%;
-		border-top: 1px solid #1e1e1e;
+		border-top: 1px solid var(--dark);
 		transform: translate(-50%, -50%);
 }
 
@@ -823,7 +821,7 @@ section.custom-timeline .timeline-box .experience-info .company > span {
 * Testimonials
 */
 .custom-testimonial-style-1.testimonial-with-quotes blockquote:before, .custom-testimonial-style-1.testimonial-with-quotes blockquote:after {
-		color: #1e1e1e;
+		color: var(--dark);
 }
 
 .custom-testimonial-style-1.testimonial-with-quotes blockquote p {
@@ -860,7 +858,7 @@ section.custom-timeline .timeline-box .experience-info .company > span {
 }
 
 .custom-testimonial-style-1.custom-testimonial-style-1-light blockquote:before, .custom-testimonial-style-1.custom-testimonial-style-1-light blockquote:after {
-		color: #FFF;
+		color: var(--light);
 }
 
 .custom-testimonial-style-1.custom-testimonial-style-1-light .testimonial-author:before {
@@ -1001,7 +999,7 @@ section.custom-timeline .timeline-box .experience-info .company > span {
 		background: transparent !important;
 		border: none;
 		border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-		color: #1e1e1e;
+		color: var(--dark);
 		font-size: 12px;
 		padding: 6px 0;
 		margin-bottom: 15px;
@@ -1009,25 +1007,25 @@ section.custom-timeline .timeline-box .experience-info .company > span {
 }
 
 .custom-form-style .form-control-custom .form-control::-webkit-input-placeholder {
-		color: #1e1e1e;
+		color: var(--dark);
 		text-transform: uppercase;
 		font-weight: 600;
 }
 
 .custom-form-style .form-control-custom .form-control::-moz-placeholder {
-		color: #1e1e1e;
+		color: var(--dark);
 		text-transform: uppercase;
 		font-weight: 600;
 }
 
 .custom-form-style .form-control-custom .form-control:-ms-input-placeholder {
-		color: #1e1e1e;
+		color: var(--dark);
 		text-transform: uppercase;
 		font-weight: 600;
 }
 
 .custom-form-style .form-control-custom .form-control:-moz-placeholder {
-		color: #1e1e1e;
+		color: var(--dark);
 		text-transform: uppercase;
 		font-weight: 600;
 }
@@ -1038,24 +1036,24 @@ section.custom-timeline .timeline-box .experience-info .company > span {
 }
 
 .custom-form-style .form-control-custom.form-control-custom-light .form-control {
-		color: #FFF;
+		color: var(--light);
 		border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .custom-form-style .form-control-custom.form-control-custom-light .form-control::-webkit-input-placeholder {
-		color: #FFF;
+		color: var(--light);
 }
 
 .custom-form-style .form-control-custom.form-control-custom-light .form-control::-moz-placeholder {
-		color: #FFF;
+		color: var(--light);
 }
 
 .custom-form-style .form-control-custom.form-control-custom-light .form-control:-ms-input-placeholder {
-		color: #FFF;
+		color: var(--light);
 }
 
 .custom-form-style .form-control-custom.form-control-custom-light .form-control:-moz-placeholder {
-		color: #FFF;
+		color: var(--light);
 }
 
 .custom-feature-box .custom-feature-box-icon {
@@ -1124,4 +1122,106 @@ section.custom-timeline .timeline-box .experience-info .company > span {
 		#header .header-nav-main nav > ul > li.dropdown:hover .dropdown-menu li.dropdown-submenu > .dropdown-menu {
 				right: 100%;
 		}
+}
+
+/* Skin */
+/*
+* Text Color
+*/
+.custom-text-color-3 {
+		color: var(--light) !important;
+}
+
+/*
+* Buttons
+*/
+.custom-btn-style-2:not(.btn-dark):not(.btn-quaternary).active, .custom-btn-style-2:not(.btn-dark):not(.btn-quaternary):hover, .custom-btn-style-2:not(.btn-dark):not(.btn-quaternary):active, .custom-btn-style-2:not(.btn-dark):not(.btn-quaternary):focus {
+		color: var(--primary-inverse) !important;
+		border-color: var(--primary) !important;
+}
+
+/*
+* Menu
+*/
+#header.header-floating-icons .header-nav-main nav > ul > li > a:after {
+		background: var(--primary);
+}
+
+#header.header-floating-icons .header-nav-main nav > ul > li > a:not(.active) {
+		color: var(--primary-inverse) !important;
+}
+
+#header.header-floating-icons .header-nav-main nav > ul > li.open > a:not(.active):after, #header.header-floating-icons .header-nav-main nav > ul > li.active > a:not(.active):after, #header.header-floating-icons .header-nav-main nav > ul > li:hover > a:not(.active):after, #header.header-floating-icons .header-nav-main nav > ul > li:active > a:not(.active):after, #header.header-floating-icons .header-nav-main nav > ul > li:focus > a:not(.active):after {
+		background: var(--primary);
+}
+
+/*
+* Owl Carousel
+*/
+.owl-carousel.custom-dots-style-1 .owl-dots button.owl-dot.active span, .owl-carousel.custom-dots-style-1 .owl-dots button.owl-dot:hover span {
+		border-color: var(--primary);
+}
+
+.owl-carousel.custom-dots-style-1 .owl-dots button.owl-dot.active span:before, .owl-carousel.custom-dots-style-1 .owl-dots button.owl-dot:hover span:before {
+		color: var(--primary);
+}
+
+/*
+* Timeline
+*/
+section.custom-timeline .timeline-box.right:before {
+		box-shadow: 0 0 0 3px var(--secondary), 0 0 0 6px var(--dark) !important;
+}
+
+section.custom-timeline .timeline-box.right:after {
+		background: var(--primary);
+}
+
+/*
+* Portfolio
+*/
+.custom-nav-sort.nav > li.active > a, .custom-nav-sort.nav > li:hover > a {
+		background: var(--primary);
+		border-color: var(--primary);
+		color: var(--primary-inverse);
+}
+
+.custom-nav-sort.nav > li.active > a:hover, .custom-nav-sort.nav > li.active > a:focus, .custom-nav-sort.nav > li:hover > a:hover, .custom-nav-sort.nav > li:hover > a:focus {
+		color: var(--primary-inverse);
+}
+
+.custom-thumb-info-1 .thumb-info-wrapper:after {
+		background: var(--primary);
+}
+
+.custom-thumb-info-1 .thumb-info-wrapper .thumb-info-plus:before, .custom-thumb-info-1 .thumb-info-wrapper .thumb-info-plus:after {
+		border-top-color: var(--primary-inverse);
+}
+
+/*
+* Say Hello
+*/
+.custom-feature-box:hover .custom-feature-box-icon {
+		background: var(--primary);
+}
+
+.custom-feature-box:hover .custom-feature-box-icon i {
+		color: var(--primary-inverse) !important;
+}
+
+/*
+* Dark
+*/
+html.dark {
+		/*
+	* Thumb Info
+	*/
+}
+
+html.dark section.custom-timeline .timeline-box.right:before {
+		box-shadow: 0 0 0 3px var(--secondary), 0 0 0 6px var(--light) !important;
+}
+
+html.dark .thumb-info .thumb-info-wrapper:after {
+		background-color: var(--primary);
 }

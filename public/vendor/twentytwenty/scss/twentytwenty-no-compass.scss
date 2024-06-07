@@ -2,7 +2,7 @@
 $pluginPrefix: "twentytwenty" !default;
 
 // 20/20 Handle Styles
-$twenty20-handle-color: #fff !default;
+$twenty20-handle-color: var(--light) !default;
 $twenty20-handle-stroke: 3px !default;
 $twenty20-handle-circle-width: 38px !default;
 $twenty20-handle-box-shadow: 0px 0px 12px rgba(#333,0.5) !default;
@@ -13,7 +13,7 @@ $twenty20-handle-radius: 1000px !default;
 
 // 20/20 Overlay Styles
 $twenty20-overlay-bg: rgba(#000,0.5) !default;
-$twenty20-overlay-label-color: #fff !default;
+$twenty20-overlay-label-color: var(--light) !default;
 $twenty20-overlay-label-bg: rgba(#fff, .2) !default;
 $twenty20-overlay-label-height: 38px !default;
 $twenty20-overlay-label-width: 90px !default;

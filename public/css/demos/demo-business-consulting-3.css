@@ -122,14 +122,6 @@
 /*
 * Custom Link Effects
 */
-@-webkit-keyframes crookedLineAnim {
-		from {
-				transform: translate3d(0, 0, 0);
-		}
-		to {
-				transform: translate3d(-48%, 0, 0);
-		}
-}
 @keyframes crookedLineAnim {
 		from {
 				transform: translate3d(0, 0, 0);
@@ -144,14 +136,10 @@
 }
 
 .custom-link-hover-effects:hover .custom-crooked-line svg {
-		-webkit-animation-name: crookedLineAnim;
-						animation-name: crookedLineAnim;
-		-webkit-animation-duration: 2s;
-						animation-duration: 2s;
-		-webkit-animation-iteration-count: infinite;
-						animation-iteration-count: infinite;
-		-webkit-animation-timing-function: linear;
-						animation-timing-function: linear;
+		animation-name: crookedLineAnim;
+		animation-duration: 2s;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
 }
 
 .custom-link-hover-effects:hover .custom-view-more svg {
@@ -180,7 +168,7 @@
 		right: 0;
 		width: 100vw;
 		height: 100%;
-		background: #CCC;
+		background: var(--grey-500);
 		transform: skewX(-25deg);
 		z-index: 1;
 }
@@ -192,7 +180,7 @@
 		right: -7px;
 		width: 100vw;
 		height: 100%;
-		background: #CCC;
+		background: var(--grey-500);
 		transform: skewX(-25deg);
 		z-index: 0;
 }
@@ -360,4 +348,39 @@
 
 #footer .footer-copyright p {
 		color: #999;
+}
+
+/* Skin */
+/*
+* Text Highlight
+*/
+.custom-highlight-text-1:before {
+		border-bottom-color: var(--primary);
+}
+
+/*
+* Header
+*/
+.custom-header-top-nav-background {
+		position: relative;
+}
+
+.custom-header-top-nav-background:before {
+		background: var(--primary);
+}
+
+.custom-header-top-nav-background:after {
+		background: var(--primary--300);
+}
+
+/*
+* Accordion
+*/
+.custom-accordion-style-1 > .card .card-header a:not(.collapsed) {
+		background-color: var(--primary);
+		color: var(--primary-inverse) !important;
+}
+
+.custom-accordion-style-1 > .card:hover .card-header a.collapsed {
+		color: var(--primary) !important;
 }

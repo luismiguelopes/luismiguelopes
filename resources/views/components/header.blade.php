@@ -46,9 +46,6 @@
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
 
-    <!-- Head Libs -->
-    <script src="vendor/modernizr/modernizr.min.js"></script>
-
 </head>
 
 
@@ -78,12 +75,6 @@
                                                 <a data-hash href="#experience" class="nav-link text-color-dark bg-color-primary">
                                                     <i class="icon-eye icons"></i>
                                                     <span class="custom-tooltip text-color-dark">{{ __('presentation.menuExperience') }}</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a data-hash href="#education" class="nav-link text-color-dark bg-color-primary">
-                                                    <i class="icon-briefcase icons"></i>
-                                                    <span class="custom-tooltip text-color-dark">{{ __('presentation.menuEducation') }}</span>
                                                 </a>
                                             </li>
                                             <li>
