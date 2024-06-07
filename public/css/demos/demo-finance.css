@@ -83,3 +83,9 @@
 #footer .footer-copyright p {
 		color: #888888;
 }
+
+/* Skin */
+/* Footer */
+#footer p:hover, #footer span:hover, #footer li:hover, #footer a:not(.btn):not(.no-footer-css):hover {
+		color: var(--primary);
+}

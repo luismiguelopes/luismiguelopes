@@ -93,7 +93,7 @@ body {
 		font-size: 13.6px;
 		font-size: 0.85rem;
 		letter-spacing: 0.5px;
-		color: #212529;
+		color: var(--dark);
 }
 
 #header .header-nav.header-nav-line .header-nav-main nav > ul > li:hover.no-line-effect > a:before, #header .header-nav.header-nav-line .header-nav-main nav > ul > li.active.no-line-effect > a:before {
@@ -170,8 +170,8 @@ html:not(.sticky-header-active) #header .header-body.header-border-bottom {
 		top: 50%;
 		width: 90%;
 		height: 90%;
-		border-top: 1px solid #212529;
-		border-left: 1px solid #212529;
+		border-top: 1px solid var(--dark);
+		border-left: 1px solid var(--dark);
 		opacity: 0.6;
 		transform: translate3d(0, -50%, 0) rotate(-45deg);
 }
@@ -184,8 +184,8 @@ html:not(.sticky-header-active) #header .header-body.header-border-bottom {
 		top: 50%;
 		width: 100%;
 		height: 100%;
-		border-top: 1px solid #212529;
-		border-left: 1px solid #212529;
+		border-top: 1px solid var(--dark);
+		border-left: 1px solid var(--dark);
 		transform: translate3d(0, -50%, 0) rotate(-45deg);
 }
 
@@ -213,8 +213,8 @@ html:not(.sticky-header-active) #header .header-body.header-border-bottom {
 		width: 80px;
 		height: 80px;
 		border-radius: 100%;
-		background: #FFF;
-		color: #212529;
+		background: var(--light);
+		color: var(--dark);
 		transition: ease transform 300ms;
 		font-size: 20.8px;
 		font-size: 1.3rem;
@@ -240,16 +240,6 @@ html:not(.sticky-header-active) #header .header-body.header-border-bottom {
 }
 
 /* Custom SVG Line Animation */
-@-webkit-keyframes customSVGLineAnim {
-		from {
-				stroke-dasharray: 380;
-				stroke-dashoffset: 170;
-		}
-		to {
-				stroke-dasharray: 310;
-				stroke-dashoffset: 340;
-		}
-}
 @keyframes customSVGLineAnim {
 		from {
 				stroke-dasharray: 380;
@@ -262,19 +252,7 @@ html:not(.sticky-header-active) #header .header-body.header-border-bottom {
 }
 
 .customSVGLineAnim {
-		-webkit-animation-name: customSVGLineAnim;
-						animation-name: customSVGLineAnim;
-}
-
-@-webkit-keyframes customSVGLineAnimTwo {
-		from {
-				stroke-dasharray: 820;
-				stroke-dashoffset: 500;
-		}
-		to {
-				stroke-dasharray: 1120;
-				stroke-dashoffset: 500;
-		}
+		animation-name: customSVGLineAnim;
 }
 
 @keyframes customSVGLineAnimTwo {
@@ -289,8 +267,7 @@ html:not(.sticky-header-active) #header .header-body.header-border-bottom {
 }
 
 .customSVGLineAnimTwo {
-		-webkit-animation-name: customSVGLineAnimTwo;
-						animation-name: customSVGLineAnimTwo;
+		animation-name: customSVGLineAnimTwo;
 }
 
 /* 360º Product Viewer */
@@ -300,4 +277,10 @@ html:not(.sticky-header-active) #header .header-body.header-border-bottom {
 
 .cd-product-viewer-handle .fill {
 		background-color: #e8e9e9;
+}
+
+/* Skin */
+/* Product Carousel Thumb Gallery */
+.thumb-gallery-wrapper .thumb-gallery-thumbs .owl-item:hover, .thumb-gallery-wrapper .thumb-gallery-thumbs .owl-item.selected {
+		border-color: var(--primary);
 }

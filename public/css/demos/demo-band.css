@@ -31,13 +31,13 @@ body {
 /* Header */
 @media (min-width: 992px) {
 		#header .header-nav .header-nav-line nav > ul:not(:hover) li > a.active {
-				color: #FFF !important;
+				color: var(--light) !important;
 		}
 		#header .header-nav-main nav > ul > li {
 				margin-right: 1.2rem;
 		}
 		#header .header-nav-main nav > ul > li > a {
-				color: #FFF !important;
+				color: var(--light) !important;
 		}
 }
 
@@ -60,7 +60,7 @@ body {
 .custom-borders-divider-style-1 > div[class*="col"] {
 		border-width: 1px;
 		border-style: solid;
-		border-color: #212529;
+		border-color: var(--dark);
 		border-top-width: 0;
 		border-right-width: 0;
 		border-left-width: 0;
@@ -167,9 +167,9 @@ body {
 
 .custom-card-style-1 .custom-card-img-top-wrapper .post-date .month {
 		display: block;
-		background: #CCC;
+		background: var(--grey-500);
 		border-radius: 0 0 2px 2px;
-		color: #FFF;
+		color: var(--light);
 		font-size: 0.8em;
 		line-height: 1.8;
 		padding: 1px 10px;
@@ -178,9 +178,9 @@ body {
 }
 
 .custom-card-style-1 .custom-card-img-top-wrapper .post-date .day {
-		background: #f7f7f7;
+		background: var(--grey-100);
 		border-radius: 2px 2px 0 0;
-		color: #CCC;
+		color: var(--grey-500);
 		display: block;
 		font-size: 18px;
 		font-weight: 900;
@@ -189,16 +189,6 @@ body {
 }
 
 /* Custom SVG Line Animation */
-@-webkit-keyframes customSVGLineAnim {
-		from {
-				stroke-dasharray: 40;
-				stroke-dashoffset: 40;
-		}
-		to {
-				stroke-dasharray: 40;
-				stroke-dashoffset: 0;
-		}
-}
 @keyframes customSVGLineAnim {
 		from {
 				stroke-dasharray: 40;
@@ -211,6 +201,5 @@ body {
 }
 
 .customSVGLineAnim {
-		-webkit-animation-name: customSVGLineAnim;
-						animation-name: customSVGLineAnim;
+		animation-name: customSVGLineAnim;
 }

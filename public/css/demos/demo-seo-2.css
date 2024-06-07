@@ -1,3 +1,8 @@
+.body {
+		max-width: 100vw;
+		overflow-x: hidden;
+}
+
 /*
 * Demo Fonts
 */
@@ -14,18 +19,6 @@ body {
 /* 
 * Custom Animations
 */
-@-webkit-keyframes expandInWithBlur {
-		from {
-				opacity: 0;
-				filter: blur(10px);
-				transform: scale(0.8);
-		}
-		to {
-				opacity: 1;
-				filter: blur(0px);
-				transform: scale(1);
-		}
-}
 @keyframes expandInWithBlur {
 		from {
 				opacity: 0;
@@ -40,15 +33,14 @@ body {
 }
 
 .expandInWithBlur {
-		-webkit-animation-name: expandInWithBlur;
-						animation-name: expandInWithBlur;
+		animation-name: expandInWithBlur;
 }
 
 /*
 * Custom Text Colors
 */
 .custom-text-color-grey-1 {
-		color: #777 !important;
+		color: var(--default) !important;
 }
 
 .custom-text-color-grey-2 {
@@ -237,19 +229,19 @@ html.sticky-header-active #header.header-transparent .header-body:not(.header-bo
 }
 
 .custom-form-style-1 .form-control::-webkit-input-placeholder {
-		color: #777;
+		color: var(--default);
 }
 
 .custom-form-style-1 .form-control::-moz-placeholder {
-		color: #777;
+		color: var(--default);
 }
 
 .custom-form-style-1 .form-control:-ms-input-placeholder {
-		color: #777;
+		color: var(--default);
 }
 
 .custom-form-style-1 .form-control:-moz-placeholder {
-		color: #777;
+		color: var(--default);
 }
 
 /*
@@ -258,12 +250,12 @@ html.sticky-header-active #header.header-transparent .header-body:not(.header-bo
 .custom-progress-bars-style-1 .progress {
 		position: relative;
 		height: 7px;
-		background: #CCC;
+		background: var(--grey-500);
 }
 
 .custom-progress-bars-style-1 .progress-bar-tooltip {
 		background-color: transparent;
-		color: #777;
+		color: var(--default);
 		font-size: 14px;
 		top: -30px;
 		right: 0;
@@ -731,7 +723,7 @@ html.sticky-header-active #header.header-transparent .header-body:not(.header-bo
 		justify-content: center;
 		width: 10px;
 		height: 10px;
-		box-shadow: 0px 0px 0px 2px #CCC;
+		box-shadow: 0px 0px 0px 2px var(--grey-500);
 		border-radius: 100%;
 		border: 2px solid #FFF;
 		background: transparent;
@@ -748,7 +740,7 @@ html.sticky-header-active #header.header-transparent .header-body:not(.header-bo
 }
 
 .custom-carousel-dots-style-1 .owl-dots .owl-dot.active {
-		background: #CCC;
+		background: var(--grey-500);
 }
 
 /*
@@ -788,7 +780,7 @@ html.sticky-header-active #header.header-transparent .header-body:not(.header-bo
 		line-height: 2.3;
 		top: 20px;
 		right: -55px;
-		background: #CCC;
+		background: var(--grey-500);
 		width: 55%;
 		transform: rotate(36deg);
 }
@@ -820,7 +812,7 @@ html.sticky-header-active #header.header-transparent .header-body:not(.header-bo
 }
 
 .custom-pagination-style-1 .page-item.active .page-link, .custom-pagination-style-1 .page-item:hover .page-link {
-		color: #FFF;
+		color: var(--light);
 }
 
 /*
@@ -830,4 +822,76 @@ html.sticky-header-active #header.header-transparent .header-body:not(.header-bo
 		width: 38px;
 		height: 38px;
 		line-height: 38px;
+}
+
+/* Skin */
+/* Custom Colors For SVG's */
+.custom-fill-color-primary,
+.custom-fill-color-primary > svg path {
+		fill: var(--primary) !important;
+}
+
+.custom-fill-color-secondary,
+.custom-fill-color-secondary > svg path {
+		fill: var(--secondary) !important;
+}
+
+.custom-fill-color-tertiary,
+.custom-fill-color-tertiary > svg path {
+		fill: var(--tertiary) !important;
+}
+
+.custom-fill-color-quaternary,
+.custom-fill-color-quaternary > svg path {
+		fill: var(--quaternary) !important;
+}
+
+/* Header */
+#header .header-btn-collapse-nav {
+		background: var(--tertiary);
+}
+
+@media (min-width: 992px) {
+		#header .header-nav.header-nav-links nav > ul:not(:hover) > li > a.active {
+				color: var(--tertiary);
+		}
+		#header .header-nav.header-nav-links nav > ul li:hover > a {
+				color: var(--tertiary);
+		}
+		#header .header-nav-main nav > ul > li.dropdown .dropdown-menu {
+				border-top-color: var(--tertiary);
+		}
+}
+
+@media (max-width: 991px) {
+		#header .header-nav-main:not(.header-nav-main-mobile-dark) nav > ul > li > a.active {
+				color: var(--tertiary) !important;
+		}
+}
+
+/* Testimonial blockquote */
+.testimonial.testimonial-style-3.custom-testimonial-style-1 blockquote:before {
+		color: var(--secondary);
+}
+
+/* Pricing Table */
+.pricing-table.custom-pricing-table-style-1 .plan.plan-featured .plan-popular-tag {
+		background: var(--secondary);
+}
+
+/* Carousel */
+.custom-carousel-dots-style-1 .owl-dots .owl-dot {
+		box-shadow: 0px 0px 0px 2px var(--quaternary);
+}
+
+.custom-carousel-dots-style-1 .owl-dots .owl-dot.active {
+		background: var(--quaternary);
+}
+
+/*
+* Pagination
+*/
+.custom-pagination-style-1 .page-item.active .page-link, .custom-pagination-style-1 .page-item:hover .page-link {
+		border-color: var(--secondary);
+		background-color: var(--secondary) !important;
 }

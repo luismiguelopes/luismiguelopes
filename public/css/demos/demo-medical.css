@@ -56,7 +56,7 @@
 }
 
 .medical-schedules h4, .medical-schedules h5, .medical-schedules a, .medical-schedules i {
-		color: #fff !important;
+		color: var(--light) !important;
 }
 
 .medical-schedules h5 {
@@ -68,8 +68,7 @@
 		cursor: pointer;
 		height: 94px;
 		position: relative;
-		-webkit-animation-duration: 0.6s;
-						animation-duration: 0.6s;
+		animation-duration: 0.6s;
 }
 
 .medical-schedules .box-one {
@@ -221,11 +220,11 @@
 		content: ':';
 		display: block;
 		float: right;
-		color: #fff;
+		color: var(--light);
 }
 
 .custom-info span:nth-child(2) {
-		color: #fff;
+		color: var(--light);
 }
 
 .feature-box.feature-box-style-2 .feature-box-icon {
@@ -237,14 +236,14 @@
 }
 
 .team .thumb-info:hover .thumb-info-caption span, .team .thumb-info:hover .thumb-info-caption i {
-		color: #fff !important;
+		color: var(--light) !important;
 }
 
 .team .thumb-info .thumb-info-caption {
 		position: relative;
 		padding: 10px 0;
 		display: block;
-		background: #fff;
+		background: var(--light);
 		transition: all 0.3s ease;
 }
 
@@ -312,7 +311,7 @@
 
 .thumb-info-side-image-custom {
 		border: 0 none;
-		color: #777;
+		color: var(--default);
 		margin: 0 0 35px;
 		transition: all 0.3s ease;
 }
@@ -405,7 +404,7 @@
 .testimonial .testimonial-quote {
 		display: inline-block;
 		position: relative;
-		color: #fff;
+		color: var(--light);
 		font-size: 50px;
 		line-height: 1;
 		font-family: Georgia, serif;
@@ -424,12 +423,12 @@
 }
 
 .testimonial blockquote::before, .testimonial blockquote::after {
-		color: #fff !important;
+		color: var(--light) !important;
 		font-size: 40px !important;
 }
 
 .testimonial blockquote p {
-		color: #fff !important;
+		color: var(--light) !important;
 		font-family: "Poppins", Arial, sans-serif;
 		font-size: 15px;
 		line-height: 1.6;
@@ -438,7 +437,7 @@
 .testimonial .testimonial-author p strong {
 		position: relative;
 		display: inline-block;
-		color: #fff !important;
+		color: var(--light) !important;
 }
 
 .testimonial .testimonial-author p strong::before {
@@ -468,7 +467,7 @@
 }
 
 #footer a label {
-		color: #fff !important;
+		color: var(--light) !important;
 }
 
 #footer .custom-info span:nth-child(1) {

@@ -14,7 +14,7 @@ body{
 
 h1,h2,h3,h4,h5,h6{
 	font-family: Hind, sans-serif;
-	color: #333;
+	color: var(--dark--200);
 	margin: 2em 0 1em;
 }
 
@@ -106,7 +106,7 @@ pre{
 	width: 50%;
 	float: left;
 	padding: 15px;
-
+	
 	&-list{
 		&:after{
 			content :" ";
@@ -160,7 +160,7 @@ pre{
 
 			&__card{box-shadow: 0 10px 30px rgba(0,0,0,.4);}
 			&__image:after{ opacity: 1; }
-			&__detail{
+			&__detail{ 
 				border-width : 10px;
 				box-shadow   : 0 10px 30px rgba(0,0,0,.4);
 			}
@@ -251,16 +251,16 @@ pre{
 		border-radius: 10px;
 	}
 	.layer-1{
-		background-image: url(../../dist/images/deadpool-bg.png);
+		background-image: url(dist/images/deadpool-bg.png);
 		background-size: cover;
 	}
 	.layer-2{
-		background-image: url(../../dist/images/deadpool.png);
+		background-image: url(dist/images/deadpool.png);
 		background-size: cover;
 		transform: translateZ(30px);
 	}
 	.layer-3{
-		background-image: url(../../dist/images/deadpool-title.png);
+		background-image: url(dist/images/deadpool-title.png);
 		background-size: cover;
 		transform: translateZ(50px);
 	}

@@ -28,7 +28,7 @@ body {
 }
 
 .custom-text-color-grey-1 {
-		color: #777 !important;
+		color: var(--default) !important;
 }
 
 .custom-border-color-grey {
@@ -130,7 +130,7 @@ body {
 }
 
 .custom-btn-color-1:hover {
-		border-color: #212529 !important;
+		border-color: var(--dark) !important;
 }
 
 .custom-btn-style-1.btn-dark {
@@ -138,7 +138,7 @@ body {
 }
 
 .custom-btn-style-1.btn-dark:hover {
-		background: #212529 !important;
+		background: var(--dark) !important;
 }
 
 .active-revslide .custom-square-1 rect {
@@ -188,4 +188,52 @@ body {
 
 #header.side-header-hide [data-plugin-scrollable] {
 		display: none;
+}
+
+/* Skin */
+.custom-square-1 rect {
+		stroke: var(--primary);
+		fill: var(--primary);
+}
+
+.custom-featured-boxes-style-1 .featured-box:hover .box-content {
+		border: 7px solid var(--primary);
+}
+
+.custom-featured-boxes-style-1 .featured-box:hover .box-content svg {
+		fill: var(--primary);
+}
+
+.custom-thumb-info-style-1 .thumb-info-wrapper:after {
+		background: var(--primary);
+}
+
+.custom-testimonial-colored-quotes.testimonial-with-quotes blockquote:before, .custom-testimonial-colored-quotes.testimonial-with-quotes blockquote:after {
+		color: var(--primary) !important;
+}
+
+@keyframes customTextColored {
+		from {
+				color: var(--light);
+		}
+		to {
+				color: var(--primary);
+		}
+}
+
+.customTextColored {
+		animation-name: customTextColored;
+}
+
+@keyframes customBorderColored {
+		from {
+				border-color: #43474A;
+		}
+		to {
+				border-color: var(--primary);
+		}
+}
+
+.customBorderColored {
+		animation-name: customBorderColored;
 }

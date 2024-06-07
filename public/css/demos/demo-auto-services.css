@@ -8,6 +8,12 @@ body {
 		}
 }
 
+@media (min-width: 992px) {
+		#header .header-nav-main nav > ul > li > a {
+				font-size: 13px;
+		}
+}
+
 .custom-border-radius-1 {
 		border-radius: 7px !important;
 }
@@ -17,7 +23,7 @@ body {
 }
 
 .custom-btn-border-radius {
-		border-radius: 12px;
+		border-radius: var(--border-radius2x);
 }
 
 .custom-btn-arrow-effect-1 > svg {
@@ -73,12 +79,12 @@ body {
 }
 
 .custom-alert-bg-color-1 {
-		background-color: #fffcd6 !important;
+		background-color: var(--light) cd6 !important;
 }
 
 @media (max-width: 575px) {
 		.custom-section-background {
-				background-color: #FFF !important;
+				background-color: var(--light) !important;
 		}
 }
 
@@ -89,7 +95,7 @@ body {
 		right: 85%;
 		width: 100vw;
 		height: calc( 100% + 150px);
-		background: #FFF;
+		background: var(--light);
 		z-index: 0;
 		transform: translate3d(0, -50%, 0);
 }
@@ -109,7 +115,7 @@ body {
 @media (max-width: 575px) {
 		.custom-background-style-1 {
 				background-image: none !important;
-				background-color: #FFF;
+				background-color: var(--light);
 		}
 }
 
@@ -162,17 +168,6 @@ body {
 		height: 4px !important;
 }
 
-@-webkit-keyframes customLineAnim {
-		from {
-				stroke-dasharray: 1600;
-				stroke-dashoffset: 1600;
-		}
-		to {
-				stroke-dasharray: 2500;
-				stroke-dashoffset: 1600;
-		}
-}
-
 @keyframes customLineAnim {
 		from {
 				stroke-dasharray: 1600;
@@ -185,19 +180,7 @@ body {
 }
 
 .customLineAnim {
-		-webkit-animation-name: customLineAnim;
-						animation-name: customLineAnim;
-}
-
-@-webkit-keyframes customLineAnim2 {
-		from {
-				stroke-dasharray: 2650;
-				stroke-dashoffset: 2650;
-		}
-		to {
-				stroke-dasharray: 2650;
-				stroke-dashoffset: 0;
-		}
+		animation-name: customLineAnim;
 }
 
 @keyframes customLineAnim2 {
@@ -212,17 +195,7 @@ body {
 }
 
 .customLineAnim2 {
-		-webkit-animation-name: customLineAnim2;
-						animation-name: customLineAnim2;
-}
-
-@-webkit-keyframes customLineProgressAnim {
-		from {
-				width: 0;
-		}
-		to {
-				width: 60px;
-		}
+		animation-name: customLineAnim2;
 }
 
 @keyframes customLineProgressAnim {
@@ -235,8 +208,7 @@ body {
 }
 
 .customLineProgressAnim {
-		-webkit-animation-name: customLineProgressAnim;
-						animation-name: customLineProgressAnim;
+		animation-name: customLineProgressAnim;
 }
 
 /*
@@ -282,7 +254,7 @@ body {
 		top: 50%;
 		left: -22px;
 		height: 60%;
-		border-left: 1px solid #CCC;
+		border-left: 1px solid var(--grey-500);
 		transform: translate3d(0, -50%, 0);
 }
 
@@ -305,7 +277,7 @@ body {
 		right: 0;
 		bottom: 0;
 		left: 0;
-		border: 2px solid #CCC;
+		border: 2px solid var(--grey-500);
 		border-radius: 7px;
 		transform: rotate(45deg);
 		z-index: 0;
@@ -351,7 +323,7 @@ body {
 
 .custom-testimonial-style-1.testimonial-with-quotes blockquote:before {
 		content: "\f10d";
-		font-family: "Font Awesome 5 Free";
+		font-family: "Font Awesome 6 Free";
 		font-weight: 900;
 		font-size: 20px;
 }
@@ -406,7 +378,7 @@ body {
 
 .custom-accordion-style-1 > .card .card-header + .collapse.show,
 .custom-accordion-style-1 > .card .card-header + .collapsing {
-		border: 1px solid #CCC;
+		border: 1px solid var(--grey-500);
 		border-top: 0;
 }
 
@@ -429,7 +401,7 @@ body {
 		left: 0;
 		width: 0;
 		height: 0;
-		border-top: 4px solid #CCC;
+		border-top: 4px solid var(--grey-500);
 		opacity: 0;
 		visibility: hidden;
 		transform: translate3d(0, -50%, 0);
@@ -499,18 +471,18 @@ body {
 
 .datepicker table thead tr th.prev {
 		content: '\f0d9';
-		font-family: 'Font Awesome 5 Free';
+		font-family: 'Font Awesome 6 Free';
 		font-weight: 900;
 }
 
 .datepicker table thead tr th.next {
 		content: '\f0da';
-		font-family: 'Font Awesome 5 Free';
+		font-family: 'Font Awesome 6 Free';
 		font-weight: 900;
 }
 
 .datepicker table thead tr th:hover {
-		color: #FFF;
+		color: var(--light);
 }
 
 .datepicker table thead tr:last-child th {
@@ -518,7 +490,7 @@ body {
 }
 
 .datepicker table thead tr:last-child th:hover {
-		color: #CCC;
+		color: var(--grey-500);
 }
 
 .datepicker table td {
@@ -559,4 +531,92 @@ body {
 
 .custom-list-style-1 > li:last-child {
 		padding-bottom: 0;
+}
+
+/* Skin */
+/*
+* Icon Style
+*/
+.custom-icon-style-1:before {
+		border-color: var(--primary);
+}
+
+.custom-icon-box-style-1:hover .custom-icon-style-1:before {
+		background: var(--primary);
+}
+
+.custom-icon-box-style-1:hover .custom-icon-style-1 svg path {
+		fill: var(--primary-inverse) !important;
+}
+
+.custom-icon-box-style-1:hover h3 {
+		color: var(--primary) !important;
+}
+
+/*
+* Thumb Info
+*/
+.custom-thumb-info-style-1:hover .thumb-info-wrapper {
+		border-color: var(--primary) !important;
+}
+
+.custom-thumb-info-style-1:hover h3 {
+		color: var(--primary) !important;
+}
+
+/*
+* Testimonial
+*/
+.custom-testimonial-style-1.testimonial-with-quotes blockquote:before {
+		color: var(--primary);
+}
+
+/*
+* Accordion
+*/
+.custom-accordion-style-1 > .card .card-header a:not(.collapsed) {
+		background-color: var(--primary);
+		color: var(--primary-inverse) !important;
+}
+
+.custom-accordion-style-1 > .card:hover .card-header a.collapsed {
+		color: var(--primary) !important;
+}
+
+/*
+* Services Detail - Nav List
+*/
+.custom-nav-list-effect-1 > li > a:before {
+		border-top-color: var(--primary);
+}
+
+.custom-nav-list-effect-1 > li.active > a, .custom-nav-list-effect-1 > li.open > a, .custom-nav-list-effect-1 > li:hover > a {
+		color: var(--primary) !important;
+}
+
+/*
+* Datepicker
+*/
+.datepicker thead tr:first-child th:hover,
+.datepicker tfoot tr th:hover,
+.datepicker table tr td span:hover {
+		background: var(--primary);
+}
+
+.datepicker .datepicker-switch:hover,
+.datepicker .prev:hover,
+.datepicker .next:hover {
+		background: var(--primary);
+}
+
+.datepicker table thead tr:last-child th:hover {
+		color: var(--primary);
+}
+
+.datepicker table tbody tr td.day:hover {
+		background: var(--primary);
+}
+
+.datepicker table tbody tr td.day.active {
+		background: var(--primary-300);
 }

@@ -26,7 +26,7 @@
 .custom-stroke-text-effect-1 {
 		-webkit-text-fill-color: transparent;
 		-webkit-text-stroke-width: 0.5px;
-		-webkit-text-stroke-color: #FFF;
+		-webkit-text-stroke-color: var(--light);
 		white-space: nowrap;
 }
 
@@ -91,7 +91,7 @@
 }
 
 .custom-tabs-style-1.tabs .nav-tabs .nav-link h4 {
-		color: #777;
+		color: var(--default);
 }
 
 @media (max-width: 991px) {
@@ -288,13 +288,13 @@
 		height: calc(1.8em + 1.85rem + 2px);
 		padding: 15.6px 20px;
 		padding: 0.975rem 1.25rem;
-		background: #f7f7f7;
-		border-color: #f7f7f7;
+		background: var(--grey-100);
+		border-color: var(--grey-100);
 		line-height: 1.5 !important;
 }
 
 .custom-form-style-1 .form-control:focus {
-		border-color: #CCC;
+		border-color: var(--grey-500);
 }
 
 .custom-form-style-1 .form-control::-webkit-input-placeholder {
@@ -323,4 +323,24 @@
 
 .custom-form-style-1 textarea.form-control {
 		height: auto;
+}
+
+/* Skin */
+/*
+* Tabs
+*/
+.custom-tabs-style-1.tabs .nav-tabs .nav-link.active h4 {
+		color: var(--primary);
+}
+
+/*
+* Accordion
+*/
+.custom-accordion-style-1 > .card .card-header a:not(.collapsed) {
+		background-color: var(--primary);
+		color: var(--primary-inverse) !important;
+}
+
+.custom-accordion-style-1 > .card:hover .card-header a.collapsed {
+		color: var(--primary) !important;
 }

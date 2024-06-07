@@ -61,10 +61,10 @@ $simple-line-icon-prefix   : "prefix-";
 ## Contributions
 
 Contributions are more then welcome. Keep them coming!
-Please make sure you have read our [guide line](CONTRIBUTING.md).
+Please make sure you have read our [guide line](./CONTRIBUTING.md).
 
 ## License
 
 You're free to use the web-font in a template/theme intended for sale on marketplaces like ThemeForest.
 
-CSS, SCSS & LESS files are under [MIT License](LICENSE.md).
+CSS, SCSS & LESS files are under [MIT License](./LICENSE.md).

@@ -12,17 +12,10 @@ body {
 }
 
 /*
-* Border
-*/
-.border-color-grey {
-		border-color: #e7e7e7 !important;
-}
-
-/*
 * Header
 */
 .header-top {
-		border-bottom: 1px solid #e7e7e7 !important;
+		border-bottom: 1px solid var(--grey-100) !important;
 }
 
 .header-top .header-top-phone {
@@ -222,7 +215,7 @@ body {
 }
 
 .custom-list-icons li i {
-		border-color: #e7e7e7 !important;
+		border-color: var(--grey) !important;
 		width: 40px !important;
 		height: 40px !important;
 		line-height: 33px !important;
@@ -238,13 +231,13 @@ body {
 */
 .custom-owl-carousel .owl-next:before {
 		content: "\f061" !important;
-		color: #212529 !important;
+		color: var(--dark) !important;
 		font-size: 20px !important;
 }
 
 .custom-owl-carousel .owl-prev:before {
 		content: "\f060" !important;
-		color: #212529 !important;
+		color: var(--dark) !important;
 		font-size: 20px !important;
 }
 
@@ -256,7 +249,7 @@ body {
 * About Me
 */
 .more-about {
-		background-color: #FFF;
+		background-color: var(--light);
 		background-position-y: center;
 		background-repeat: no-repeat;
 		background-size: contain;
@@ -272,7 +265,7 @@ body {
 				position: static;
 				background-size: 100%;
 				background-position: 0 0;
-				background-color: #FFF;
+				background-color: var(--light);
 				margin-bottom: 0;
 				overflow: auto;
 		}
@@ -286,7 +279,7 @@ body {
 				right: -90%;
 				width: 100%;
 				height: 100%;
-				background: #fff;
+				background: var(--light);
 				z-index: 0;
 				transform: rotate(75deg);
 		}
@@ -297,7 +290,7 @@ body {
 				right: -90%;
 				width: 100%;
 				height: 100%;
-				background: #fff;
+				background: var(--light);
 				z-index: 0;
 				transform: rotate(-75deg);
 		}
@@ -323,7 +316,7 @@ body {
 .patient-reviews {
 		background-position: right;
 		background-repeat: no-repeat;
-		background-color: #fff;
+		background-color: var(--light);
 		background-size: contain;
 		height: auto;
 		position: relative;
@@ -336,7 +329,7 @@ body {
 				position: static;
 				background-size: 100%;
 				background-position: 0 0;
-				background-color: #FFF;
+				background-color: var(--light);
 				margin-bottom: 0;
 				overflow: auto;
 		}
@@ -350,7 +343,7 @@ body {
 				left: -68%;
 				width: 100%;
 				height: 100%;
-				background: #fff;
+				background: var(--light);
 				z-index: 0;
 				transform: rotate(-70deg);
 		}
@@ -361,7 +354,7 @@ body {
 				left: -68%;
 				width: 100%;
 				height: 100%;
-				background: #fff;
+				background: var(--light);
 				z-index: 0;
 				transform: rotate(70deg);
 		}
@@ -405,8 +398,8 @@ body {
 
 .patient-reviews .owl-next:before {
 		content: "\f060" !important;
-		color: #212529 !important;
-		font-family: 'Font Awesome 5 Free' !important;
+		color: var(--dark) !important;
+		font-family: 'Font Awesome 6 Free' !important;
 		font-weight: 900 !important;
 		font-size: 20px !important;
 		left: 1px !important;
@@ -426,8 +419,8 @@ body {
 
 .patient-reviews .owl-prev:before {
 		content: "\f060" !important;
-		color: #212529 !important;
-		font-family: 'Font Awesome 5 Free' !important;
+		color: var(--dark) !important;
+		font-family: 'Font Awesome 6 Free' !important;
 		font-weight: 900 !important;
 		font-size: 20px !important;
 		left: 1px !important;
@@ -520,7 +513,7 @@ body {
 		padding: 1.2rem;
 		box-shadow: none !important;
 		height: auto;
-		background: #F4F4F4 !important;
+		background: var(--grey-100) !important;
 }
 
 /*
@@ -565,7 +558,7 @@ body {
 }
 
 .footer-top-info .btn-footer-top-info:hover {
-		border-color: #FFF !important;
+		border-color: var(--light) !important;
 }
 
 @media (max-width: 991px) {
@@ -615,7 +608,7 @@ body {
 }
 
 #footer .social-icons li:hover a {
-		color: #333 !important;
+		color: var(--dark--200) !important;
 }
 
 #footer .footer-copyright {
@@ -625,4 +618,18 @@ body {
 #footer .footer-column-opening-hours .custom-info {
 		padding: 15px 0;
 		border-bottom: 1px solid rgba(225, 225, 225, 0.1);
+}
+
+/* Skin */
+.border-color-active-primary:active {
+		border-color: var(--primary) !important;
+}
+
+@media (min-width: 992px) {
+		#header .header-nav-main nav > ul > li.dropdown .dropdown-menu li:hover > a,
+		#header .header-nav-main nav > ul > li.dropdown .dropdown-menu li:focus > a,
+		#header .header-nav-main nav > ul > li.dropdown .dropdown-menu li.active > a,
+		#header .header-nav-main nav > ul > li.dropdown .dropdown-menu li:active > a {
+				color: var(--primary) !important;
+		}
 }

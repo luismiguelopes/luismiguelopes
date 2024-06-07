@@ -51,7 +51,7 @@ body {
 		font-family: 'Poppins', sans-serif;
 		font-size: 17.6px;
 		font-size: 1.1rem;
-		color: #FFF !important;
+		color: var(--light) !important;
 		padding: 8px 24px !important;
 		padding: 0.5rem 1.5rem !important;
 }
@@ -68,15 +68,6 @@ body {
 		border-radius: 100%;
 }
 
-@-webkit-keyframes lineProgress {
-		from {
-				stroke-dashoffset: 1550;
-		}
-		to {
-				stroke-dashoffset: 0;
-		}
-}
-
 @keyframes lineProgress {
 		from {
 				stroke-dashoffset: 1550;
@@ -87,29 +78,7 @@ body {
 }
 
 .lineProgress {
-		-webkit-animation-name: lineProgress;
-						animation-name: lineProgress;
-}
-
-@-webkit-keyframes lineProgressAndFill {
-		0% {
-				stroke-dasharray: 1440;
-				stroke-dashoffset: 1440;
-				fill-opacity: 0;
-		}
-		75% {
-				fill-opacity: 0.5;
-		}
-		90% {
-				stroke-dasharray: 1440;
-				stroke-dashoffset: 0;
-				fill-opacity: 0.5;
-		}
-		100% {
-				stroke-dasharray: 1440;
-				stroke-dashoffset: 0;
-				fill-opacity: 1;
-		}
+		animation-name: lineProgress;
 }
 
 @keyframes lineProgressAndFill {
@@ -134,8 +103,7 @@ body {
 }
 
 .lineProgressAndFill {
-		-webkit-animation-name: lineProgressAndFill;
-						animation-name: lineProgressAndFill;
+		animation-name: lineProgressAndFill;
 }
 
 .custom-side-dots {
@@ -151,7 +119,7 @@ body {
 		position: absolute;
 		top: 50%;
 		left: 0;
-		background-color: #CCC;
+		background-color: var(--grey-500);
 		width: 8px;
 		height: 8px;
 		border-radius: 100%;
@@ -163,7 +131,7 @@ body {
 		position: absolute;
 		top: 50%;
 		right: 0;
-		background-color: #CCC;
+		background-color: var(--grey-500);
 		width: 8px;
 		height: 8px;
 		border-radius: 100%;
@@ -253,7 +221,7 @@ body {
 				position: absolute;
 				top: 50.7%;
 				right: -5px;
-				background-color: #FFF !important;
+				background-color: var(--light) !important;
 				width: 6px;
 				height: 6px;
 				border-radius: 100%;
@@ -280,7 +248,7 @@ body {
 		font-style: normal;
 		font-family: 'Playfair Display', sans-serif;
 		line-height: 1;
-		color: #777;
+		color: var(--default);
 }
 
 .custom-blockquote-style-1 p {
@@ -325,11 +293,11 @@ body {
 }
 
 .custom-working-hours .custom-working-hours-item:hover, .custom-working-hours .custom-working-hours-item.active {
-		background-color: #CCC;
+		background-color: var(--grey-500);
 }
 
 .custom-working-hours .custom-working-hours-item:hover *, .custom-working-hours .custom-working-hours-item.active * {
-		color: #FFF !important;
+		color: var(--light) !important;
 }
 
 @media (max-width: 991px) {
@@ -433,17 +401,31 @@ body {
 }
 
 .custom-form-style-1 .form-control::-webkit-input-placeholder {
-		color: #777;
+		color: var(--default);
 }
 
 .custom-form-style-1 .form-control::-moz-placeholder {
-		color: #777;
+		color: var(--default);
 }
 
 .custom-form-style-1 .form-control:-ms-input-placeholder {
-		color: #777;
+		color: var(--default);
 }
 
 .custom-form-style-1 .form-control:-moz-placeholder {
-		color: #777;
+		color: var(--default);
+}
+
+/* Skin */
+.svg-primary circle {
+		stroke: var(--primary);
+		fill: var(--primary);
+}
+
+.custom-side-dots:before, .custom-side-dots:after {
+		background-color: var(--primary);
+}
+
+.custom-working-hours .custom-working-hours-item:hover, .custom-working-hours .custom-working-hours-item.active {
+		background-color: var(--primary);
 }

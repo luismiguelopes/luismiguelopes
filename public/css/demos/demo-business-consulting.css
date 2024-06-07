@@ -144,8 +144,7 @@ h2 {
 }
 
 .custom-nav-arrows-1 .owl-nav .owl-next {
-		-webkit-backface-visibility: hidden;
-						backface-visibility: hidden;
+		backface-visibility: hidden;
 		transform: rotate(180deg) !important;
 		transform-origin: 50% 28%;
 }
@@ -357,7 +356,7 @@ html.sticky-header-active #header.header-effect-shrink .header-body {
 }
 
 .looking-for .looking-for-box h2 {
-		color: #FFF;
+		color: var(--light);
 		line-height: 1.2;
 		margin-bottom: 0;
 }
@@ -381,7 +380,7 @@ html.sticky-header-active #header.header-effect-shrink .header-body {
 }
 
 .custom-call-to-action.white-border {
-		border-color: #FFF !important;
+		border-color: var(--light) !important;
 }
 
 @media (max-width: 991px) {
@@ -571,7 +570,7 @@ html.sticky-header-active #header.header-effect-shrink .header-body {
 }
 
 .owl-carousel.numbered-dots button.owl-dot.active span:before, .owl-carousel.numbered-dots button.owl-dot:hover span:before {
-		color: #FFF;
+		color: var(--light);
 }
 
 .owl-carousel.numbered-dots button.owl-dot:hover {
@@ -676,7 +675,7 @@ html.sticky-header-active #header.header-effect-shrink .header-body {
 }
 
 .thumb-info.custom-thumb-info-style-1:hover .thumb-info-caption .custom-thumb-info-title span {
-		color: #FFF !important;
+		color: var(--light) !important;
 }
 
 .thumb-info.custom-thumb-info-style-1:hover .thumb-info-caption .custom-arrow {
@@ -700,7 +699,7 @@ html.sticky-header-active #header.header-effect-shrink .header-body {
 }
 
 .thumb-info.custom-thumb-info-style-1 .thumb-info-caption .custom-thumb-info-title span {
-		color: #777;
+		color: var(--default);
 }
 
 .thumb-info.custom-thumb-info-style-1 .thumb-info-caption .custom-thumb-info-title .custom-thumb-info-name {
@@ -825,7 +824,7 @@ html.sticky-header-active #header.header-effect-shrink .header-body {
 }
 
 .testimonial.custom-testimonial-style-1 blockquote p {
-		color: #777;
+		color: var(--default);
 		font-family: "Sintony", sans-serif;
 		font-style: normal;
 		font-size: 1em;
@@ -870,7 +869,7 @@ html.sticky-header-active #header.header-effect-shrink .header-body {
 
 .team-item .team-infos {
 		position: relative;
-		background: #FFF;
+		background: var(--light);
 		padding: 25px;
 }
 
@@ -898,7 +897,7 @@ html.sticky-header-active #header.header-effect-shrink .header-body {
 		position: absolute;
 		bottom: 0;
 		left: 0;
-		background: #FFF;
+		background: var(--light);
 		width: 100%;
 		height: 22px;
 }
@@ -913,7 +912,7 @@ html.sticky-header-active #header.header-effect-shrink .header-body {
 
 .team-item .team-infos .share i {
 		display: block;
-		color: #FFF;
+		color: var(--light);
 		padding: 15px;
 		opacity: 0.5;
 		transition: ease opacity 300ms;
@@ -947,7 +946,7 @@ html.sticky-header-active #header.header-effect-shrink .header-body {
 
 .team-item .team-infos .team-member-desc {
 		display: block;
-		color: #777;
+		color: var(--default);
 }
 
 /*
@@ -986,7 +985,7 @@ article.blog-post .blog-post-image-wrapper .blog-post-date .month-year {
 
 .custom-social-icons-style-1 li a {
 		background: transparent;
-		color: #FFF !important;
+		color: var(--light) !important;
 }
 
 .custom-contact-form-style-1 .custom-input-box {
@@ -1025,4 +1024,94 @@ article.blog-post .blog-post-image-wrapper .blog-post-date .month-year {
 #footer p {
 		color: #a8b1b8;
 		margin-bottom: 0;
+}
+
+/* Skin */
+.dropdown-menu > li > a i {
+		color: var(--primary);
+}
+
+html #header.header-semi-transparent .header-body:before, html #header.header-semi-transparent-light .header-body:before {
+		background: var(--quaternary);
+}
+
+@media (min-width: 992px) {
+		#header .header-nav-main.header-nav-main-square nav > ul > li.active > a {
+				color: var(--primary) !important;
+		}
+		#header .header-nav-main.header-nav-main-square nav > ul > li.active > a.dropdown-toggle::after {
+				border-color: var(--primary) transparent transparent !important;
+		}
+		#header .header-nav-main.header-nav-main-square nav > ul > li:hover > a {
+				color: var(--primary) !important;
+		}
+		#header .header-nav-main.header-nav-main-square nav > ul > li:hover > a.dropdown-toggle::after {
+				border-color: var(--primary) transparent transparent !important;
+		}
+}
+
+.btn-primary.active:not([disabled]):not(.disabled),
+.btn-primary:active:not([disabled]):not(.disabled),
+.show > .btn-primary.dropdown-toggle {
+		background-color: var(--primary);
+		border-color: var(--primary);
+		box-shadow: 0 0 0 0.2rem var(--primary-rgba-50);
+}
+
+.tp-leftarrow.custom-arrows-style-1, .tp-rightarrow.custom-arrows-style-1 {
+		background: var(--quaternary-rgba-50);
+}
+
+.tp-leftarrow.custom-arrows-style-1:hover, .tp-rightarrow.custom-arrows-style-1:hover {
+		background: var(--quaternary-rgba-90);
+}
+
+.custom-call-to-action {
+		border-color: var(--primary);
+}
+
+@media (max-width: 991px) {
+		.custom-position-1 {
+				background-color: var(--quaternary);
+		}
+}
+
+.custom-accordion-style-1 .card .card-title > a.accordion-toggle:not(.collapsed) {
+		color: var(--primary);
+}
+
+.custom-accordion-style-1 .card .card-title > a.accordion-toggle:not(.collapsed):before {
+		border-color: var(--primary);
+}
+
+.custom-accordion-style-1 .card .card-title > a.accordion-toggle:not(.collapsed) .custom-accordion-plus:after {
+		border-color: var(--primary);
+}
+
+.custom-accordion-style-1 .card .card-title > a .custom-accordion-plus:after {
+		border-color: var(--primary);
+}
+
+.thumb-info.custom-thumb-info-style-1:hover .thumb-info-caption {
+		background-color: var(--primary) !important;
+}
+
+.owl-carousel.custom-dots-style-1 button.owl-dot.active span, .owl-carousel.custom-dots-style-1 button.owl-dot:hover span {
+		border-color: var(--primary);
+}
+
+.owl-carousel.custom-dots-style-1 button.owl-dot.active span:before, .owl-carousel.custom-dots-style-1 button.owl-dot:hover span:before {
+		background-color: var(--primary);
+}
+
+.team-item .team-infos .share:hover i.fa-share-alt {
+		background-color: var(--primary);
+}
+
+.owl-carousel.custom-arrows-style-2 .owl-nav button.owl-prev:before, .owl-carousel.custom-arrows-style-2 .owl-nav button.owl-next:before, .owl-carousel.custom-xs-arrows-style-2 .owl-nav button.owl-prev:before, .owl-carousel.custom-xs-arrows-style-2 .owl-nav button.owl-next:before {
+		border-color: var(--primary);
+}
+
+.owl-carousel.custom-arrows-style-2 .owl-nav button.owl-prev:after, .owl-carousel.custom-arrows-style-2 .owl-nav button.owl-next:after, .owl-carousel.custom-xs-arrows-style-2 .owl-nav button.owl-prev:after, .owl-carousel.custom-xs-arrows-style-2 .owl-nav button.owl-next:after {
+		border-color: var(--primary);
 }

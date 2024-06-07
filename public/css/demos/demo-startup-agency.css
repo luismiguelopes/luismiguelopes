@@ -2,6 +2,11 @@ body {
 		font-family: "Poppins", sans-serif;
 }
 
+.body {
+		max-width: 100vw;
+		overflow-x: hidden;
+}
+
 [class*="text-color-hover-"] {
 		transition: ease all 300ms;
 }
@@ -155,11 +160,11 @@ body {
 }
 
 .custom-dots-style-1.custom-dots-style-1-light .owl-dots .owl-dot.active > span, .custom-dots-style-1.custom-dots-style-1-light .owl-dots .owl-dot:hover > span, .custom-dots-style-1.custom-dots-style-1-light .owl-dots .owl-dot:focus > span {
-		border-color: #FFF;
+		border-color: var(--light);
 }
 
 .custom-dots-style-1.custom-dots-style-1-light .owl-dots .owl-dot.active > span:before, .custom-dots-style-1.custom-dots-style-1-light .owl-dots .owl-dot:hover > span:before, .custom-dots-style-1.custom-dots-style-1-light .owl-dots .owl-dot:focus > span:before {
-		background: #FFF;
+		background: var(--light);
 }
 
 .custom-carousel-backward-shape {
@@ -175,7 +180,7 @@ body {
 		left: 50%;
 		right: auto;
 		bottom: 60px;
-		background-color: #CCC;
+		background-color: var(--grey-500);
 		opacity: 0.15;
 		transform: translate3d(-50%, 0, 0);
 }
@@ -323,7 +328,7 @@ body {
 }
 
 .custom-pricing-table-style-1 .plan.plan-featured .plan-header h3 {
-		color: #FFF;
+		color: var(--light);
 		font-size: 16px;
 		font-size: 1rem;
 		font-weight: 400;
@@ -353,4 +358,47 @@ body {
 
 .custom-form-style-1 textarea.form-control {
 		height: auto;
+}
+
+/* Skin */
+.custom-carousel-backward-shape .owl-stage-outer:before {
+		background-color: var(--primary--300);
+}
+
+.custom-svg-linear-gradient stop:nth-child(1) {
+		stop-color: var(--secondary) !important;
+}
+
+.custom-svg-linear-gradient stop:nth-child(2) {
+		stop-color: var(--primary) !important;
+}
+
+path.custom-svg-fill-color-primary,
+circle.custom-svg-fill-color-primary {
+		fill: var(--primary) !important;
+}
+
+path.custom-svg-fill-color-secondary,
+circle.custom-svg-fill-color-secondary {
+		fill: var(--secondary) !important;
+}
+
+path.custom-svg-fill-color-tertiary,
+circle.custom-svg-fill-color-tertiary {
+		fill: var(--tertiary) !important;
+}
+
+path.custom-svg-fill-color-quaternary,
+circle.custom-svg-fill-color-quaternary {
+		fill: var(--quaternary) !important;
+}
+
+path.custom-svg-fill-color-dark,
+circle.custom-svg-fill-color-dark {
+		fill: var(--dark) !important;
+}
+
+path.custom-svg-fill-color-light,
+circle.custom-svg-fill-color-light {
+		fill: var(--light) !important;
 }

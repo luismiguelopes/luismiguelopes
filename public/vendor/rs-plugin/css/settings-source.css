@@ -812,7 +812,7 @@ img.tp-slider-alternative-image	{
 }
 
 .rev-burger.revb-white {
-	border: 2px solid rgba(255,255,255,0.2);
+	border: 2px solid var(--light-rgba-20);
 }
 .rev-burger.revb-white span {
 	background: #fff;
@@ -1251,7 +1251,7 @@ img.tp-slider-alternative-image	{
 .tp-tabs,
 .tp-thumbs						{	box-sizing:content-box !important; }
 
-.tp-bullet 						{	width:15px;height:15px; position:absolute; background:#fff; background:rgba(255,255,255,0.3); cursor: pointer;}
+.tp-bullet 						{	width:15px;height:15px; position:absolute; background:#fff; background:var(--light-rgba-30); cursor: pointer;}
 .tp-bullet.selected,
 .tp-bullet:hover				{	background:#fff;}
 

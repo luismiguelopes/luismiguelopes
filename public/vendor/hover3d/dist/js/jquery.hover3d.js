@@ -96,7 +96,7 @@ Issues: http://github.com/ariona/hover3d/issues
 					transform      : "rotateY("+ax+"deg) rotateX("+ay+"deg)"
 				});
 
-				$shine.css('background', 'linear-gradient(' + angle + 'deg, rgba(255,255,255,' + event.offsetY / h * .5 + ') 0%,rgba(255,255,255,0) 80%)');
+				$shine.css('background', 'linear-gradient(' + angle + 'deg, rgba(255,255,255,' + event.offsetY / h * .5 + ') 0%,var(--light-rgba-0) 80%)');
 			}
 			
 			// Mouse leave function, will set the transform

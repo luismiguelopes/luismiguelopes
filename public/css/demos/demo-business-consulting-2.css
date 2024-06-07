@@ -331,7 +331,7 @@ html[dir="rtl"] .slider-container .line-pre-title {
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background: #FFF;
+		background: var(--light);
 		z-index: 6;
 }
 
@@ -342,7 +342,7 @@ html[dir="rtl"] .slider-container .line-pre-title {
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background: #FFF;
+		background: var(--light);
 		z-index: 6;
 }
 
@@ -355,7 +355,7 @@ html[dir="rtl"] .slider-container .line-pre-title {
 }
 
 .slider-container .tparrows:before {
-		color: #222529 !important;
+		color: var(--dark) !important;
 		font-size: 22px;
 		font-weight: 900;
 }
@@ -401,13 +401,13 @@ html[dir="rtl"] .slider-container .line-pre-title {
 .tp-bullet {
 		width: 16px;
 		height: 16px;
-		box-shadow: 0 0 0 2px #222529 !important;
+		box-shadow: 0 0 0 2px var(--dark) !important;
 		opacity: .5;
 }
 
 .tp-bullet.selected {
 		opacity: 1;
-		box-shadow: 0 0 0 2px #222529 !important;
+		box-shadow: 0 0 0 2px var(--dark) !important;
 }
 
 .tp-bullet.selected .tp-bullet-inner {
@@ -437,11 +437,11 @@ html[dir="rtl"] .slider-container .line-pre-title {
 }
 
 .custom-social-icons li:hover a {
-		color: #333 !important;
+		color: var(--dark--200) !important;
 }
 
 .custom-social-icons li:hover a > i[class*="text-color-"] {
-		color: #FFF !important;
+		color: var(--light) !important;
 }
 
 /*
@@ -532,7 +532,7 @@ html[dir="rtl"] .slider-container .line-pre-title {
 		right: 0;
 		width: 50%;
 		height: 100%;
-		background-color: #fff;
+		background-color: var(--light);
 		z-index: 0;
 }
 
@@ -607,7 +607,7 @@ html[dir="rtl"] .slider-container .line-pre-title {
 }
 
 .real-word-stories .owl-dots button {
-		border: 2px solid #222529 !important;
+		border: 2px solid var(--dark) !important;
 		width: 15px;
 		height: 15px;
 		border-radius: 50%;
@@ -626,7 +626,7 @@ html[dir="rtl"] .slider-container .line-pre-title {
 		margin: 0 auto !important;
 		width: 7px !important;
 		height: 7px !important;
-		background-color: #222529 !important;
+		background-color: var(--dark) !important;
 }
 
 .real-word-stories .owl-dots button.active span {
@@ -888,4 +888,16 @@ html[dir="rtl"] .slider-container .line-pre-title {
 
 #footer .custom-row-footer .custom-footer-column-logo img {
 		margin-bottom: 35px;
+}
+
+/* Skin */
+.bg-color-primary-darken-1 {
+		background-color: var(--primary-100) !important;
+}
+
+@media (min-width: 992px) {
+		#header .header-nav.header-nav-links:not(.header-nav-light-text) nav > ul > li > a,
+		#header .header-nav.header-nav-line:not(.header-nav-light-text) nav > ul > li > a {
+				color: var(--secondary);
+		}
 }

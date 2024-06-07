@@ -1,5 +1,5 @@
 <div id="about-me">
-    <section class="section section-no-border section-parallax bg-transparent custom-section-padding-1 custom-position-1 custom-xs-bg-size-cover parallax-no-overflow m-0" data-plugin-parallax data-plugin-options="{'speed': 1.5}" data-image-src="img/demos/resume/about-me/about-me-bg-1.jpg">
+    <section class="section section-no-border section-parallax bg-transparent custom-section-padding-1 custom-position-1 custom-xs-bg-size-cover parallax-no-overflow m-0" data-plugin-parallax data-plugin-options="{'speed': 1.5}" data-image-src="img/about-me-bg-1.jpg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 position-relative custom-sm-margin-bottom-1">
@@ -9,10 +9,15 @@
                     <h1 class="text-color-primary custom-font-size-1">Luis Lopes</h1>
                     <p class="text-color-primary font-weight-normal custom-font-size-2 custom-margin-bottom-1">{{ __('presentation.job') }}</p>
                     <span class="custom-about-me-infos">
-										<span class="custom-text-color-1 text-uppercase">{{ __('presentation.place') }}</span>
+					<span class="custom-text-color-1 text-uppercase">{{ __('presentation.place') }}</span>
+					<span class="custom-text-color-1 text-uppercase mb-3">Information Technology &amp; Analytics</span>
+					<span class="custom-text-color-1 text-uppercase">
+											<strong class="text-color-light">Previous: </strong>
+											Data Analyst at Teleperformance
+											<a data-hash href="#experience" class="btn btn-tertiary text-uppercase custom-btn-style-1 text-1 ms-2">View More</a>
 
 
-									</span>
+				    </span>
                 </div>
                 <div class="col-lg-2 col-xl-3 d-none d-lg-block">
                     <img src="img/mouse.png" custom-anim class="img-fluid custom-image-pos-1" alt />
