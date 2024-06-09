@@ -1,10 +1,9 @@
 <?php
 
 use App\Http\Controllers\ContactController;
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\JobController;
 use App\Http\Controllers\FileController;
-
+use Illuminate\Support\Facades\Route;
 
 // Custom route for the root (/) to display all jobs
 Route::get('/', [JobController::class, 'index'])->name('root');
@@ -12,21 +11,37 @@ Route::get('/', [JobController::class, 'index'])->name('root');
 // Route for downloading a file
 Route::get('/download-file', [FileController::class, 'downloadFile'])->name('download.file');
 
+/*
+|--------------------------------------------------------------------------
+| Future Routes
+|--------------------------------------------------------------------------
+| Uncomment and use these routes when needed.
+*/
+
 // Route for form submission
-//Route::post('/', [ContactController::class, 'submit'])->name('contact.submit');
-// test email send
-//Route::get('/testroute', [ContactController::class, 'getPosted']);
+// Route::post('/', [ContactController::class, 'submit'])->name('contact.submit');
 
+// Test email send
+// Route::get('/testroute', [ContactController::class, 'getPosted']);
 
-/********** testing purposes to implement on future deployments
-// testing purposes
-Route::get('/contact', function () {
-    return view('mail.contact');
-})->name('contact');
+/*
+|--------------------------------------------------------------------------
+| Testing Purposes
+|--------------------------------------------------------------------------
+| Routes for testing purposes. Move to appropriate section when deploying.
+*/
 
+// Contact form view
+// Route::get('/contact', function () {
+//     return view('mail.contact');
+// })->name('contact');
 
-Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');
+// Contact form submission
+// Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');
 
- * ////////
-// End of routes/web.php
- */
+/*
+|--------------------------------------------------------------------------
+| End of Routes
+|--------------------------------------------------------------------------
+*/
+
