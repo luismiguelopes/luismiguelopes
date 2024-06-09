@@ -19,5 +19,5 @@ class Job extends Model
     ];
 
     // Uncomment if the table has created_at and updated_at columns and you want to manage them automatically
-    // public $timestamps = true;
+    public $timestamps = true;
 }
