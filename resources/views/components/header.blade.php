@@ -43,8 +43,7 @@
     <!-- Skin CSS -->
     <link id="skinCSS" rel="stylesheet" href="{{ asset('css/skins/skin-resume.css') }}">
 
-    <!-- Theme Custom CSS -->
-    <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
+
 
 </head>
 <body data-plugin-scroll-spy data-plugin-options="{'target': '.wrapper-spy'}">
