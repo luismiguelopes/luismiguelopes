@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 position-relative custom-sm-margin-bottom-1">
-                    <img src="img/luismiguelopes.jpeg" class="img-fluid custom-border custom-image-position-2 custom-box-shadow-4" alt />
+                    <img src="img/luismiguelopes.webp" class="img-fluid custom-border custom-image-position-2 custom-box-shadow-4" alt />
                 </div>
                 <div class="col-lg-6 col-xl-5">
                     <h1 class="text-color-primary custom-font-size-1">Luis Lopes</h1>

@@ -12,7 +12,7 @@
             </section>
         </div>
         <div class="col-lg-6 p-0">
-            <section class="section section-no-border h-100 m-0" style="background: url(img/contact-bg.jpeg); background-size: cover;">
+            <section class="section section-no-border h-100 m-0" style="background: url(img/contact-bg.webp); background-size: cover;">
                 <div class="row m-0">
                     <div class="col-half-section col-half-section-left ms-3">
                         <a href="mailto:{{ __('presentation.emailtxt') }}" class="text-decoration-none">
