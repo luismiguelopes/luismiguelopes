@@ -11,25 +11,25 @@
                             </div>
 
                             <div class="progress mb-2">
-                                <div class="progress-bar" data-appear-progress-animation="60%"></div>
+                                <div class="progress-bar" data-appear-progress-animation="100%"></div>
                             </div>
                             <div class="progress-label text-color-dark font-weight-semibold text-uppercase text-2">
                                 <span>SQL</span>
                             </div>
                             <div class="progress mb-2">
-                                <div class="progress-bar" data-appear-progress-animation="80%" data-appear-animation-delay="300"></div>
+                                <div class="progress-bar" data-appear-progress-animation="90%" data-appear-animation-delay="300"></div>
                             </div>
                             <div class="progress-label text-color-dark font-weight-semibold text-uppercase text-2">
                                 <span>DAX</span>
                             </div>
                             <div class="progress mb-2">
-                                <div class="progress-bar" data-appear-progress-animation="70%" data-appear-animation-delay="600"></div>
+                                <div class="progress-bar" data-appear-progress-animation="100%" data-appear-animation-delay="600"></div>
                             </div>
                             <div class="progress-label text-color-dark font-weight-semibold text-uppercase text-2">
                                 <span>PowerQuery</span>
                             </div>
                             <div class="progress mb-2">
-                                <div class="progress-bar" data-appear-progress-animation="90%" data-appear-animation-delay="900"></div>
+                                <div class="progress-bar" data-appear-progress-animation="100%" data-appear-animation-delay="900"></div>
                             </div>
                         </div>
                     </div>
@@ -39,7 +39,7 @@
                                 <span>WebDev</span>
                             </div>
                             <div class="progress mb-2">
-                                <div class="progress-bar" data-appear-progress-animation="60%"></div>
+                                <div class="progress-bar" data-appear-progress-animation="80%"></div>
                             </div>
                             <div class="progress-label text-color-dark font-weight-semibold text-uppercase text-2">
                                 <span>Laravel</span>
@@ -51,7 +51,7 @@
                                 <span>E-commerce</span>
                             </div>
                             <div class="progress mb-2">
-                                <div class="progress-bar" data-appear-progress-animation="70%" data-appear-animation-delay="600"></div>
+                                <div class="progress-bar" data-appear-progress-animation="80%" data-appear-animation-delay="600"></div>
                             </div>
                             <div class="progress-label text-color-dark font-weight-semibold text-uppercase text-2">
                                 <span>Wordpress</span>
