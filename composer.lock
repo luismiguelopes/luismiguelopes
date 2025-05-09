@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8b968bb287fc6b59a8611a70ec38cf57",
+    "content-hash": "694d3b508f207990bbacfa105330e36e",
     "packages": [
         {
             "name": "brick/math",
@@ -3101,31 +3101,31 @@
         },
         {
             "name": "nunomaduro/termwind",
-            "version": "v2.3.0",
+            "version": "v2.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nunomaduro/termwind.git",
-                "reference": "52915afe6a1044e8b9cee1bcff836fb63acf9cda"
+                "reference": "dfa08f390e509967a15c22493dc0bac5733d9123"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nunomaduro/termwind/zipball/52915afe6a1044e8b9cee1bcff836fb63acf9cda",
-                "reference": "52915afe6a1044e8b9cee1bcff836fb63acf9cda",
+                "url": "https://api.github.com/repos/nunomaduro/termwind/zipball/dfa08f390e509967a15c22493dc0bac5733d9123",
+                "reference": "dfa08f390e509967a15c22493dc0bac5733d9123",
                 "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
                 "php": "^8.2",
-                "symfony/console": "^7.1.8"
+                "symfony/console": "^7.2.6"
             },
             "require-dev": {
-                "illuminate/console": "^11.33.2",
-                "laravel/pint": "^1.18.2",
+                "illuminate/console": "^11.44.7",
+                "laravel/pint": "^1.22.0",
                 "mockery/mockery": "^1.6.12",
-                "pestphp/pest": "^2.36.0",
-                "phpstan/phpstan": "^1.12.11",
-                "phpstan/phpstan-strict-rules": "^1.6.1",
-                "symfony/var-dumper": "^7.1.8",
+                "pestphp/pest": "^2.36.0 || ^3.8.2",
+                "phpstan/phpstan": "^1.12.25",
+                "phpstan/phpstan-strict-rules": "^1.6.2",
+                "symfony/var-dumper": "^7.2.6",
                 "thecodingmachine/phpstan-strict-rules": "^1.0.0"
             },
             "type": "library",
@@ -3168,7 +3168,7 @@
             ],
             "support": {
                 "issues": "https://github.com/nunomaduro/termwind/issues",
-                "source": "https://github.com/nunomaduro/termwind/tree/v2.3.0"
+                "source": "https://github.com/nunomaduro/termwind/tree/v2.3.1"
             },
             "funding": [
                 {
@@ -3184,7 +3184,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-11-21T10:39:51+00:00"
+            "time": "2025-05-08T08:14:37+00:00"
         },
         {
             "name": "nyholm/psr7",
@@ -3654,61 +3654,6 @@
                 "source": "https://github.com/php-http/message/tree/1.16.2"
             },
             "time": "2024-10-02T11:34:13+00:00"
-        },
-        {
-            "name": "php-http/message-factory",
-            "version": "1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-http/message-factory.git",
-                "reference": "4d8778e1c7d405cbb471574821c1ff5b68cc8f57"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-http/message-factory/zipball/4d8778e1c7d405cbb471574821c1ff5b68cc8f57",
-                "reference": "4d8778e1c7d405cbb471574821c1ff5b68cc8f57",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4",
-                "psr/http-message": "^1.0 || ^2.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Http\\Message\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Márk Sági-Kazár",
-                    "email": "mark.sagikazar@gmail.com"
-                }
-            ],
-            "description": "Factory interfaces for PSR-7 HTTP Message",
-            "homepage": "http://php-http.org",
-            "keywords": [
-                "factory",
-                "http",
-                "message",
-                "stream",
-                "uri"
-            ],
-            "support": {
-                "issues": "https://github.com/php-http/message-factory/issues",
-                "source": "https://github.com/php-http/message-factory/tree/1.1.0"
-            },
-            "abandoned": "psr/http-factory",
-            "time": "2023-04-14T14:16:17+00:00"
         },
         {
             "name": "php-http/promise",
@@ -4440,37 +4385,36 @@
         },
         {
             "name": "railsware/mailtrap-php",
-            "version": "1.9.0",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/railsware/mailtrap-php.git",
-                "reference": "a4e20f077c900ed4cf59bfa5d2221b37e8429b38"
+                "reference": "1dbed2bec099c02df3ba1e1c8c5f9c61b3fa246c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/railsware/mailtrap-php/zipball/a4e20f077c900ed4cf59bfa5d2221b37e8429b38",
-                "reference": "a4e20f077c900ed4cf59bfa5d2221b37e8429b38",
+                "url": "https://api.github.com/repos/railsware/mailtrap-php/zipball/1dbed2bec099c02df3ba1e1c8c5f9c61b3fa246c",
+                "reference": "1dbed2bec099c02df3ba1e1c8c5f9c61b3fa246c",
                 "shasum": ""
             },
             "require": {
                 "egulias/email-validator": "^2.1.10|^3.1|^4",
                 "ext-curl": "*",
                 "ext-json": "*",
-                "php": "^7.4 || ^8.0",
+                "php": "^8.0",
                 "php-http/client-common": "^2.0",
                 "php-http/discovery": "^1.0",
                 "php-http/httplug": "^2.0",
-                "php-http/message-factory": "^1.0",
                 "psr/http-client-implementation": "^1.0",
+                "psr/http-factory": "^1.1",
                 "psr/http-message": "^1.0 || ^2.0",
-                "symfony/mime": "^5.4|^6.0|^7.0"
+                "symfony/mime": "^6.0|^7.0"
             },
             "require-dev": {
                 "nyholm/psr7": "^1.5",
                 "phpunit/phpunit": "^9",
-                "symfony/http-client": "^5.4|^6.0|^7.0",
-                "symfony/mailer": "^5.4|^6.0|^7.0",
-                "vimeo/psalm": "^4.0 || ^5.0"
+                "symfony/http-client": "^6.0|^7.0",
+                "symfony/mailer": "^6.0|^7.0"
             },
             "suggest": {
                 "nyholm/psr7": "PSR-7 message implementation",
@@ -4508,9 +4452,9 @@
             ],
             "support": {
                 "issues": "https://github.com/railsware/mailtrap-php/issues",
-                "source": "https://github.com/railsware/mailtrap-php/tree/1.9.0"
+                "source": "https://github.com/railsware/mailtrap-php/tree/2.1.0"
             },
-            "time": "2024-05-03T11:44:19+00:00"
+            "time": "2025-01-27T09:06:23+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
@@ -9503,16 +9447,16 @@
         },
         {
             "name": "spatie/backtrace",
-            "version": "1.7.3",
+            "version": "1.7.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/backtrace.git",
-                "reference": "80ae5fabe2a1e3bc7df5c7ca5d91b094dc314b20"
+                "reference": "cd37a49fce7137359ac30ecc44ef3e16404cccbe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/backtrace/zipball/80ae5fabe2a1e3bc7df5c7ca5d91b094dc314b20",
-                "reference": "80ae5fabe2a1e3bc7df5c7ca5d91b094dc314b20",
+                "url": "https://api.github.com/repos/spatie/backtrace/zipball/cd37a49fce7137359ac30ecc44ef3e16404cccbe",
+                "reference": "cd37a49fce7137359ac30ecc44ef3e16404cccbe",
                 "shasum": ""
             },
             "require": {
@@ -9550,7 +9494,7 @@
                 "spatie"
             ],
             "support": {
-                "source": "https://github.com/spatie/backtrace/tree/1.7.3"
+                "source": "https://github.com/spatie/backtrace/tree/1.7.4"
             },
             "funding": [
                 {
@@ -9562,7 +9506,7 @@
                     "type": "other"
                 }
             ],
-            "time": "2025-05-07T07:20:00+00:00"
+            "time": "2025-05-08T15:41:09+00:00"
         },
         {
             "name": "spatie/error-solutions",
