@@ -1,73 +1,78 @@
-# Welcome to your Lovable project
+# Personal Resume Website
 
-## Project info
+This is a modern, responsive personal resume website built with **React** and **Tailwind CSS**. It showcases my professional experience, skills, projects, and contact information in a clean and visually appealing way.
 
-**URL**: https://lovable.dev/projects/e8339be5-bf70-4c76-8953-9847f5e93e5d
+## Features
 
-## How can I edit this code?
+- Fully responsive design for desktop, tablet, and mobile devices
+- Built with React functional components and hooks
+- Styled using Tailwind CSS for utility-first, custom styling
+- Easy to update and customize with your own content
+- Smooth navigation and section scrolling
+- Clean, minimalistic layout focused on content readability
 
-There are several ways of editing your application.
+## Technologies Used
 
-**Use Lovable**
+- [React](https://reactjs.org/) - A JavaScript library for building user interfaces
+- [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework for rapid UI development
+- JavaScript (ES6+)
+- HTML5 & CSS3
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/e8339be5-bf70-4c76-8953-9847f5e93e5d) and start prompting.
+## Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
 
-**Use your preferred IDE**
+- Node.js (v14 or above recommended)
+- npm or yarn package manager
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Installation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. Clone the repository
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```bash
+git clone https://github.com/yourusername/your-resume-website.git
+cd your-resume-website
 ```
 
-**Edit a file directly in GitHub**
+2. Install dependencies
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```bash
+npm install
+# or
+yarn install
+```
 
-**Use GitHub Codespaces**
+3. Start the development server
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```bash
+npm start
+# or
+yarn start
+```
 
-## What technologies are used for this project?
+4. Open your browser at `http://localhost:3000` to view the website.
 
-This project is built with:
+## Deployment
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+You can build the project for production with:
 
-## How can I deploy this project?
+```bash
+npm run build
+# or
+yarn build
+```
 
-Simply open [Lovable](https://lovable.dev/projects/e8339be5-bf70-4c76-8953-9847f5e93e5d) and click on Share -> Publish.
+Then deploy the contents of the `build` folder to your preferred hosting platform (GitHub Pages, Netlify, Vercel, etc.).
 
-## Can I connect a custom domain to my Lovable project?
+## Customization
 
-Yes, you can!
+- Update the content in the React components located in the `src` folder
+- Modify styles by editing Tailwind classes or extending Tailwind config
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## License
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+This project is open source and available under the MIT License.
+
+---
+
+Feel free to reach out if you have any questions or suggestions!
