@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -43,7 +42,7 @@ const Contact = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-gray-900/50">
+    <section id="contact" className="py-20 px-4 bg-gray-900/50">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">

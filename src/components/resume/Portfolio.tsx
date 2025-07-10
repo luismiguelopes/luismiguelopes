@@ -12,7 +12,7 @@ const Portfolio = () => {
       technologies: ["Go (Golang)", "Modular Scripting"],
       image: "images/portfolio/ankoscripts-project.png",
       liveUrl: "#",
-      githubUrl: "#",
+      githubUrl: "https://github.com/luismiguelopes/AnkoScripts/",
       type: "Automation Scripts / Game Botting"
     },
     {
@@ -21,26 +21,17 @@ const Portfolio = () => {
       technologies: ["Python", "Flask", "HTML/CSS", "Web UI", "JSON"],
       image: "images/portfolio/ikabot-project.png",
       liveUrl: "#",
-      githubUrl: "#",
+      githubUrl: "https://github.com/luismiguelopes/ikabot",
       type: "CLI Automation / Game Botting / GUI Application"
     },
     {
       title: "luismiguelopes Website",
-      description: "Docker-based deployment pipeline with automated testing and monitoring. Reduced deployment time by 75% and improved system reliability for multiple client projects.",
-      technologies: ["Docker", "Laravel", "GitHub Actions", "VPS", "Nginx"],
-      image: "https://images.unsplash.com/photo-1618477388954-7852f32655ec?w=600&h=400&fit=crop",
+      description: "My personal website built with Next.js, Tailwind CSS,and TypeScript. It serves as a portfolio of my work and a platform for sharing my thoughts and experiences.",
+      technologies: ["Next.js", "Tailwind CSS", "TypeScript", "React", "Vercel"],
+      image: "images/portfolio/luismiguelopes-project.png",
       liveUrl: "#",
-      githubUrl: "#",
-      type: "DevOps"
-    },
-    {
-      title: "GirlsVinci Website",
-      description: "Interactive dashboard for monitoring business KPIs in real-time. Built with Laravel backend and modern JavaScript frontend, processing over 1M data points daily.",
-      technologies: ["Laravel", "JavaScript", "Chart.js", "WebSockets", "MySQL"],
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
-      liveUrl: "#",
-      githubUrl: "#",
-      type: "Data Visualization"
+      githubUrl: "https://github.com/luismiguelopes/luismiguelopes",
+      type: "Web Development"
     }
   ];
 
@@ -87,14 +78,27 @@ const Portfolio = () => {
                 </div>
 
                 <div className="flex gap-3">
-                  <Button size="sm" className="bg-blue-600 hover:bg-blue-700 text-white">
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    Live Demo
-                  </Button>
-                  <Button size="sm" variant="outline" className="border-gray-600 text-gray-300 hover:bg-gray-700">
-                    <Github className="w-4 h-4 mr-2" />
-                    Code
-                  </Button>
+                  {project.liveUrl !== "#" && (
+                    <Button 
+                      size="sm" 
+                      className="bg-blue-600 hover:bg-blue-700 text-white"
+                      onClick={() => window.open(project.liveUrl, '_blank')}
+                    >
+                      <ExternalLink className="w-4 h-4 mr-2" />
+                      Live Demo
+                    </Button>
+                  )}
+                  {project.githubUrl !== "#" && (
+                    <Button 
+                      size="sm" 
+                      variant="outline" 
+                      className="border-gray-600 text-gray-300 hover:bg-gray-700"
+                      onClick={() => window.open(project.githubUrl, '_blank')}
+                    >
+                      <Github className="w-4 h-4 mr-2" />
+                      Code
+                    </Button>
+                  )}
                 </div>
               </CardContent>
             </Card>
@@ -102,7 +106,10 @@ const Portfolio = () => {
         </div>
 
         <div className="text-center mt-12">
-          <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3">
+          <Button 
+            className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3"
+            onClick={() => window.open('https://github.com/luismiguelopes', '_blank')}
+          >
             <Github className="w-4 h-4 mr-2" />
             View All Projects on GitHub
           </Button>
