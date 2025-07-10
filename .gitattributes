@@ -1,10 +1,31 @@
+# Normalize line endings to prevent CRLF/LF issues
 * text=auto
 
-*.blade.php diff=html
-*.css diff=css
-*.html diff=html
-*.md diff=markdown
-*.php diff=php
+# Force LF line endings for code files
+*.js      text eol=lf
+*.jsx     text eol=lf
+*.ts      text eol=lf
+*.tsx     text eol=lf
+*.css     text eol=lf
+*.json    text eol=lf
+*.html    text eol=lf
+*.svg     text eol=lf
+*.md      text eol=lf
+*.yml     text eol=lf
+*.yaml    text eol=lf
 
-/.github export-ignore
+# Treat binary files as binary to avoid line ending conversions
+*.png     binary
+*.jpg     binary
+*.jpeg    binary
+*.gif     binary
+*.ico     binary
+*.eot     binary
+*.woff    binary
+*.woff2   binary
+*.ttf     binary
+*.otf     binary
+
+# Ignore exporting GitHub metadata folder and changelog file when creating archives
+.github/** export-ignore
 CHANGELOG.md export-ignore
