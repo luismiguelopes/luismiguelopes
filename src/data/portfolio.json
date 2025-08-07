@@ -1,0 +1,96 @@
+{
+  "personal": {
+    "name": "Luís Miguel Lopes",
+    "title": "Data Analyst Coordinator & Full-Stack Developer",
+    "description": "Experienced Data Analyst Coordinator skilled in transforming complex data into actionable insights and leading cross-functional teams to deliver results. Passionate about building web applications with Laravel and WordPress, while driving strategic initiatives through data analysis and DevOps best practices.",
+    "email": "geral@luismiguelopes.com",
+    "location": "Portugal",
+    "image": "/images/luismiguelopes.png",
+    "social": {
+      "github": "https://github.com/luismiguelopes/",
+      "linkedin": "https://www.linkedin.com/in/luismiguelopes/",
+      "email": "mailto:geral@luismiguelopes.com"
+    }
+  },
+  "skills": [
+    {
+      "title": "Backend Development",
+      "icon": "Code",
+      "skills": [
+        { "name": "Laravel", "level": 95 },
+        { "name": "PHP", "level": 95 },
+        { "name": "Python", "level": 85 },
+        { "name": "Node.js", "level": 80 },
+        { "name": "Go (GoLang)", "level": 80 }
+      ]
+    },
+    {
+      "title": "Data Analysis",
+      "icon": "Database",
+      "skills": [
+        { "name": "Power BI", "level": 99 },
+        { "name": "Excel/VBA", "level": 99 },
+        { "name": "SQL", "level": 95 },
+        { "name": "Azure Databricks", "level": 92 },
+        { "name": "Python (Pandas)", "level": 88 }
+      ]
+    },
+    {
+      "title": "DevOps & Tools",
+      "icon": "Terminal",
+      "skills": [
+        { "name": "Linux/Bash Scripting", "level": 99 },
+        { "name": "VPS Management", "level": 98 },
+        { "name": "Git/GitHub", "level": 98 },
+        { "name": "Docker", "level": 85 },
+        { "name": "Kubernetes", "level": 80 }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "title": "Data Analyst Coordinator",
+      "company": "Current Position",
+      "period": "2020 - Present",
+      "description": "Leading cross-functional teams to deliver data-driven insights and strategic initiatives.",
+      "technologies": ["Power BI", "SQL", "Python", "Azure Databricks", "Excel/VBA"]
+    },
+    {
+      "title": "Full-Stack Developer",
+      "company": "Freelance",
+      "period": "2016 - Present",
+      "description": "Developing web applications and automation solutions for various clients.",
+      "technologies": ["Laravel", "PHP", "WordPress", "JavaScript", "MySQL"]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor's Degree",
+      "institution": "University",
+      "period": "2012 - 2016",
+      "description": "Computer Science and Information Systems"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Portfolio Website",
+      "description": "Modern responsive portfolio built with React and TypeScript",
+      "technologies": ["React", "TypeScript", "Tailwind CSS", "Vite"],
+      "image": "/images/portfolio/portfolio-website.png",
+      "github": "https://github.com/luismiguelopes/portfolio",
+      "demo": "https://luismiguelopes.com",
+      "category": "web"
+    }
+  ],
+  "contact": {
+    "title": "Let's Work Together",
+    "subtitle": "Ready to discuss your next project? I'm available for both full-time opportunities and freelance work.",
+    "description": "I'm always interested in new opportunities and challenging projects. Whether you need automation or web development expertise, let's discuss how I can help bring your ideas to life.",
+    "benefits": [
+      "8+ years of experience in automation and web development",
+      "Full-stack expertise with modern technologies",
+      "Proven track record with 20+ successful projects",
+      "Available for both short-term and long-term engagements"
+    ]
+  }
+}
