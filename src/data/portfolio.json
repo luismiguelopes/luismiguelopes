@@ -83,19 +83,19 @@
       "type": "Full-Stack App"
     },
     {
-      "title": "Ikabot",
-      "description": "Python-based automation bot for Ikariam with a Flask web interface for controlling in-game actions: building queues, troop movements, and resource management. Supports multi-universe operation.",
+      "title": "Ikabot (Contributor)",
+      "description": "Open-source Python bot for automating Ikariam — active contributor to the Ikabot-Collective project. The bot provides a Flask web interface for managing building queues, troop movements, resource distribution, and multi-account operations.",
       "technologies": ["Python", "Flask", "HTML", "CSS"],
       "image": "images/portfolio/ikabot-project.png",
       "liveUrl": "#",
       "githubUrl": "https://github.com/luismiguelopes/ikabot",
       "category": "automation",
-      "type": "GUI Application"
+      "type": "Open Source Contribution"
     },
     {
       "title": "Anko Scripts",
-      "description": "Collection of automation scripts written in Go for browser-based strategy games. Handles resource farming, timed actions, and smart probing logic with custom session controls built for scale.",
-      "technologies": ["Go", "Automation", "Scripting"],
+      "description": "Collection of scripts written in Anko — the scripting language powering the ogame-ninja bot — for automating OGame gameplay. Covers fleet management, resource farming, and recurring in-game tasks.",
+      "technologies": ["Anko", "OGame", "ogame-ninja", "Automation"],
       "image": "images/portfolio/ankoscripts-project.png",
       "liveUrl": "#",
       "githubUrl": "https://github.com/luismiguelopes/AnkoScripts/",

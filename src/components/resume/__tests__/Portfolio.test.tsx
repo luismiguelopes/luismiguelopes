@@ -30,7 +30,7 @@ describe('Portfolio Component', () => {
     render(<Portfolio />)
 
     expect(screen.getByRole('heading', { name: /Ikabot Dashboard/i })).toBeInTheDocument()
-    expect(screen.getByRole('heading', { name: /^Ikabot$/i })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: /Ikabot \(Contributor\)/i })).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: /Anko Scripts/i })).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: /luismiguelopes\.com/i })).toBeInTheDocument()
   })
@@ -69,7 +69,7 @@ describe('Portfolio Component', () => {
 
     // Verifica se os cards dos projetos têm as informações necessárias
     expect(screen.getByRole('heading', { name: /Anko Scripts/i })).toBeInTheDocument()
-    expect(screen.getByText(/Collection of automation scripts written in Go/i)).toBeInTheDocument()
+    expect(screen.getByText(/Collection of scripts written in Anko/i)).toBeInTheDocument()
 
     // Verifica se as tecnologias são exibidas como badges
     expect(screen.getAllByText(/Go/i).length).toBeGreaterThan(0)
