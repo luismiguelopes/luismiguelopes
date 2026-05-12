@@ -29,10 +29,10 @@ describe('Portfolio Component', () => {
   it('displays all projects by default', () => {
     render(<Portfolio />)
 
-    // Verifica se os projetos estão sendo exibidos
+    expect(screen.getByRole('heading', { name: /Ikabot Dashboard/i })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: /^Ikabot$/i })).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: /Anko Scripts/i })).toBeInTheDocument()
-    expect(screen.getByRole('heading', { name: /Ikabot Fork/i })).toBeInTheDocument()
-    expect(screen.getByRole('heading', { name: /luismiguelopes Website/i })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: /luismiguelopes\.com/i })).toBeInTheDocument()
   })
 
   it('renders filter buttons for categories', () => {
@@ -61,7 +61,7 @@ describe('Portfolio Component', () => {
   it('displays project count', () => {
     render(<Portfolio />)
 
-    expect(screen.getByText(/Showing 3 of 3 projects/i)).toBeInTheDocument()
+    expect(screen.getByText(/Showing 6 of 6 projects/i)).toBeInTheDocument()
   })
 
   it('renders project cards with proper information', () => {
@@ -69,7 +69,7 @@ describe('Portfolio Component', () => {
 
     // Verifica se os cards dos projetos têm as informações necessárias
     expect(screen.getByRole('heading', { name: /Anko Scripts/i })).toBeInTheDocument()
-    expect(screen.getByText(/Anko Scripts is a collection of automation scripts/i)).toBeInTheDocument()
+    expect(screen.getByText(/Collection of automation scripts written in Go/i)).toBeInTheDocument()
 
     // Verifica se as tecnologias são exibidas como badges
     expect(screen.getAllByText(/Go/i).length).toBeGreaterThan(0)

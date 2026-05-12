@@ -6,6 +6,7 @@ import { ExternalLink, Github, Filter, ChevronDown, Check } from 'lucide-react';
 import { useAppStore } from '@/store/useAppStore';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useRef, useEffect } from 'react';
+import portfolioData from '@/data/portfolio.json';
 
 const Portfolio = () => {
   const { portfolioFilter, setPortfolioFilter } = useAppStore();
@@ -24,38 +25,7 @@ const Portfolio = () => {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
   
-  const projects = [
-    {
-      title: "Anko Scripts",
-      description: "Anko Scripts is a collection of automation scripts written in Go, designed to streamline and optimize bot behaviors for browser-based strategy games. Built with modularity and performance in mind, these scripts handle resource farming, timed actions, and smart probing logic using custom session controls. The project emphasizes efficient automation with a clean codebase, ideal for scaling bot infrastructure across multiple game universes.",
-      technologies: ["Go", "Automation", "Scripting"],
-      image: "images/portfolio/ankoscripts-project.png",
-      liveUrl: "#",
-      githubUrl: "https://github.com/luismiguelopes/AnkoScripts/",
-      category: "automation",
-      type: "Automation Scripts"
-    },
-    {
-      title: "Ikabot Fork",
-      description: "Ikabot Fork is a customized version of the popular Ikariam automation tool, enhanced with a responsive web interface built using Flask. This version introduces an intuitive GUI for controlling automated in-game actions such as building, troop movements, and resource management. Developed in Python, it integrates backend logic with a user-friendly front-end to make strategy game automation accessible and flexible, while supporting advanced features for power users.",
-      technologies: ["Python", "Flask", "HTML", "CSS", "GUI"],
-      image: "images/portfolio/ikabot-project.png",
-      liveUrl: "#",
-      githubUrl: "https://github.com/luismiguelopes/ikabot",
-      category: "automation",
-      type: "GUI Application"
-    },
-    {
-      title: "luismiguelopes Website",
-      description: "My personal website built with Next.js, Tailwind CSS,and TypeScript. It serves as a portfolio of my work and a platform for sharing my thoughts and experiences.",
-      technologies: ["React", "TypeScript", "Tailwind", "Vite", "PWA"],
-      image: "images/portfolio/luismiguelopes-project.png",
-      liveUrl: "#",
-      githubUrl: "https://github.com/luismiguelopes/luismiguelopes",
-      category: "web",
-      type: "Web Development"
-    }
-  ];
+  const projects = portfolioData.projects;
 
   // Extrair categorias e tecnologias únicas
   const categories = ['all', ...new Set(projects.map(p => p.category))];

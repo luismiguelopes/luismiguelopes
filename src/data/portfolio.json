@@ -73,13 +73,64 @@
   ],
   "projects": [
     {
-      "title": "Portfolio Website",
-      "description": "Modern responsive portfolio built with React and TypeScript",
+      "title": "Ikabot Dashboard",
+      "description": "Dockerized empire management dashboard for Ikariam automation — collects real-time empire data and exposes it through a Flask/React interface with monitoring and full bot control.",
+      "technologies": ["TypeScript", "React", "Python", "Flask", "Docker"],
+      "image": "images/portfolio/ikabot-dashboard-project.png",
+      "liveUrl": "#",
+      "githubUrl": "https://github.com/luismiguelopes/ikabot-dashboard",
+      "category": "automation",
+      "type": "Full-Stack App"
+    },
+    {
+      "title": "Ikabot",
+      "description": "Python-based automation bot for Ikariam with a Flask web interface for controlling in-game actions: building queues, troop movements, and resource management. Supports multi-universe operation.",
+      "technologies": ["Python", "Flask", "HTML", "CSS"],
+      "image": "images/portfolio/ikabot-project.png",
+      "liveUrl": "#",
+      "githubUrl": "https://github.com/luismiguelopes/ikabot",
+      "category": "automation",
+      "type": "GUI Application"
+    },
+    {
+      "title": "Anko Scripts",
+      "description": "Collection of automation scripts written in Go for browser-based strategy games. Handles resource farming, timed actions, and smart probing logic with custom session controls built for scale.",
+      "technologies": ["Go", "Automation", "Scripting"],
+      "image": "images/portfolio/ankoscripts-project.png",
+      "liveUrl": "#",
+      "githubUrl": "https://github.com/luismiguelopes/AnkoScripts/",
+      "category": "automation",
+      "type": "Automation Scripts"
+    },
+    {
+      "title": "iOS Cloud Backup",
+      "description": "Shell tool that compresses, splits, and PAR2-protects iPhone backups, then syncs them to any cloud storage provider — Proton Drive, OneDrive, Google Drive, iCloud, Dropbox or NAS.",
+      "technologies": ["Bash", "Shell", "PAR2", "Cloud Storage"],
+      "image": "images/portfolio/ios-cloud-backup-project.png",
+      "liveUrl": "#",
+      "githubUrl": "https://github.com/luismiguelopes/ios-cloud-backup",
+      "category": "automation",
+      "type": "DevOps Tool"
+    },
+    {
+      "title": "Mac Dev Up",
+      "description": "One-command macOS developer environment updater. Keeps Homebrew, npm, pip, and system tools current — safe, fast, and idempotent. Designed for daily use without surprises.",
+      "technologies": ["Bash", "Shell", "macOS", "Homebrew"],
+      "image": "images/portfolio/mac-dev-up-project.png",
+      "liveUrl": "#",
+      "githubUrl": "https://github.com/luismiguelopes/mac-dev-up",
+      "category": "automation",
+      "type": "DevOps Tool"
+    },
+    {
+      "title": "luismiguelopes.com",
+      "description": "Personal portfolio built with React 18, TypeScript, Vite and Tailwind CSS v4. Features lazy-loaded sections, Web Vitals reporting, EmailJS contact form, shadcn/ui components and Google Analytics.",
       "technologies": ["React", "TypeScript", "Tailwind CSS", "Vite"],
-      "image": "/images/portfolio/portfolio-website.png",
-      "github": "https://github.com/luismiguelopes/portfolio",
-      "demo": "https://luismiguelopes.com",
-      "category": "web"
+      "image": "images/portfolio/luismiguelopes-project.png",
+      "liveUrl": "https://luismiguelopes.com",
+      "githubUrl": "https://github.com/luismiguelopes/luismiguelopes",
+      "category": "web",
+      "type": "Web Development"
     }
   ],
   "contact": {
