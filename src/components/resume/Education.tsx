@@ -1,25 +1,15 @@
-
 import { Card, CardContent } from '@/components/ui/card';
-import { GraduationCap, Award, SquareCode } from 'lucide-react';
+import { SquareCode } from 'lucide-react';
+import portfolioData from '@/data/portfolio.json';
+import type { ElementType } from 'react';
+
+const iconMap: Record<string, ElementType> = { SquareCode };
 
 const Education = () => {
-  const education = [
-    {
-      degree: "Web & Mobile Developer Course",
-      institution: "Flag",
-      period: "2014 - 2015",
-      description: "Completed training focused on web and mobile development, covering HTML5, CSS3, PHP, MySQL, Java and Objective-C. The program was designed to build the skills needed to develop responsive websites and mobile applications for both Android and iOS platforms.",
-      icon: SquareCode
-    }
-  ];
-
-  const certifications = [
-    "AWS Certified Solutions Architect",
-    "Laravel Certified Developer",
-    "Google Analytics Individual Qualification",
-    "Docker Certified Associate",
-    "Microsoft Power BI Data Analyst"
-  ];
+  const education = portfolioData.education.map(edu => ({
+    ...edu,
+    icon: iconMap[edu.icon] ?? SquareCode,
+  }));
 
   return (
     <section className="py-20 px-4 bg-gray-900/50">
@@ -50,8 +40,6 @@ const Education = () => {
             </Card>
           ))}
         </div>
-
-
       </div>
     </section>
   );

@@ -1,50 +1,10 @@
-
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Briefcase, Calendar } from 'lucide-react';
+import portfolioData from '@/data/portfolio.json';
 
 const Experience = () => {
-  const experiences = [
-    {
-      title: "Data Analyst Coordinator",
-      company: "Teleperformance",
-      type: "Full-time",
-      period: "2024 - Present",
-      description: "Led a team of data analysts to deliver actionable insights aligned with client goals and tight deadlines. Coordinated cross-functional efforts to drive strategic initiatives and improve operational efficiency. Developed automated reporting systems with Power BI and SQL, reducing manual workload by 60% and implemented real-time dashboards to support decision-making. Fostered a collaborative team culture while mentoring junior analysts.",
-      technologies: ["Python", "SQL", "Power BI", "Azure DevOps", "Azure Databricks", "Bash Scripting"],
-      achievements: [
-        "Improved data processing efficiency by 60% through automation",
-        "Led a team of 5 junior analysts",
-        "Implemented real-time dashboard solutions"
-      ]
-    },
-    {
-      title: "Full-Stack Developer (Freelance)",
-      company: "Various Clients",
-      type: "Freelance",
-      period: "2020 - Present",
-      description: "Developed and maintained custom web applications and WordPress themes to enhance brand identity and user experience. Delivered Laravel-based solutions with modern DevOps practices, including VPS setup and management using Ubuntu Server and Nginx. Drove online growth through SEO, social media strategy and full-stack development for projects like GirlsVinci.",
-      technologies: ["Laravel", "Wordpress", "React", "Node.JS", "Python" ,"Docker", "Linux", "VPS", "MySQL", "SQLLite"],
-      achievements: [
-        "Completed 10+ successful projects",
-        "Maintained 98% client satisfaction rate",
-        "Specialized in e-commerce solutions"
-      ]
-    },
-    {
-      title: "Data Analyst",
-      company: "Teleperformance",
-      type: "Full-time",
-      period: "2017 - 2024",
-      description: "Analyzed and transformed large datasets to deliver actionable insights and improve decision-making. Automated reporting processes significantly reducing manual workload. Created standardized dashboards and reports to support business intelligence and strategic planning, while collaborating closely with stakeholders to align data initiatives with business needs.",
-      technologies: ["SQL", "Python", "Excel", "VBA", "Power BI", "PowerPivot", "PowerQuery"],
-      achievements: [
-        "Processed and analyzed 10M+ records monthly",
-        "Created 100+ automated reporting solutions",
-        "Reduced report generation time by 45%"
-      ]
-    }
-  ];
+  const experiences = portfolioData.experience;
 
   return (
     <section className="py-20 px-4 bg-gray-950">

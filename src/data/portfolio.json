@@ -50,26 +50,59 @@
   "experience": [
     {
       "title": "Data Analyst Coordinator",
-      "company": "Current Position",
-      "period": "2020 - Present",
-      "description": "Leading cross-functional teams to deliver data-driven insights and strategic initiatives.",
-      "technologies": ["Power BI", "SQL", "Python", "Azure Databricks", "Excel/VBA"]
+      "company": "Teleperformance",
+      "type": "Full-time",
+      "period": "2024 - Present",
+      "description": "Led a team of data analysts to deliver actionable insights aligned with client goals and tight deadlines. Coordinated cross-functional efforts to drive strategic initiatives and improve operational efficiency. Developed automated reporting systems with Power BI and SQL, reducing manual workload by 60% and implemented real-time dashboards to support decision-making. Fostered a collaborative team culture while mentoring junior analysts.",
+      "technologies": ["Python", "SQL", "Power BI", "Azure DevOps", "Azure Databricks", "Bash Scripting"],
+      "achievements": [
+        "Improved data processing efficiency by 60% through automation",
+        "Led a team of 5 junior analysts",
+        "Implemented real-time dashboard solutions"
+      ]
     },
     {
-      "title": "Full-Stack Developer",
-      "company": "Freelance",
-      "period": "2016 - Present",
-      "description": "Developing web applications and automation solutions for various clients.",
-      "technologies": ["Laravel", "PHP", "WordPress", "JavaScript", "MySQL"]
+      "title": "Full-Stack Developer (Freelance)",
+      "company": "Various Clients",
+      "type": "Freelance",
+      "period": "2020 - Present",
+      "description": "Developed and maintained custom web applications and WordPress themes to enhance brand identity and user experience. Delivered Laravel-based solutions with modern DevOps practices, including VPS setup and management using Ubuntu Server and Nginx. Drove online growth through SEO, social media strategy and full-stack development for projects like GirlsVinci.",
+      "technologies": ["Laravel", "Wordpress", "React", "Node.JS", "Python", "Docker", "Linux", "VPS", "MySQL", "SQLLite"],
+      "achievements": [
+        "Completed 10+ successful projects",
+        "Maintained 98% client satisfaction rate",
+        "Specialized in e-commerce solutions"
+      ]
+    },
+    {
+      "title": "Data Analyst",
+      "company": "Teleperformance",
+      "type": "Full-time",
+      "period": "2017 - 2024",
+      "description": "Analyzed and transformed large datasets to deliver actionable insights and improve decision-making. Automated reporting processes significantly reducing manual workload. Created standardized dashboards and reports to support business intelligence and strategic planning, while collaborating closely with stakeholders to align data initiatives with business needs.",
+      "technologies": ["SQL", "Python", "Excel", "VBA", "Power BI", "PowerPivot", "PowerQuery"],
+      "achievements": [
+        "Processed and analyzed 10M+ records monthly",
+        "Created 100+ automated reporting solutions",
+        "Reduced report generation time by 45%"
+      ]
     }
   ],
   "education": [
     {
-      "degree": "Bachelor's Degree",
-      "institution": "University",
-      "period": "2012 - 2016",
-      "description": "Computer Science and Information Systems"
+      "degree": "Web & Mobile Developer Course",
+      "institution": "Flag",
+      "period": "2014 - 2015",
+      "description": "Completed training focused on web and mobile development, covering HTML5, CSS3, PHP, MySQL, Java and Objective-C. The program was designed to build the skills needed to develop responsive websites and mobile applications for both Android and iOS platforms.",
+      "icon": "SquareCode"
     }
+  ],
+  "certifications": [
+    "AWS Certified Solutions Architect",
+    "Laravel Certified Developer",
+    "Google Analytics Individual Qualification",
+    "Docker Certified Associate",
+    "Microsoft Power BI Data Analyst"
   ],
   "projects": [
     {
