@@ -13,10 +13,10 @@ vi.mock('@/store/useAppStore', () => ({
 describe('Portfolio Component', () => {
   beforeEach(() => {
     vi.clearAllMocks()
-      ; (useAppStore as any).mockReturnValue({
-        portfolioFilter: { category: 'all', technology: 'all' },
-        setPortfolioFilter: mockSetPortfolioFilter
-      })
+    vi.mocked(useAppStore).mockReturnValue({
+      portfolioFilter: { category: 'all', technology: 'all' },
+      setPortfolioFilter: mockSetPortfolioFilter
+    } as ReturnType<typeof useAppStore>)
   })
 
   it('renders portfolio section with title', () => {

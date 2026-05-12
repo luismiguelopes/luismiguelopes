@@ -1,7 +1,6 @@
-import { onCLS, onFCP, onLCP, onTTFB, onINP } from 'web-vitals'
+import { onCLS, onFCP, onLCP, onTTFB, onINP, type Metric } from 'web-vitals'
 
-// Função para enviar métricas para analytics (pode ser customizada)
-function sendToAnalytics(metric: any) {
+function sendToAnalytics(metric: Metric) {
   // Em produção, você pode enviar para Google Analytics, DataDog, etc.
   if (import.meta.env.DEV) {
     console.log('Web Vitals:', metric)

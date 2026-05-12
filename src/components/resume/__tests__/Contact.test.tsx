@@ -2,27 +2,29 @@ import { render, screen, fireEvent, waitFor } from '@testing-library/react'
 import { describe, it, expect, beforeEach, vi } from 'vitest'
 import Contact from '../Contact'
 import { useAppStore } from '@/store/useAppStore'
+import emailjs from '@emailjs/browser'
 
-// Mock do store
-const mockSetContactForm = vi.fn()
+vi.mock('@emailjs/browser', () => ({
+  default: { send: vi.fn() }
+}))
 
 vi.mock('@/store/useAppStore', () => ({
   useAppStore: vi.fn()
 }))
 
+const mockSetContactForm = vi.fn()
+
+const baseStore = () => ({
+  contactForm: { name: '', email: '', message: '' },
+  setContactForm: mockSetContactForm,
+  resetContactForm: vi.fn(),
+  trackEvent: vi.fn(),
+} as ReturnType<typeof useAppStore>)
+
 describe('Contact Component', () => {
   beforeEach(() => {
     vi.clearAllMocks()
-      ; (useAppStore as any).mockReturnValue({
-        contactForm: {
-          name: '',
-          email: '',
-          message: ''
-        },
-        setContactForm: mockSetContactForm,
-        resetContactForm: vi.fn(),
-        trackEvent: vi.fn()
-      })
+    vi.mocked(useAppStore).mockReturnValue(baseStore())
   })
 
   it('renders contact section with title', () => {
@@ -62,13 +64,14 @@ describe('Contact Component', () => {
   })
 
   it('validates email format', async () => {
+    vi.mocked(useAppStore).mockReturnValue({
+      ...baseStore(),
+      contactForm: { name: 'John Doe', email: 'invalid-email', message: 'Hello, this is a test message.' },
+    } as ReturnType<typeof useAppStore>)
+
     render(<Contact />)
 
-    const emailInput = screen.getByLabelText(/Email/i)
-    const submitButton = screen.getByRole('button', { name: /Send Message/i })
-
-    fireEvent.change(emailInput, { target: { value: 'invalid-email' } })
-    fireEvent.click(submitButton)
+    fireEvent.click(screen.getByRole('button', { name: /Send Message/i }))
 
     await waitFor(() => {
       expect(screen.getByText(/Please enter a valid email address/i)).toBeInTheDocument()
@@ -76,18 +79,15 @@ describe('Contact Component', () => {
   })
 
   it('submits form with valid data', async () => {
+    vi.mocked(emailjs.send).mockResolvedValue({} as never)
+    vi.mocked(useAppStore).mockReturnValue({
+      ...baseStore(),
+      contactForm: { name: 'John Doe', email: 'john@example.com', message: 'Hello, this is a test message.' },
+    } as ReturnType<typeof useAppStore>)
+
     render(<Contact />)
 
-    const nameInput = screen.getByLabelText(/Name/i)
-    const emailInput = screen.getByLabelText(/Email/i)
-    const messageInput = screen.getByLabelText(/Message/i)
-    const submitButton = screen.getByRole('button', { name: /Send Message/i })
-
-    fireEvent.change(nameInput, { target: { value: 'John Doe' } })
-    fireEvent.change(emailInput, { target: { value: 'john@example.com' } })
-    fireEvent.change(messageInput, { target: { value: 'Hello, this is a test message.' } })
-
-    fireEvent.click(submitButton)
+    fireEvent.click(screen.getByRole('button', { name: /Send Message/i }))
 
     await waitFor(() => {
       expect(screen.queryByText(/Name is required/i)).not.toBeInTheDocument()
@@ -103,39 +103,35 @@ describe('Contact Component', () => {
     expect(screen.getByText(/Proven track record with 20\+ successful projects/i)).toBeInTheDocument()
   })
 
-  it('displays success message when form is submitted successfully', () => {
-    ; (useAppStore as any).mockReturnValue({
-      contactForm: {
-        name: '',
-        email: '',
-        message: ''
-      },
-      submitStatus: 'success',
-      setContactForm: mockSetContactForm,
-      resetContactForm: vi.fn(),
-      trackEvent: vi.fn()
-    })
+  it('displays success message when form is submitted successfully', async () => {
+    vi.mocked(emailjs.send).mockResolvedValue({} as never)
+    vi.mocked(useAppStore).mockReturnValue({
+      ...baseStore(),
+      contactForm: { name: 'John Doe', email: 'john@example.com', message: 'Hello, this is a test message.' },
+    } as ReturnType<typeof useAppStore>)
 
     render(<Contact />)
 
-    expect(screen.getByText(/Message sent successfully!/i)).toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: /Send Message/i }))
+
+    await waitFor(() => {
+      expect(screen.getByText(/Message sent successfully!/i)).toBeInTheDocument()
+    })
   })
 
-  it('displays error message when form submission fails', () => {
-    ; (useAppStore as any).mockReturnValue({
-      contactForm: {
-        name: '',
-        email: '',
-        message: ''
-      },
-      submitStatus: 'error',
-      setContactForm: mockSetContactForm,
-      resetContactForm: vi.fn(),
-      trackEvent: vi.fn()
-    })
+  it('displays error message when form submission fails', async () => {
+    vi.mocked(emailjs.send).mockRejectedValue(new Error('Network error'))
+    vi.mocked(useAppStore).mockReturnValue({
+      ...baseStore(),
+      contactForm: { name: 'John Doe', email: 'john@example.com', message: 'Hello, this is a test message.' },
+    } as ReturnType<typeof useAppStore>)
 
     render(<Contact />)
 
-    expect(screen.getByText(/Failed to send message/i)).toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: /Send Message/i }))
+
+    await waitFor(() => {
+      expect(screen.getByText(/Failed to send message/i)).toBeInTheDocument()
+    })
   })
 })

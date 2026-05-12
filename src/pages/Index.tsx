@@ -26,12 +26,10 @@ const Index = () => {
   const { incrementPageViews } = useAppStore();
 
   useEffect(() => {
-    // Incrementar contador de visualizações
     incrementPageViews();
-    
-    // Rastrear visualização da página
     trackPageView('Home - Portfolio', window.location.href);
-  }, []); // Executar apenas uma vez no mount
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <>
