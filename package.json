@@ -86,7 +86,7 @@
     "globals": "^15.9.0",
     "jsdom": "^26.1.0",
     "lovable-tagger": "^1.1.7",
-    "postcss": "^8.4.47",
+    "postcss": "^8.5.10",
     "rollup-plugin-visualizer": "^6.0.3",
     "tailwindcss": "^4.1.11",
     "typescript": "^5.5.3",
@@ -98,6 +98,9 @@
   "overrides": {
     "serialize-javascript": "^7.0.5",
     "lodash": "^4.17.24",
-    "brace-expansion": "^2.0.3"
+    "brace-expansion": "^2.0.3",
+    "postcss": "^8.5.10",
+    "fast-uri": "^3.1.2",
+    "@babel/plugin-transform-modules-systemjs": "^7.29.4"
   }
 }
