@@ -40,7 +40,8 @@ describe('Portfolio Component', () => {
 
     expect(screen.getByRole('button', { name: /^All$/i })).toBeInTheDocument()
     expect(screen.getByRole('button', { name: /Web Dev/i })).toBeInTheDocument()
-    expect(screen.getByRole('button', { name: /Automation/i })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: /^Automation$/i })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: /^DevOps$/i })).toBeInTheDocument()
   })
 
   it('renders technology filter dropdown', () => {

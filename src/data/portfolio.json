@@ -119,7 +119,7 @@
       "title": "Ikabot (Contributor)",
       "description": "Open-source Python bot for automating Ikariam — active contributor to the Ikabot-Collective project. The bot provides a Flask web interface for managing building queues, troop movements, resource distribution, and multi-account operations.",
       "technologies": ["Python", "Flask", "HTML", "CSS"],
-      "image": "images/portfolio/ikabot-project.png",
+      "image": "images/portfolio/ikabot-project.webp",
       "liveUrl": "#",
       "githubUrl": "https://github.com/luismiguelopes/ikabot",
       "category": "automation",
@@ -129,7 +129,7 @@
       "title": "Anko Scripts",
       "description": "Collection of scripts written in Anko — the scripting language powering the ogame-ninja bot — for automating OGame gameplay. Covers fleet management, resource farming, and recurring in-game tasks.",
       "technologies": ["Anko", "OGame", "ogame-ninja", "Automation"],
-      "image": "images/portfolio/ankoscripts-project.png",
+      "image": "images/portfolio/ankoscripts-project.webp",
       "liveUrl": "#",
       "githubUrl": "https://github.com/luismiguelopes/AnkoScripts/",
       "category": "automation",
@@ -142,7 +142,7 @@
       "image": "images/portfolio/ios-cloud-backup-project.svg",
       "liveUrl": "#",
       "githubUrl": "https://github.com/luismiguelopes/ios-cloud-backup",
-      "category": "automation",
+      "category": "devops",
       "type": "DevOps Tool"
     },
     {
@@ -152,14 +152,14 @@
       "image": "images/portfolio/mac-dev-up-project.svg",
       "liveUrl": "#",
       "githubUrl": "https://github.com/luismiguelopes/mac-dev-up",
-      "category": "automation",
+      "category": "devops",
       "type": "DevOps Tool"
     },
     {
       "title": "luismiguelopes.com",
       "description": "Personal portfolio built with React 18, TypeScript, Vite and Tailwind CSS v4. Features lazy-loaded sections, Web Vitals reporting, EmailJS contact form, shadcn/ui components and Google Analytics.",
       "technologies": ["React", "TypeScript", "Tailwind CSS", "Vite"],
-      "image": "images/portfolio/luismiguelopes-project.png",
+      "image": "images/portfolio/luismiguelopes-project.webp",
       "liveUrl": "https://luismiguelopes.com",
       "githubUrl": "https://github.com/luismiguelopes/luismiguelopes",
       "category": "web",

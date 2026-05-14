@@ -70,7 +70,7 @@ const Portfolio = () => {
                   }`}
                   onClick={() => setPortfolioFilter({ category })}
                 >
-                  {category === 'all' ? 'All' : category === 'web' ? 'Web Dev' : 'Automation'}
+                  {category === 'all' ? 'All' : category === 'web' ? 'Web Dev' : category === 'devops' ? 'DevOps' : 'Automation'}
                 </Button>
               ))}
             </div>
