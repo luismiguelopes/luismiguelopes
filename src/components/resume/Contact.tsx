@@ -85,6 +85,7 @@ const Contact = () => {
   };
 
   const { personal, contact } = portfolioData;
+  const yearsOfExperience = new Date().getFullYear() - personal.experienceStartYear;
 
   const contactInfo = [
     { icon: Mail, label: "Email", value: personal.email, href: `mailto:${personal.email}` },
@@ -136,6 +137,10 @@ const Contact = () => {
               <div className="pt-8">
                 <h4 className="text-lg font-semibold text-white mb-4">Why Work With Me?</h4>
                 <ul className="space-y-3 text-gray-300">
+                  <li className="flex items-start">
+                    <span className="text-blue-400 mr-2 mt-1">•</span>
+                    {yearsOfExperience}+ years of experience in data analysis and web development
+                  </li>
                   {contact.benefits.map((benefit, index) => (
                     <li key={index} className="flex items-start">
                       <span className="text-blue-400 mr-2 mt-1">•</span>

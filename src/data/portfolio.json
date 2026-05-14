@@ -2,7 +2,7 @@
   "personal": {
     "name": "Luís Miguel Lopes",
     "title": "Data Analyst Coordinator & Full-Stack Developer",
-    "description": "Experienced Data Analyst Coordinator skilled in transforming complex data into actionable insights and leading cross-functional teams to deliver results. Passionate about building web applications with Laravel and WordPress, while driving strategic initiatives through data analysis and DevOps best practices.",
+    "description": "Data Analyst Coordinator at Teleperformance, leading data-driven initiatives and cross-functional teams. Passionate about building full-stack web applications with Laravel and React, automating workflows with Python and Bash, and managing VPS infrastructure — development is what I do outside work hours, by choice.",
     "email": "geral@luismiguelopes.com",
     "location": "Portugal",
     "image": "/images/luismiguelopes.png",
@@ -10,7 +10,8 @@
       "github": "https://github.com/luismiguelopes/",
       "linkedin": "https://www.linkedin.com/in/luismiguelopes/",
       "email": "mailto:geral@luismiguelopes.com"
-    }
+    },
+    "experienceStartYear": 2017
   },
   "skills": [
     {
@@ -69,7 +70,7 @@
       "description": "Developed and maintained custom web applications and WordPress themes to enhance brand identity and user experience. Delivered Laravel-based solutions with modern DevOps practices, including VPS setup and management using Ubuntu Server and Nginx. Drove online growth through SEO, social media strategy and full-stack development for projects like GirlsVinci.",
       "technologies": ["Laravel", "Wordpress", "React", "Node.JS", "Python", "Docker", "Linux", "VPS", "MySQL", "SQLLite"],
       "achievements": [
-        "Completed 10+ successful projects",
+        "Completed 11+ successful projects",
         "Maintained 98% client satisfaction rate",
         "Specialized in e-commerce solutions"
       ]
@@ -174,9 +175,8 @@
     "subtitle": "Ready to discuss your next project? I'm available for both full-time opportunities and freelance work.",
     "description": "I'm always interested in new opportunities and challenging projects. Whether you need automation or web development expertise, let's discuss how I can help bring your ideas to life.",
     "benefits": [
-      "8+ years of experience in automation and web development",
       "Full-stack expertise with modern technologies",
-      "Proven track record with 20+ successful projects",
+      "Proven track record with 11+ successful projects",
       "Available for both short-term and long-term engagements"
     ]
   }

@@ -98,9 +98,9 @@ describe('Contact Component', () => {
     render(<Contact />)
 
     expect(screen.getByText(/Why Work With Me?/i)).toBeInTheDocument()
-    expect(screen.getByText(/8\+ years of experience in automation and web development/i)).toBeInTheDocument()
+    expect(screen.getByText(/\d+\+ years of experience in data analysis and web development/i)).toBeInTheDocument()
     expect(screen.getByText(/Full-stack expertise with modern technologies/i)).toBeInTheDocument()
-    expect(screen.getByText(/Proven track record with 20\+ successful projects/i)).toBeInTheDocument()
+    expect(screen.getByText(/Proven track record with 11\+ successful projects/i)).toBeInTheDocument()
   })
 
   it('displays success message when form is submitted successfully', async () => {
