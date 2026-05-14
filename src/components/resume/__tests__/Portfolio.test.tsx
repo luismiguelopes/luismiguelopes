@@ -62,7 +62,7 @@ describe('Portfolio Component', () => {
   it('displays project count', () => {
     render(<Portfolio />)
 
-    expect(screen.getByText(/Showing 6 of 6 projects/i)).toBeInTheDocument()
+    expect(screen.getByText(/Showing 7 of 7 projects/i)).toBeInTheDocument()
   })
 
   it('renders project cards with proper information', () => {

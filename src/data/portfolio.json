@@ -149,6 +149,16 @@
       "type": "DevOps Tool"
     },
     {
+      "title": "Shortion",
+      "description": "Production-ready URL shortener built with Laravel 12 and React 18. Features custom aliases, QR code generation, real-time click analytics with geo-location tracking, multi-role user management, admin panel, and WebSocket-driven live updates via Laravel Echo and Pusher.",
+      "technologies": ["Laravel", "React", "TypeScript", "MySQL", "Redis", "Docker", "Nginx"],
+      "image": "images/portfolio/shortion-project.webp",
+      "liveUrl": "https://shortion.com",
+      "githubUrl": "#",
+      "category": "web",
+      "type": "Full-Stack App"
+    },
+    {
       "title": "luismiguelopes.com",
       "description": "Personal portfolio built with React 18, TypeScript, Vite and Tailwind CSS v4. Features lazy-loaded sections, Web Vitals reporting, EmailJS contact form, shadcn/ui components and Google Analytics.",
       "technologies": ["React", "TypeScript", "Tailwind CSS", "Vite"],
