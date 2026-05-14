@@ -21,7 +21,7 @@
         { "name": "PHP", "level": 90 },
         { "name": "Python", "level": 85 },
         { "name": "Node.js", "level": 80 },
-        { "name": "Go (GoLang)", "level": 80 }
+        { "name": "TypeScript", "level": 82 }
       ]
     },
     {
@@ -43,7 +43,7 @@
         { "name": "VPS Management", "level": 92 },
         { "name": "Git/GitHub", "level": 92 },
         { "name": "Docker", "level": 85 },
-        { "name": "Kubernetes", "level": 80 }
+        { "name": "Nginx", "level": 85 }
       ]
     }
   ],
