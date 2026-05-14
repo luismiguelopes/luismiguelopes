@@ -1,4 +1,18 @@
-Options -MultiViews
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^ index.html [QSA,L]
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # NÃO redireciona /blog (WordPress)
+    RewriteCond %{REQUEST_URI} !^/blog
+    RewriteCond %{REQUEST_URI} !^/blog/
+
+    # Se não for arquivo ou pasta real, redireciona para index.html (SPA)
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^ index.html [L]
+</IfModule>
+
+# Proteção de arquivos sensíveis
+<FilesMatch "^(\.env|wp-config\.php|\.htaccess|composer\.(json|lock))$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
