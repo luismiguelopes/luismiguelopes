@@ -109,7 +109,7 @@
       "title": "Ikabot Dashboard",
       "description": "Dockerized empire management dashboard for Ikariam automation — collects real-time empire data and exposes it through a Flask/React interface with monitoring and full bot control.",
       "technologies": ["TypeScript", "React", "Python", "Flask", "Docker"],
-      "image": "images/portfolio/ikabot-dashboard-project.png",
+      "image": "images/portfolio/ikabot-dashboard-project.svg",
       "liveUrl": "#",
       "githubUrl": "https://github.com/luismiguelopes/ikabot-dashboard",
       "category": "automation",
