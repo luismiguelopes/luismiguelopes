@@ -97,13 +97,6 @@
       "icon": "SquareCode"
     }
   ],
-  "certifications": [
-    "AWS Certified Solutions Architect",
-    "Laravel Certified Developer",
-    "Google Analytics Individual Qualification",
-    "Docker Certified Associate",
-    "Microsoft Power BI Data Analyst"
-  ],
   "projects": [
     {
       "title": "Ikabot Dashboard",
