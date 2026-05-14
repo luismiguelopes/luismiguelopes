@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { Github, Linkedin, Mail, Download } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 import portfolioData from '@/data/portfolio.json';
 
 const { personal } = portfolioData;
@@ -36,10 +36,6 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-wrap justify-center gap-4 pt-8">
-          <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-all duration-300 hover:scale-105">
-            <Download className="w-4 h-4 mr-2" />
-            Download Resume
-          </Button>
           <a href="#contact">
             <Button variant="outline" className="border-blue-500 text-blue-400 hover:bg-blue-500/10 px-6 py-3 rounded-lg transition-all duration-300 hover:scale-105">
               <Mail className="w-4 h-4 mr-2" />

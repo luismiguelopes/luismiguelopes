@@ -20,8 +20,6 @@ describe('Hero Component', () => {
   it('renders contact buttons', () => {
     render(<Hero />)
     
-    // Verifica se os botões de contato estão presentes
-    expect(screen.getByText(/Download Resume/i)).toBeInTheDocument()
     expect(screen.getByText(/Contact Me/i)).toBeInTheDocument()
   })
 
