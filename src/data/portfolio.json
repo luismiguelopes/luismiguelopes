@@ -17,8 +17,8 @@
       "title": "Backend Development",
       "icon": "Code",
       "skills": [
-        { "name": "Laravel", "level": 95 },
-        { "name": "PHP", "level": 95 },
+        { "name": "Laravel", "level": 90 },
+        { "name": "PHP", "level": 90 },
         { "name": "Python", "level": 85 },
         { "name": "Node.js", "level": 80 },
         { "name": "Go (GoLang)", "level": 80 }
@@ -28,9 +28,9 @@
       "title": "Data Analysis",
       "icon": "Database",
       "skills": [
-        { "name": "Power BI", "level": 99 },
-        { "name": "Excel/VBA", "level": 99 },
-        { "name": "SQL", "level": 95 },
+        { "name": "Power BI", "level": 95 },
+        { "name": "Excel/VBA", "level": 93 },
+        { "name": "SQL", "level": 92 },
         { "name": "Azure Databricks", "level": 92 },
         { "name": "Python (Pandas)", "level": 88 }
       ]
@@ -39,9 +39,9 @@
       "title": "DevOps & Tools",
       "icon": "Terminal",
       "skills": [
-        { "name": "Linux/Bash Scripting", "level": 99 },
-        { "name": "VPS Management", "level": 98 },
-        { "name": "Git/GitHub", "level": 98 },
+        { "name": "Linux/Bash Scripting", "level": 95 },
+        { "name": "VPS Management", "level": 92 },
+        { "name": "Git/GitHub", "level": 92 },
         { "name": "Docker", "level": 85 },
         { "name": "Kubernetes", "level": 80 }
       ]
