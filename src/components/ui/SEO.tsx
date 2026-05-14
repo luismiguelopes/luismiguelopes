@@ -11,9 +11,9 @@ interface SEOProps {
 
 const SEO = ({
   title = 'Luís Miguel Lopes - Data Analyst Coordinator & Full-Stack Developer',
-  description = 'Experienced Data Analyst Coordinator skilled in transforming complex data into actionable insights and leading cross-functional teams. Passionate about building web applications with Laravel and WordPress.',
+  description = 'Experienced Data Analyst Coordinator skilled in transforming complex data into actionable insights and leading cross-functional teams. Passionate about building web applications with Laravel, React and modern DevOps practices.',
   keywords = 'data analyst, full-stack developer, Laravel, PHP, Python, Power BI, web development, automation, DevOps, Portugal',
-  image = '/images/luismiguelopes.png',
+  image = '/images/luismiguelopes.webp',
   url = 'https://luismiguelopes.com',
   type = 'website'
 }: SEOProps) => {
@@ -85,7 +85,7 @@ const SEO = ({
           ],
           "worksFor": {
             "@type": "Organization",
-            "name": "Freelance"
+            "name": "Teleperformance"
           }
         })}
       </script>

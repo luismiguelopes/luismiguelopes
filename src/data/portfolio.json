@@ -5,7 +5,7 @@
     "description": "Data Analyst Coordinator at Teleperformance, leading data-driven initiatives and cross-functional teams. Passionate about building full-stack web applications with Laravel and React, automating workflows with Python and Bash, and managing VPS infrastructure — development is what I do outside work hours, by choice.",
     "email": "geral@luismiguelopes.com",
     "location": "Portugal",
-    "image": "/images/luismiguelopes.png",
+    "image": "/images/luismiguelopes.webp",
     "social": {
       "github": "https://github.com/luismiguelopes/",
       "linkedin": "https://www.linkedin.com/in/luismiguelopes/",
@@ -161,7 +161,7 @@
     },
     {
       "title": "luismiguelopes.com",
-      "description": "Personal portfolio built with React 18, TypeScript, Vite and Tailwind CSS v4. Features lazy-loaded sections, Web Vitals reporting, EmailJS contact form, shadcn/ui components and Google Analytics.",
+      "description": "Personal portfolio built with React 18, TypeScript, Vite and Tailwind CSS v4. Features lazy-loaded sections, PWA support, EmailJS contact form, Cloudflare Analytics and shadcn/ui components.",
       "technologies": ["React", "TypeScript", "Tailwind CSS", "Vite"],
       "image": "images/portfolio/luismiguelopes-project.webp",
       "liveUrl": "https://luismiguelopes.com",
