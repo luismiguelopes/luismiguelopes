@@ -22,9 +22,6 @@ interface AppState {
   }
   setPortfolioFilter: (filter: Partial<AppState['portfolioFilter']>) => void
 
-  // Page views
-  pageViews: number
-  incrementPageViews: () => void
 }
 
 const initialContactForm = {
@@ -65,15 +62,10 @@ export const useAppStore = create<AppState>()(
             'setPortfolioFilter'
           ),
 
-        // Page views
-        pageViews: 0,
-        incrementPageViews: () =>
-          set((state) => ({ pageViews: state.pageViews + 1 }), false, 'incrementPageViews'),
       }),
       {
         name: 'app-storage',
         partialize: (state) => ({
-          pageViews: state.pageViews,
           portfolioFilter: state.portfolioFilter,
         }),
       }

@@ -151,7 +151,7 @@ const Portfolio = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
-          <AnimatePresence mode="wait">
+          <AnimatePresence mode="popLayout">
             {filteredProjects.map((project, index) => (
               <motion.div
                 key={`${project.title}-${portfolioFilter.category}-${portfolioFilter.technology}`}
@@ -162,9 +162,10 @@ const Portfolio = () => {
               >
                 <Card className="bg-gray-800/30 border-gray-700 hover:bg-gray-800/50 transition-all duration-300 hover:scale-105 overflow-hidden">
                   <div className="aspect-video overflow-hidden">
-                    <img 
-                      src={project.image} 
+                    <img
+                      src={project.image}
                       alt={project.title}
+                      loading="lazy"
                       className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
                     />
                   </div>

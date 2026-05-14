@@ -55,10 +55,6 @@ const SEO = ({
       {/* Canonical URL */}
       <link rel="canonical" href={url} />
       
-      {/* Preconnect to external domains */}
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-      
       {/* JSON-LD Structured Data */}
       <script type="application/ld+json">
         {JSON.stringify({

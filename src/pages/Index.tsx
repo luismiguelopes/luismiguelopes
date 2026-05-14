@@ -1,10 +1,9 @@
 
-import { lazy, Suspense, useEffect } from 'react';
+import { lazy, Suspense } from 'react';
 import Hero from '@/components/resume/Hero';
 import AnimatedSection from '@/components/ui/AnimatedSection';
 import LoadingSpinner from '@/components/ui/LoadingSpinner';
 import SEO from '@/components/ui/SEO';
-import { useAppStore } from '@/store/useAppStore';
 
 // Lazy loading dos componentes não críticos
 const Skills = lazy(() => import('@/components/resume/Skills'));
@@ -21,13 +20,6 @@ const SectionLoader = () => (
 );
 
 const Index = () => {
-  const { incrementPageViews } = useAppStore();
-
-  useEffect(() => {
-    incrementPageViews();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
   return (
     <>
       <SEO />
