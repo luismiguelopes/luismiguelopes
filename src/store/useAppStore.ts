@@ -5,7 +5,7 @@ interface AppState {
   // UI state
   isLoading: boolean
   setIsLoading: (loading: boolean) => void
-  
+
   // Contact form state
   contactForm: {
     name: string
@@ -14,20 +14,17 @@ interface AppState {
   }
   setContactForm: (form: Partial<AppState['contactForm']>) => void
   resetContactForm: () => void
-  
+
   // Portfolio filters
   portfolioFilter: {
     category: string
     technology: string
   }
   setPortfolioFilter: (filter: Partial<AppState['portfolioFilter']>) => void
-  
-  // Analytics/tracking
+
+  // Page views
   pageViews: number
   incrementPageViews: () => void
-  
-  // Analytics events
-  trackEvent: (action: string, category: string, label?: string) => void
 }
 
 const initialContactForm = {
@@ -39,50 +36,39 @@ const initialContactForm = {
 export const useAppStore = create<AppState>()(
   devtools(
     persist(
-      (set, get) => ({
+      (set) => ({
         // UI
         isLoading: false,
         setIsLoading: (isLoading) => set({ isLoading }, false, 'setIsLoading'),
-        
+
         // Contact form
         contactForm: initialContactForm,
-        setContactForm: (form) => 
+        setContactForm: (form) =>
           set(
-            (state) => ({ 
-              contactForm: { ...state.contactForm, ...form } 
-            }), 
-            false, 
+            (state) => ({
+              contactForm: { ...state.contactForm, ...form }
+            }),
+            false,
             'setContactForm'
           ),
-        resetContactForm: () => 
+        resetContactForm: () =>
           set({ contactForm: initialContactForm }, false, 'resetContactForm'),
-        
+
         // Portfolio
         portfolioFilter: { category: 'all', technology: 'all' },
-        setPortfolioFilter: (filter) => 
+        setPortfolioFilter: (filter) =>
           set(
-            (state) => ({ 
-              portfolioFilter: { ...state.portfolioFilter, ...filter } 
-            }), 
-            false, 
+            (state) => ({
+              portfolioFilter: { ...state.portfolioFilter, ...filter }
+            }),
+            false,
             'setPortfolioFilter'
           ),
-        
-        // Analytics
+
+        // Page views
         pageViews: 0,
-        incrementPageViews: () => 
+        incrementPageViews: () =>
           set((state) => ({ pageViews: state.pageViews + 1 }), false, 'incrementPageViews'),
-        
-        // Analytics events
-        trackEvent: (action: string, category: string, label?: string) => {
-          // Esta função será usada em conjunto com o hook useAnalytics
-          if (typeof window !== 'undefined' && window.gtag) {
-            window.gtag('event', action, {
-              event_category: category,
-              event_label: label,
-            });
-          }
-        },
       }),
       {
         name: 'app-storage',

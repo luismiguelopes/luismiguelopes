@@ -18,7 +18,6 @@ const baseStore = () => ({
   contactForm: { name: '', email: '', message: '' },
   setContactForm: mockSetContactForm,
   resetContactForm: vi.fn(),
-  trackEvent: vi.fn(),
 } as ReturnType<typeof useAppStore>)
 
 describe('Contact Component', () => {

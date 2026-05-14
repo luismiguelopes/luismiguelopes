@@ -4,7 +4,6 @@ import Hero from '@/components/resume/Hero';
 import AnimatedSection from '@/components/ui/AnimatedSection';
 import LoadingSpinner from '@/components/ui/LoadingSpinner';
 import SEO from '@/components/ui/SEO';
-import { useAnalytics } from '@/hooks/use-analytics';
 import { useAppStore } from '@/store/useAppStore';
 
 // Lazy loading dos componentes não críticos
@@ -22,12 +21,10 @@ const SectionLoader = () => (
 );
 
 const Index = () => {
-  const { trackPageView } = useAnalytics();
   const { incrementPageViews } = useAppStore();
 
   useEffect(() => {
     incrementPageViews();
-    trackPageView('Home - Portfolio', window.location.href);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -38,31 +35,31 @@ const Index = () => {
         <AnimatedSection>
           <Hero />
         </AnimatedSection>
-        
+
         <AnimatedSection delay={0.1}>
           <Suspense fallback={<SectionLoader />}>
             <Skills />
           </Suspense>
         </AnimatedSection>
-        
+
         <AnimatedSection delay={0.2}>
           <Suspense fallback={<SectionLoader />}>
             <Experience />
           </Suspense>
         </AnimatedSection>
-        
+
         <AnimatedSection delay={0.3}>
           <Suspense fallback={<SectionLoader />}>
             <Education />
           </Suspense>
         </AnimatedSection>
-        
+
         <AnimatedSection delay={0.4}>
           <Suspense fallback={<SectionLoader />}>
             <Portfolio />
           </Suspense>
         </AnimatedSection>
-        
+
         <AnimatedSection delay={0.5}>
           <Suspense fallback={<SectionLoader />}>
             <Contact />

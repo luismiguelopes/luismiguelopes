@@ -10,7 +10,7 @@ import emailjs from '@emailjs/browser';
 import portfolioData from '@/data/portfolio.json';
 
 const Contact = () => {
-  const { contactForm, setContactForm, resetContactForm, trackEvent } = useAppStore();
+  const { contactForm, setContactForm, resetContactForm } = useAppStore();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const [errors, setErrors] = useState<Record<string, string>>({});
@@ -62,21 +62,13 @@ const Contact = () => {
         to_name: 'Luís Miguel Lopes',
       };
       
-      // Enviar email via EmailJS
       await emailjs.send(serviceId, templateId, templateParams, publicKey);
-      
-      // Rastrear evento de sucesso
-      trackEvent('form_submit', 'contact', 'success');
-      
       setSubmitStatus('success');
       resetContactForm();
       
       // Reset status após 5 segundos
       setTimeout(() => setSubmitStatus('idle'), 5000);
     } catch (error) {
-      // Rastrear evento de erro
-      trackEvent('form_submit', 'contact', 'error');
-      
       setSubmitStatus('error');
       console.error('Erro ao enviar formulário:', error);
     } finally {
