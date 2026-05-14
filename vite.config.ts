@@ -19,7 +19,7 @@ export default defineConfig({
     }),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.ico', 'images/*.png'],
+      includeAssets: ['favicon.ico', 'apple-touch-icon.png'],
       manifest: {
         name: 'Luis Miguel Lopes - Portfolio',
         short_name: 'LML Portfolio',
@@ -37,45 +37,20 @@ export default defineConfig({
             type: 'image/x-icon'
           },
           {
-            src: '/images/luismiguelopes.png',
+            src: '/pwa-192x192.png',
             sizes: '192x192',
             type: 'image/png'
           },
           {
-            src: '/images/luismiguelopes.png',
+            src: '/pwa-512x512.png',
             sizes: '512x512',
             type: 'image/png'
           }
         ]
       },
       workbox: {
-         globPatterns: ['**/*.{js,css,html,ico,svg}'],
-         maximumFileSizeToCacheInBytes: 5 * 1024 * 1024, // 5MB
-         runtimeCaching: [
-           {
-             urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
-             handler: 'CacheFirst',
-             options: {
-               cacheName: 'google-fonts-cache',
-               expiration: {
-                 maxEntries: 10,
-                 maxAgeSeconds: 60 * 60 * 24 * 365 // <== 365 days
-               }
-             }
-           },
-           {
-             urlPattern: /\.(?:png|jpg|jpeg|svg)$/,
-             handler: 'CacheFirst',
-             options: {
-               cacheName: 'images-cache',
-               expiration: {
-                 maxEntries: 50,
-                 maxAgeSeconds: 60 * 60 * 24 * 30 // 30 days
-               }
-             }
-           }
-         ]
-       }
+        globPatterns: ['**/*.{js,css,html,ico}'],
+      }
     })
   ],
   resolve: {
