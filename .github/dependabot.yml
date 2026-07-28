@@ -1,0 +1,74 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: weekly
+      day: monday
+      time: "07:00"
+      timezone: Europe/Lisbon
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: "chore(deps)"
+      prefix-development: "chore(deps-dev)"
+    groups:
+      # Patch/minor updates are batched into a single PR per area so routine
+      # bumps do not produce one PR per package.
+      react:
+        patterns:
+          - "react"
+          - "react-dom"
+          - "@types/react"
+          - "@types/react-dom"
+          - "react-router-dom"
+        update-types:
+          - minor
+          - patch
+      build-tooling:
+        patterns:
+          - "vite"
+          - "@vitejs/*"
+          - "vite-plugin-*"
+          - "@tailwindcss/*"
+          - "tailwindcss"
+          - "rollup-plugin-*"
+        update-types:
+          - minor
+          - patch
+      linting:
+        patterns:
+          - "eslint"
+          - "@eslint/*"
+          - "eslint-plugin-*"
+          - "typescript-eslint"
+          - "globals"
+        update-types:
+          - minor
+          - patch
+      testing:
+        patterns:
+          - "vitest"
+          - "@vitest/*"
+          - "@testing-library/*"
+          - "jsdom"
+        update-types:
+          - minor
+          - patch
+      minor-and-patch:
+        patterns:
+          - "*"
+        update-types:
+          - minor
+          - patch
+    # Major bumps stay as individual PRs — they need to be reviewed one by one.
+
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: monthly
+    commit-message:
+      prefix: "chore(ci)"
+    groups:
+      actions:
+        patterns:
+          - "*"
