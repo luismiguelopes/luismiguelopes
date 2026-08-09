@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Mail } from 'lucide-react';
+import { GithubIcon, LinkedinIcon } from '@/components/ui/BrandIcons';
 import portfolioData from '@/data/portfolio.json';
 
 const { personal } = portfolioData;
@@ -52,7 +53,7 @@ const Hero = () => {
             className="text-gray-400 hover:text-blue-400 transition-colors duration-300 hover:scale-110 transform"
             aria-label="Visit GitHub profile (opens in new tab)"
           >
-            <Github className="w-6 h-6" aria-hidden="true" />
+            <GithubIcon className="w-6 h-6" aria-hidden="true" />
           </a>
           <a
             href={personal.social.linkedin}
@@ -61,7 +62,7 @@ const Hero = () => {
             className="text-gray-400 hover:text-blue-400 transition-colors duration-300 hover:scale-110 transform"
             aria-label="Visit LinkedIn profile (opens in new tab)"
           >
-            <Linkedin className="w-6 h-6" aria-hidden="true" />
+            <LinkedinIcon className="w-6 h-6" aria-hidden="true" />
           </a>
           <a
             href={personal.social.email}
