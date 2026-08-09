@@ -44,5 +44,10 @@ describe('Hero Component', () => {
     
     expect(githubLink).toHaveAttribute('href', 'https://github.com/luismiguelopes/')
     expect(linkedinLink).toHaveAttribute('href', 'https://www.linkedin.com/in/luismiguelopes/')
+
+    // Os ícones de marca são locais (lucide-react removeu-os no v1), por isso
+    // confirma-se que cada link renderiza mesmo o seu SVG
+    expect(githubLink?.querySelector('svg')).toBeInTheDocument()
+    expect(linkedinLink?.querySelector('svg')).toBeInTheDocument()
   })
 })

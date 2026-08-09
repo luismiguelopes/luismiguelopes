@@ -2,7 +2,8 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { ExternalLink, Github, Filter, ChevronDown, Check } from 'lucide-react';
+import { ExternalLink, Filter, ChevronDown, Check } from 'lucide-react';
+import { GithubIcon } from '@/components/ui/BrandIcons';
 import { useAppStore } from '@/store/useAppStore';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useRef, useEffect } from 'react';
@@ -207,7 +208,7 @@ const Portfolio = () => {
                           className="border-gray-600 text-gray-300 hover:bg-gray-700"
                           onClick={() => window.open(project.githubUrl, '_blank')}
                         >
-                          <Github className="w-4 h-4 mr-2" />
+                          <GithubIcon className="w-4 h-4 mr-2" />
                           Code
                         </Button>
                       )}
@@ -224,7 +225,7 @@ const Portfolio = () => {
             className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3"
             onClick={() => window.open('https://github.com/luismiguelopes', '_blank')}
           >
-            <Github className="w-4 h-4 mr-2" />
+            <GithubIcon className="w-4 h-4 mr-2" />
             View All Projects on GitHub
           </Button>
         </div>
