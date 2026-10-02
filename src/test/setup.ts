@@ -7,6 +7,7 @@ import { vi } from 'vitest'
 class MockIntersectionObserver implements IntersectionObserver {
   readonly root = null
   readonly rootMargin = ''
+  readonly scrollMargin = ''
   readonly thresholds = []
   observe = () => null
   unobserve = () => null
@@ -14,7 +15,7 @@ class MockIntersectionObserver implements IntersectionObserver {
   takeRecords = () => []
 }
 window.IntersectionObserver = MockIntersectionObserver
-global.IntersectionObserver = MockIntersectionObserver
+globalThis.IntersectionObserver = MockIntersectionObserver
 
 // Mock do ResizeObserver para testes
 class MockResizeObserver implements ResizeObserver {
@@ -23,7 +24,7 @@ class MockResizeObserver implements ResizeObserver {
   disconnect = () => null
 }
 window.ResizeObserver = MockResizeObserver
-global.ResizeObserver = MockResizeObserver
+globalThis.ResizeObserver = MockResizeObserver
 
 // Mock do matchMedia para testes
 Object.defineProperty(window, 'matchMedia', {

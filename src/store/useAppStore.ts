@@ -1,7 +1,7 @@
 import { create } from 'zustand'
 import { devtools, persist } from 'zustand/middleware'
 
-interface AppState {
+export interface AppState {
   // UI state
   isLoading: boolean
   setIsLoading: (loading: boolean) => void
