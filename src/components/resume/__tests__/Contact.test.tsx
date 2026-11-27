@@ -1,7 +1,7 @@
 import { render, screen, fireEvent, waitFor } from '@testing-library/react'
 import { describe, it, expect, beforeEach, vi } from 'vitest'
 import Contact from '../Contact'
-import { useAppStore } from '@/store/useAppStore'
+import { useAppStore, type AppState } from '@/store/useAppStore'
 import emailjs from '@emailjs/browser'
 
 vi.mock('@emailjs/browser', () => ({
@@ -14,11 +14,15 @@ vi.mock('@/store/useAppStore', () => ({
 
 const mockSetContactForm = vi.fn()
 
-const baseStore = () => ({
+const baseStore = (): AppState => ({
+  isLoading: false,
+  setIsLoading: vi.fn(),
   contactForm: { name: '', email: '', message: '' },
   setContactForm: mockSetContactForm,
   resetContactForm: vi.fn(),
-} as ReturnType<typeof useAppStore>)
+  portfolioFilter: { category: 'all', technology: 'all' },
+  setPortfolioFilter: vi.fn(),
+})
 
 describe('Contact Component', () => {
   beforeEach(() => {
@@ -66,7 +70,7 @@ describe('Contact Component', () => {
     vi.mocked(useAppStore).mockReturnValue({
       ...baseStore(),
       contactForm: { name: 'John Doe', email: 'invalid-email', message: 'Hello, this is a test message.' },
-    } as ReturnType<typeof useAppStore>)
+    } as AppState)
 
     render(<Contact />)
 
@@ -82,7 +86,7 @@ describe('Contact Component', () => {
     vi.mocked(useAppStore).mockReturnValue({
       ...baseStore(),
       contactForm: { name: 'John Doe', email: 'john@example.com', message: 'Hello, this is a test message.' },
-    } as ReturnType<typeof useAppStore>)
+    } as AppState)
 
     render(<Contact />)
 
@@ -107,7 +111,7 @@ describe('Contact Component', () => {
     vi.mocked(useAppStore).mockReturnValue({
       ...baseStore(),
       contactForm: { name: 'John Doe', email: 'john@example.com', message: 'Hello, this is a test message.' },
-    } as ReturnType<typeof useAppStore>)
+    } as AppState)
 
     render(<Contact />)
 
@@ -123,7 +127,7 @@ describe('Contact Component', () => {
     vi.mocked(useAppStore).mockReturnValue({
       ...baseStore(),
       contactForm: { name: 'John Doe', email: 'john@example.com', message: 'Hello, this is a test message.' },
-    } as ReturnType<typeof useAppStore>)
+    } as AppState)
 
     render(<Contact />)
 
