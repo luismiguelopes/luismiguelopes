@@ -103,11 +103,31 @@
       "title": "Ikabot Dashboard",
       "description": "Dockerized empire management dashboard for Ikariam automation — collects real-time empire data and exposes it through a Flask/React interface with monitoring and full bot control.",
       "technologies": ["TypeScript", "React", "Python", "Flask", "Docker"],
-      "image": "images/portfolio/ikabot-dashboard-project.svg",
+      "image": "images/portfolio/ikabot-dashboard-project.webp",
       "liveUrl": "#",
       "githubUrl": "https://github.com/luismiguelopes/ikabot-dashboard",
       "category": "automation",
       "type": "Full-Stack App"
+    },
+    {
+      "title": "Astra",
+      "description": "OGame bot written from scratch in Go and shipped as a single binary with an embedded React UI. Encrypted credential vault (AES-256-GCM), SQLite storage, live logs and status over Server-Sent Events, PT/EN interface and a demo mode with a simulated game. Currently in active development.",
+      "technologies": ["Go", "React", "TypeScript", "Tailwind CSS", "SQLite"],
+      "image": "images/portfolio/astra-project.webp",
+      "liveUrl": "#",
+      "githubUrl": "#",
+      "category": "automation",
+      "type": "In Development"
+    },
+    {
+      "title": "Maxithlon UI+",
+      "description": "Userscript that gives the Maxithlon athletics management game a modern interface: dark/light themes, roster and market dashboards with a 0–20 skill heat map, athlete skill radar, finance charts, a Ctrl+K command palette and CSV export. Works in any site language — purely visual, no automation.",
+      "technologies": ["JavaScript", "Userscript", "SVG", "CSS"],
+      "image": "images/portfolio/maxithlon-ui-project.webp",
+      "liveUrl": "#",
+      "githubUrl": "https://github.com/luismiguelopes/maxithlon-ui",
+      "category": "web",
+      "type": "Browser Extension"
     },
     {
       "title": "Ikabot (Contributor)",
@@ -161,7 +181,7 @@
     },
     {
       "title": "luismiguelopes.com",
-      "description": "Personal portfolio built with React 18, TypeScript, Vite and Tailwind CSS v4. Features lazy-loaded sections, PWA support, EmailJS contact form, Cloudflare Analytics and shadcn/ui components.",
+      "description": "Personal portfolio built with React 19, TypeScript, Vite and Tailwind CSS v4. Features lazy-loaded sections, PWA support, EmailJS contact form, Cloudflare Analytics and shadcn/ui components.",
       "technologies": ["React", "TypeScript", "Tailwind CSS", "Vite"],
       "image": "images/portfolio/luismiguelopes-project.webp",
       "liveUrl": "https://luismiguelopes.com",
