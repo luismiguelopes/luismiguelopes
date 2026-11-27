@@ -4,6 +4,7 @@ import Hero from '@/components/resume/Hero';
 import AnimatedSection from '@/components/ui/AnimatedSection';
 import LoadingSpinner from '@/components/ui/LoadingSpinner';
 import SEO from '@/components/ui/SEO';
+import Navbar from '@/components/ui/Navbar';
 
 // Lazy loading dos componentes não críticos
 const Skills = lazy(() => import('@/components/resume/Skills'));
@@ -23,40 +24,51 @@ const Index = () => {
   return (
     <>
       <SEO />
+      <Navbar />
       <div className="min-h-screen bg-background text-foreground transition-colors duration-300">
         <AnimatedSection>
           <Hero />
         </AnimatedSection>
 
-        <AnimatedSection delay={0.1}>
-          <Suspense fallback={<SectionLoader />}>
-            <Skills />
-          </Suspense>
-        </AnimatedSection>
+        <div id="skills">
+          <AnimatedSection delay={0.1}>
+            <Suspense fallback={<SectionLoader />}>
+              <Skills />
+            </Suspense>
+          </AnimatedSection>
+        </div>
 
-        <AnimatedSection delay={0.2}>
-          <Suspense fallback={<SectionLoader />}>
-            <Experience />
-          </Suspense>
-        </AnimatedSection>
+        <div id="experience">
+          <AnimatedSection delay={0.2}>
+            <Suspense fallback={<SectionLoader />}>
+              <Experience />
+            </Suspense>
+          </AnimatedSection>
+        </div>
 
-        <AnimatedSection delay={0.3}>
-          <Suspense fallback={<SectionLoader />}>
-            <Education />
-          </Suspense>
-        </AnimatedSection>
+        <div id="education">
+          <AnimatedSection delay={0.3}>
+            <Suspense fallback={<SectionLoader />}>
+              <Education />
+            </Suspense>
+          </AnimatedSection>
+        </div>
 
-        <AnimatedSection delay={0.4}>
-          <Suspense fallback={<SectionLoader />}>
-            <Portfolio />
-          </Suspense>
-        </AnimatedSection>
+        <div id="projects">
+          <AnimatedSection delay={0.4}>
+            <Suspense fallback={<SectionLoader />}>
+              <Portfolio />
+            </Suspense>
+          </AnimatedSection>
+        </div>
 
-        <AnimatedSection delay={0.5}>
-          <Suspense fallback={<SectionLoader />}>
-            <Contact />
-          </Suspense>
-        </AnimatedSection>
+        <div id="contact">
+          <AnimatedSection delay={0.5}>
+            <Suspense fallback={<SectionLoader />}>
+              <Contact />
+            </Suspense>
+          </AnimatedSection>
+        </div>
       </div>
     </>
   );

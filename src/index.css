@@ -151,10 +151,19 @@ All colors MUST be HSL.
   html {
     @apply bg-background;
     scroll-behavior: smooth;
+    /* Keeps section headings clear of the fixed navbar after an anchor jump */
+    scroll-padding-top: 4.5rem;
   }
 
   body {
     @apply bg-background text-foreground;
     min-height: 100vh;
+  }
+}
+
+/* Jump instead of gliding for people who asked the OS for less motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 }
