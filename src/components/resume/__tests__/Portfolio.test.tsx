@@ -78,14 +78,43 @@ describe('Portfolio Component', () => {
     expect(screen.getAllByText(/Automation/i).length).toBeGreaterThan(0)
   })
 
-  it('renders external buttons for projects', () => {
+  // Real links (not window.open buttons) so they can be crawled, middle-clicked
+  // and copied, and the opened page gets no handle on this tab.
+  const expectExternalLink = (link: HTMLElement, href: string) => {
+    expect(link.tagName).toBe('A')
+    expect(link).toHaveAttribute('href', href)
+    expect(link).toHaveAttribute('target', '_blank')
+    expect(link).toHaveAttribute('rel', 'noopener noreferrer')
+  }
+
+  it('renders a Code link for every project with a public repository', () => {
     render(<Portfolio />)
 
-    // Verifica se os botões de GitHub estão presentes
-    const githubButtons = screen.getAllByText(/Code/i)
-    expect(githubButtons.length).toBeGreaterThan(0)
+    const withRepo = portfolioData.projects.filter(p => p.githubUrl !== '#')
+    for (const project of withRepo) {
+      const link = screen.getByRole('link', { name: `Code: ${project.title} on GitHub (opens in a new tab)` })
+      expectExternalLink(link, project.githubUrl)
+    }
+    expect(screen.getAllByRole('link', { name: /^Code:/ })).toHaveLength(withRepo.length)
+  })
 
-    // Verifica se há botão para ver todos os projetos
-    expect(screen.getByText(/View All Projects on GitHub/i)).toBeInTheDocument()
+  it('renders a Live Demo link only for projects with a live URL', () => {
+    render(<Portfolio />)
+
+    const withDemo = portfolioData.projects.filter(p => p.liveUrl !== '#')
+    for (const project of withDemo) {
+      const link = screen.getByRole('link', { name: `Live Demo: ${project.title} (opens in a new tab)` })
+      expectExternalLink(link, project.liveUrl)
+    }
+    expect(screen.getAllByRole('link', { name: /^Live Demo:/ })).toHaveLength(withDemo.length)
+  })
+
+  it('links to the full GitHub profile', () => {
+    render(<Portfolio />)
+
+    expectExternalLink(
+      screen.getByRole('link', { name: /View All Projects on GitHub/i }),
+      'https://github.com/luismiguelopes'
+    )
   })
 })

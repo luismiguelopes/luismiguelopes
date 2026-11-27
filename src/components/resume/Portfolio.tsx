@@ -192,24 +192,34 @@ const Portfolio = () => {
 
                     <div className="flex gap-3">
                       {project.liveUrl !== "#" && (
-                        <Button 
-                          size="sm" 
-                          className="bg-blue-600 hover:bg-blue-700 text-white"
-                          onClick={() => window.open(project.liveUrl, '_blank')}
-                        >
-                          <ExternalLink className="w-4 h-4 mr-2" />
-                          Live Demo
+                        <Button asChild size="sm" className="bg-blue-600 hover:bg-blue-700 text-white">
+                          <a
+                            href={project.liveUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label={`Live Demo: ${project.title} (opens in a new tab)`}
+                          >
+                            <ExternalLink className="w-4 h-4 mr-2" aria-hidden="true" />
+                            Live Demo
+                          </a>
                         </Button>
                       )}
                       {project.githubUrl !== "#" && (
-                        <Button 
-                          size="sm" 
-                          variant="outline" 
+                        <Button
+                          asChild
+                          size="sm"
+                          variant="outline"
                           className="border-gray-600 text-gray-300 hover:bg-gray-700"
-                          onClick={() => window.open(project.githubUrl, '_blank')}
                         >
-                          <GithubIcon className="w-4 h-4 mr-2" />
-                          Code
+                          <a
+                            href={project.githubUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label={`Code: ${project.title} on GitHub (opens in a new tab)`}
+                          >
+                            <GithubIcon className="w-4 h-4 mr-2" aria-hidden="true" />
+                            Code
+                          </a>
                         </Button>
                       )}
                     </div>
@@ -221,12 +231,11 @@ const Portfolio = () => {
         </div>
 
         <div className="text-center mt-12">
-          <Button 
-            className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3"
-            onClick={() => window.open('https://github.com/luismiguelopes', '_blank')}
-          >
-            <GithubIcon className="w-4 h-4 mr-2" />
-            View All Projects on GitHub
+          <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3">
+            <a href="https://github.com/luismiguelopes" target="_blank" rel="noopener noreferrer">
+              <GithubIcon className="w-4 h-4 mr-2" aria-hidden="true" />
+              View All Projects on GitHub
+            </a>
           </Button>
         </div>
       </div>
