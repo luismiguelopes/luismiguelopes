@@ -85,7 +85,7 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 px-4 bg-gray-900/50" aria-label="Contact section">
+    <section className="py-20 px-4 bg-gray-900/50" aria-label="Contact section">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
