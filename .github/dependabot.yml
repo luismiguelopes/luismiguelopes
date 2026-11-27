@@ -61,6 +61,11 @@ updates:
           - minor
           - patch
     # Major bumps stay as individual PRs — they need to be reviewed one by one.
+    ignore:
+      # typescript-eslint 8 only supports typescript <6.1. Remove once it adds
+      # TypeScript 7 support.
+      - dependency-name: "typescript"
+        versions: [">=6.1.0"]
 
   - package-ecosystem: github-actions
     directory: "/"
