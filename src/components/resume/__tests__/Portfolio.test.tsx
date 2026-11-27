@@ -2,6 +2,7 @@ import { render, screen, fireEvent } from '@testing-library/react'
 import { describe, it, expect, beforeEach, vi } from 'vitest'
 import Portfolio from '../Portfolio'
 import { useAppStore } from '@/store/useAppStore'
+import portfolioData from '@/data/portfolio.json'
 
 // Mock do store
 const mockSetPortfolioFilter = vi.fn()
@@ -62,7 +63,7 @@ describe('Portfolio Component', () => {
   it('displays project count', () => {
     render(<Portfolio />)
 
-    expect(screen.getByText(/Showing 7 of 7 projects/i)).toBeInTheDocument()
+    expect(screen.getByText(`Showing ${portfolioData.projects.length} of ${portfolioData.projects.length} projects`)).toBeInTheDocument()
   })
 
   it('renders project cards with proper information', () => {
